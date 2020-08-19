@@ -1,0 +1,10 @@
+Дан код, нужно исправить ошибку компиляции.
+
+class Book {
+
+    public static void main(String[] args) {
+
+
+    }
+
+}
