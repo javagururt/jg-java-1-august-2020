@@ -1,4 +1,4 @@
-package com.javaguru.student_makim_morozovs;
+package com.javaguru.student_maksim_morozov;
 
 class Task_11 {
     public static void main(String[] args) {
