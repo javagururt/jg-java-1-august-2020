@@ -40,10 +40,11 @@ class Variables {
         System.out.println(bigDecimalPrice);
 
         char a = 'a';
+        //плохое название переменной - не несет смысловой нагрузки
         char b = 66; //ASCII - B
         System.out.println(a);
         System.out.println(b);
-
+        
         System.out.println("Hello");
     }
 }
