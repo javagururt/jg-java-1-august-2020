@@ -1,4 +1,4 @@
 package lv.javaguru.Nikolajs;
 
-public class HelloWorld {
+class HelloWorld {
 }

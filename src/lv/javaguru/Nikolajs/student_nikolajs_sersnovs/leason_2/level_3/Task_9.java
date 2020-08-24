@@ -2,7 +2,7 @@ package lv.javaguru.Nikolajs.student_nikolajs_sersnovs.leason_2.level_3;
 
 import java.util.Scanner;
 
-public class Task_9 {
+class Task_9 {
     public static void main(String[] args) {
 
 
