@@ -44,7 +44,7 @@ class Variables {
         char b = 66; //ASCII - B
         System.out.println(a);
         System.out.println(b);
-        
+
         System.out.println("Hello");
     }
 }
