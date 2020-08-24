@@ -11,11 +11,16 @@ class Task_1 {
         int firstNumber = in.nextInt();
         System.out.println("Input second number:");
         int secondNumber = in.nextInt();
-        System.out.println("Choose operation: \n + Addition \n - Subtraction \n * Multiplication \n / Division ");
-        String operation = in.nextLine();
-        int sumResult = firstNumber + secondNumber;
-        System.out.println("Sum result = " + sumResult);
 
+        int Addition = firstNumber + secondNumber;
+        int Subtraction = firstNumber - secondNumber;
+        int Multiplication = firstNumber * secondNumber;
+        int Division = firstNumber / secondNumber;
+
+        System.out.println("Addition = " + Addition);
+        System.out.println("Subtraction = " + Subtraction);
+        System.out.println("Multiplication = " + Multiplication);
+        System.out.println("Division = " + Division);
 
     }
 }
