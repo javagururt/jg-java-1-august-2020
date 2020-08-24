@@ -1,4 +1,4 @@
-package com.javaguru.student_nikolajs_sersnovs.leason_2.level_1;
+package lv.javaguru.Nikolajs.student_nikolajs_sersnovs.leason_2.level_1;
 
 import java.util.Scanner;
 
@@ -8,10 +8,11 @@ public class Task_2 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input first number:");
-        double num3 = scanner.nextDouble();
+        double firstNumber = scanner.nextDouble();
         System.out.println("Input second number:");
-        double num4 = scanner.nextDouble();
+        double secondNumber = scanner.nextDouble();
         System.out.println("Choose operation: \n + Addition \n - Subtraction \n * Multiplication \n / Division ");
-
+        double sumResult = firstNumber + secondNumber;
+        System.out.println("Sum result = " + sumResult);
     }
 }

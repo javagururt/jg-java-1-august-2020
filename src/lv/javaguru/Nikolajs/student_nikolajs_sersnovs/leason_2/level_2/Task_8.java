@@ -1,4 +1,4 @@
-package com.javaguru.student_nikolajs_sersnovs.leason_2.level_2;
+package lv.javaguru.Nikolajs.student_nikolajs_sersnovs.leason_2.level_2;
 
 import java.util.Scanner;
 
