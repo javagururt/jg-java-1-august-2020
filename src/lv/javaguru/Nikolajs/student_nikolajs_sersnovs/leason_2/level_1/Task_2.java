@@ -14,5 +14,6 @@ class Task_2 {
         System.out.println("Choose operation: \n + Addition \n - Subtraction \n * Multiplication \n / Division ");
         double sumResult = firstNumber + secondNumber;
         System.out.println("Sum result = " + sumResult);
+
     }
 }
