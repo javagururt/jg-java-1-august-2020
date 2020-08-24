@@ -1,4 +1,4 @@
-package com.javaguru.student_Vladimirs_Petrinaks.lesson_1.level_4;
+package com.javaguru.student_vladimirs_petrinaks.lesson_1.level_4;
 
 class Task_11 {
     public static void main(String[] args) {
