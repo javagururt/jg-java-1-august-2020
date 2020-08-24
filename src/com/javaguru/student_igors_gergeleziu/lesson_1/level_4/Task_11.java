@@ -8,9 +8,9 @@ public class Task_11 {
         int c = a + b;
         System.out.println("Result: " + c);
 
-        float d = 50;
-        float e = 3;
-        float f = d / e;
+        int d = 50;
+        int e = 3;
+        int f = d / e;
         System.out.println("Result:" + f);
 
     }
