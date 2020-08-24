@@ -1,4 +1,4 @@
-package lv.javaguru.Nikolajs.student_nikolajs_sersnovs.leason_2.level_3;
+package com.javaguru.student_nikolajs_sersnovs.leason_2.level_3;
 
 public class Task_10 {
 
