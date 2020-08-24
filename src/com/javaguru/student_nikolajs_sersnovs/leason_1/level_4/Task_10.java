@@ -1,4 +1,4 @@
-package lv.javaguru.Nikolajs.student_nikolajs_sersnovs.leason_1.level_4;
+package com.javaguru.student_nikolajs_sersnovs.leason_1.level_4;
 
 class Task_10 {
     public static void main(String[] args) {
