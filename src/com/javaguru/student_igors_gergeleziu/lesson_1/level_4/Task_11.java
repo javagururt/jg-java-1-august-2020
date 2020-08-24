@@ -1,4 +1,4 @@
-package com.javaguru.student_nikolajs_sersnovs.leason_1.level_4;
+package com.javaguru.student_igors_gergeleziu.lesson_1.level_4;
 
 public class Task_11 {
     public static void main(String[] args) {
@@ -8,12 +8,11 @@ public class Task_11 {
         int c = a + b;
         System.out.println("Result: " + c);
 
-        float d = 50;
-        float e = 3;
-        float f = d / e;
+        int d = 50;
+        int e = 3;
+        int f = d / e;
         System.out.println("Result:" + f);
 
     }
 
-    }
-
+}
