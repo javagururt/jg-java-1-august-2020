@@ -1,12 +1,17 @@
 package com.javaguru.student_igors_jurkovs.lesson_2.level_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_1 {
     public static void main(String[] arghs) {
 
         System.out.println("Please enter first number: ");
         Scanner sc = new Scanner(System.in);
+        @CodeReviewComment(teacher = "в Java лучше назвать переменные и методы следуя правилу camelCase.")
         int firstdoublenumber = sc.nextInt();
 
         System.out.println("Please enter second number: ");

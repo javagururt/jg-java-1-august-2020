@@ -46,5 +46,12 @@ class Variables {
         System.out.println(b);
 
         System.out.println("Hello");
+
+        System.out.print("A\n");
+        System.out.print("A");
+        System.out.print("A");
+        System.out.print("A");
+        System.out.println("A");
+        System.out.println("A");
     }
 }
