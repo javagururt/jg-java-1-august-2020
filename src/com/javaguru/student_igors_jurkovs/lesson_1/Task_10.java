@@ -1,4 +1,4 @@
-package com.javaguru.student_Igors_Jurkovs.lesson_1;
+package com.javaguru.student_igors_jurkovs.lesson_1;
 
 class Task_10 {
 

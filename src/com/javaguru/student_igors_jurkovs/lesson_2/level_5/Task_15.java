@@ -1,4 +1,4 @@
-package com.javaguru.student_Igors_Jurkovs.lesson_2.level_5;
+package com.javaguru.student_igors_jurkovs.lesson_2.level_5;
 
 import java.util.Scanner;
 
