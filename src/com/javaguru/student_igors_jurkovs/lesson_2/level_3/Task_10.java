@@ -1,6 +1,5 @@
 package com.javaguru.student_igors_jurkovs.lesson_2.level_3;
 import java.util.Scanner;
-import static com.sun.org.apache.xalan.internal.lib.ExsltMath.power;
 
 class Task_10 {
     public static void main(String[] args) {
@@ -9,7 +8,8 @@ class Task_10 {
         Scanner sc = new Scanner(System.in);
         double userRadius = sc.nextDouble();
         double circlePerimeter = 2 * Math.PI * userRadius;
-        double circleArea = Math.PI * power (userRadius, 2);
+        double squareUserRadius = userRadius * userRadius;
+        double circleArea = Math.PI * squareUserRadius;
 
         System.out.println("Circles perimeter is: " + circlePerimeter);
         System.out.println("Circles area is: " + circleArea);
