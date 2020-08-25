@@ -1,4 +1,4 @@
-package com.javaguru.student_Igors_Jurkovs.level_3;
+package com.javaguru.student_Igors_Jurkovs.lesson_2.level_3;
 import java.util.Scanner;
 import static com.sun.org.apache.xalan.internal.lib.ExsltMath.power;
 
