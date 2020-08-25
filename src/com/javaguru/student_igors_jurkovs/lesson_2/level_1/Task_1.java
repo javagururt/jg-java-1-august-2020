@@ -7,20 +7,20 @@ import java.util.Scanner;
 
 @CodeReview(approved = true)
 class Task_1 {
-    public static void main(String[] arghs) {
+    public static void main(String[] args) {
 
         System.out.println("Please enter first number: ");
         Scanner sc = new Scanner(System.in);
         @CodeReviewComment(teacher = "в Java лучше назвать переменные и методы следуя правилу camelCase.")
-        int firstdoublenumber = sc.nextInt();
+        int firstDoubleNumber = sc.nextInt();
 
         System.out.println("Please enter second number: ");
         int secondDoubleNumber = sc.nextInt();
 
-        int sumResult = firstdoublenumber + secondDoubleNumber;
-        int subtractionResult = firstdoublenumber - secondDoubleNumber;
-        int multiplyResult = firstdoublenumber * secondDoubleNumber;
-        int divisionResult = firstdoublenumber / secondDoubleNumber;
+        int sumResult = firstDoubleNumber + secondDoubleNumber;
+        int subtractionResult = firstDoubleNumber - secondDoubleNumber;
+        int multiplyResult = firstDoubleNumber * secondDoubleNumber;
+        int divisionResult = firstDoubleNumber / secondDoubleNumber;
 
         System.out.println("Sum of your numbers is: " + sumResult);
         System.out.println("Subtraction of your numbers is: " + subtractionResult);
