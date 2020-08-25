@@ -1,8 +1,13 @@
 package com.javaguru.student_igors_gergeleziu.lesson_2.level_3;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_11 {
     public static void main(String[] args) {
+        @CodeReviewComment(teacher = "В Java непринято объявлять несколько переменных в одну строку. Лучше разделить на несколько строк и сразу с присваиванием значения")
          int firstNumber, secondNumber, thirdNumber;
          float arithmeticAverage;
         Scanner sc= new Scanner(System.in);

@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 class Task_10 {
     static double square(double a) {
-        double result = a * a;
-        return result;
+        return a * a;
     }
 
     public static void main(String[] args) {

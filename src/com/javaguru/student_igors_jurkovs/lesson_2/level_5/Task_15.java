@@ -11,7 +11,7 @@ public class Task_15 {
         int userAnswer = sc.nextInt();
         if (userAnswer == 6) {
             System.out.println("Correct answer");
-            rightAnswer = rightAnswer +1;
+            rightAnswer++;
         }
         else {
             System.out.println("Incorrect answer");
@@ -20,7 +20,7 @@ public class Task_15 {
         int userAnswer2 = sc.nextInt();
         if (userAnswer2 == 8) {
             System.out.println("Correct answer");
-            rightAnswer = rightAnswer +1;
+            rightAnswer++;
         }
         else {
             System.out.println("Incorrect answer");
@@ -32,7 +32,7 @@ public class Task_15 {
         boolean correctAnswer = userAnswer3.contains("hood");
         if (correctAnswer) {
             System.out.println("Correct answer");
-            rightAnswer = rightAnswer +1;
+            rightAnswer++;
         }
         else {
             System.out.println("Incorrect answer");
