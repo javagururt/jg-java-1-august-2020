@@ -1,6 +1,6 @@
 package com.javaguru.student_vladimir_petranovski.lesson_2.level_x;
 
-public class Super_Task_2 {
+public class Super_Task_2_SumTwoNumbers {
     public static void main(String[] args) {
 
         int numberOne;
