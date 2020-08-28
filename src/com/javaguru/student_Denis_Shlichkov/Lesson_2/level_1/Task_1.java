@@ -9,10 +9,10 @@ public class Task_1 {
         int num1 = in.nextInt();
         System.out.print("Input a second number: ");
         int num2 = in.nextInt();
-        System.out.println(num1 + num2);
-        System.out.println(num1 - num2);
-        System.out.println(num1 * num2);
-        System.out.println(num1 / num2);
+        System.out.println("Сумма: " + (num1 + num2));
+        System.out.println("Разность: " + (num1 - num2));
+        System.out.println("Произведение: " + (num1 * num2));
+        System.out.println("Частное: " + (num1 / num2));
         in.close();
     }
 }
