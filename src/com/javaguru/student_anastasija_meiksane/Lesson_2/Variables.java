@@ -1,5 +1,11 @@
 package com.javaguru.student_anastasija_meiksane.Lesson_2;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReviewComment(teacher = "Название класса и название файла должны совпадать." +
+        "Названия классов должны начинаться с заглавной буквы.")
+@CodeReview(approved = true)
 class human {
 
     public static void main(String[] args) {

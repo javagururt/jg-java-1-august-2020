@@ -6,5 +6,9 @@ public class Task_11 {
         int b = 36;
         int c = a + b;
         System.out.println(c);
+        int d = 50;
+        int e = 3;
+        int f = d/e;
+        System.out.println(f);
     }
 }

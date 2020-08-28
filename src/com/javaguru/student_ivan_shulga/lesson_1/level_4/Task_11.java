@@ -2,7 +2,7 @@ package com.javaguru.student_ivan_shulga.lesson_1.level_4;
 
 import java.net.SocketOption;
 
-public class Task_11 {
+class Task_11 {
 
     public static void main(String[] args) {
 
