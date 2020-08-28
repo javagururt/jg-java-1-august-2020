@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_jurkovs.other;
+package com.javaguru.student_igors_jurkovs.personal;
 
 import java.util.Scanner;
 
@@ -16,8 +16,7 @@ class Encoder{
         Scanner userChar = new Scanner(System.in);
         String userInput = userChar.nextLine();
         char firstChar = userInput.charAt(0);
-        int decodeAscCode = (int)firstChar;
-        System.out.println(decodeAscCode);
+        System.out.println((int)firstChar);
     }
 }
 class EncoderDemo{
