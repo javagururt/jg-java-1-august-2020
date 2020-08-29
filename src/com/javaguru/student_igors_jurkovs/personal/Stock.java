@@ -21,14 +21,12 @@ class Stock {
     // Method
     public void updatePrice(double newPrice) {
 
-        double checkMinimalPrice = propertyMinimalPrice;
-        double checkMaximalPrice = propertyMaximalPrice;
         propertyCurrentPrice = newPrice;
 
-        if (newPrice < checkMinimalPrice) {
+        if (newPrice < propertyMinimalPrice) {
             propertyMinimalPrice = newPrice;
         }
-        if (newPrice > checkMaximalPrice) {
+        if (newPrice > propertyMaximalPrice) {
             propertyMaximalPrice = newPrice;
         }
     }

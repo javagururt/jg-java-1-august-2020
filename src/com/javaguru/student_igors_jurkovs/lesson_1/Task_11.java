@@ -6,7 +6,7 @@ import com.javaguru.teacher.codereview.CodeReviewComment;
 @CodeReview(approved = true)
 class Task_11 {
     @CodeReviewComment(teacher = "обычно называют аргумент - args")
-    public static void main(String[] arghs)   {
+    public static void main(String[] args)   {
 
         int a = 74;
         int b = 36;
