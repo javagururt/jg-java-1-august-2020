@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_raginskis.lesson_2.level_3;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class Task_9 {
     public static void main(String[] args) {
         System.out.println("Please, enter your number: ");

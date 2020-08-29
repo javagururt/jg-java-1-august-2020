@@ -1,5 +1,8 @@
 package com.javaguru.student_Denis_Shlichkov.Lesson_2.level_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
 /*
@@ -7,6 +10,8 @@ import java.util.Scanner;
 три целых числа и выводит их среднее арифметическое
 (складывает все числа и делит на их количество).
  */
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Лучше использовать double, так как среднее может быть не только целое число.")
 public class Task_11 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

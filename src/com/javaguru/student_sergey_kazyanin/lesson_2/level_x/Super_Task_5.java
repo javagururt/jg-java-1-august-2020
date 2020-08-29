@@ -11,6 +11,9 @@
 
 package com.javaguru.student_sergey_kazyanin.lesson_2.level_x;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class Super_Task_5 {
 
     public static void main(String[] args){

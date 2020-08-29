@@ -1,7 +1,11 @@
 package com.javaguru.student_vladimir_petranovski.lesson_2.level_3;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Для среднего лучше использовать double (дробное значение)")
 public class Task_11_Average {
     public static void main(String[] args) {
         System.out.println("Введите три целых числа:");

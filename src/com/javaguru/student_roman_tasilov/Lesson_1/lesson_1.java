@@ -1,5 +1,10 @@
 package com.javaguru.student_roman_tasilov.Lesson_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Лучше создавать отдельные java файлы для различных классов")
 public class lesson_1 {
     public static class Task_10 {
 

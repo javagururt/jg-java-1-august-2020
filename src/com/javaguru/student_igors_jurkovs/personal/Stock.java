@@ -1,8 +1,13 @@
 package com.javaguru.student_igors_jurkovs.personal;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 class Stock {
 
     // Свойства (Property) fields
+    @CodeReviewComment(teacher = "Нет необходимости явно говорить, что это property")
     private final String propertyCompanyName;
     private double propertyCurrentPrice;
     private double propertyMinimalPrice;

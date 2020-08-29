@@ -1,5 +1,7 @@
 package com.javaguru.student_Denis_Shlichkov.Lesson_2.level_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -14,6 +16,7 @@ Expected Output
 Perimeter is = 47.12388980384689
 Area is = 176.71458676442586
  */
+@CodeReview(approved = true)
 public class Task_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

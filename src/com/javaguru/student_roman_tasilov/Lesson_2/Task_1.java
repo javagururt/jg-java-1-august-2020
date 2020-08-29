@@ -1,5 +1,8 @@
 package com.javaguru.student_roman_tasilov.Lesson_2;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_1 {
     public static void main(String[] args) {
         int a = 74;
