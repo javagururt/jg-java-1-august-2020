@@ -1,7 +1,9 @@
 package com.javaguru.student_sergey_kazyanin.lesson_2.level_1;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 public class Task_1 {
     //Написать консольную программу, которая запрашивает у пользователя два целых числа и
     //выводит на консоль результаты: сложения, вычитания, умножения и деления.

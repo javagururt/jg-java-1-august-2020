@@ -1,7 +1,11 @@
 package com.javaguru.student_igors_raginskis.lesson_2.level_1;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Тип данных необязательно указывать в названиях.")
 class Task_2 {
     public static void main(String[] args) {
 

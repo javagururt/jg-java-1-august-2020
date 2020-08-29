@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_2.level_x;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class Super_Task_3_CorrectDataTypes {
     public static void main(String[] args) {
     int numberOne = 10;

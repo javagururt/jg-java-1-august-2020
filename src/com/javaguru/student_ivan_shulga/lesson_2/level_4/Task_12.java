@@ -1,5 +1,8 @@
 package com.javaguru.student_ivan_shulga.lesson_2.level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Task_12 {
 
  /* Краткое руководство, показывающее использование команды «java -version» для проверки текущей версии JDK,
