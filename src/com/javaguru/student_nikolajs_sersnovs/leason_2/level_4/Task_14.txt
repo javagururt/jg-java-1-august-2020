@@ -3,7 +3,14 @@
 машины Java (JVM), без помощи среды разработки (из консоли)?
 
 
+in cmd (Command prompt) need change way to java files folder:
 
-javac - заходим в папку проектаб находим файл с расширением .java, открываем cmd.exe , через /cd даем путь до него
-прописаваем javac Main.java ( создается class Main )
-java - java Main  - запускаем компиляцию
+C:\Users\Nikolay> cd C:\Users\Nikolay\Desktop\Java Intellij IDEA Project\src\com\javaguru\student_nikolajs_sersnovs\leason_2\level_1
+press Enter,
+C:\Users\Nikolay\Desktop\Java Intellij IDEA Project\src\com\javaguru\student_nikolajs_sersnovs\leason_2\level_1>javac Task_1.java
+press Enter,
+C:\Users\Nikolay\Desktop\Java Intellij IDEA Project\src\com\javaguru\student_nikolajs_sersnovs\leason_2\level_1>java Task_1
+But always I get ERROR!!! how to fix it?
+
+Error: Could not find or load main class Task_1
+Caused by: java.lang.NoClassDefFoundError: com/javaguru/student_nikolajs_sersnovs/leason_2/level_1/Task_1 (wrong name: Task_1)
