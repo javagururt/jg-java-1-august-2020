@@ -5,7 +5,7 @@
 
 in cmd (Command prompt) need change way to java files folder:
 
-C:\Users\Nikolay> cd C:\Users\Nikolay\Desktop\Java Intellij IDEA Project\src\com\javaguru\student_nikolajs_sersnovs\leason_2\level_1
+C:\Users\Nikolay> cd C:\Users\Nikolay\Desktop\jg-java-1-august-2020\src\com\javaguru\student_nikolajs_sersnovs\leason_2\level_1
 press Enter,
-C:\Users\Nikolay\Desktop\Java Intellij IDEA Project\src\com\javaguru\student_nikolajs_sersnovs\leason_2\level_1>javac Task_1.java
+C:\Users\Nikolay\Desktop\jg-java-1-august-2020\src\com\javaguru\student_nikolajs_sersnovs\leason_2\level_1>javac Task_1.java
 press Enter, in folder level_1 appear new file Task_1.class
