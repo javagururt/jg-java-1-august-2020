@@ -9,48 +9,76 @@ import java.util.Scanner;
 @CodeReviewComment(teacher = "методы encode/decode могут принимать аргументы из вне" +
         " (к примеру аргументы можно получить в мейн методе, а затем уже передать в encode," +
         " это позволит переиспользовать код.")
-class Encoder{
-    public void encode() {
+class Encoder {
 
-        System.out.println("Enter ASCII code:" );
+    char userChar;
+    int aCode;
+
+    void encode(int aCode) {
+        userChar = (char) aCode;
+        System.out.println("Your char is: " + userChar);
+    }
+
+    void decode(char userChar) {
+        aCode = userChar;
+        System.out.println("Your ASCII is: " + aCode);
+    }
+
+/*    public void encode() {
+
+        System.out.println("Enter ASCII code:");
         Scanner userCode = new Scanner(System.in);
         int aCode = userCode.nextShort();
-        char userChar = (char)aCode;
+        char userChar = (char) aCode;
         System.out.println(userChar);
     }
+
     public void decode() {
-        System.out.println("Enter symbol: " );
+        System.out.println("Enter symbol: ");
         Scanner userChar = new Scanner(System.in);
         String userInput = userChar.nextLine();
         char firstChar = userInput.charAt(0);
-        System.out.println((int)firstChar);
-    }
+        System.out.println((int) firstChar);
+    }*/
 }
-class EncoderDemo{
+
+class EncoderDemo {
     public static void main(String[] args) {
+        boolean restart;
+        do {
 
-        Scanner userChoice = new Scanner(System.in);
-        Encoder myEncoder = new Encoder();
-        System.out.println("Chose what you want to do:");
-        System.out.println("1. Encode code to symbol");
-        System.out.println("2. Decode symbol to ASCII");
-        int choice = userChoice.nextInt();
+            Scanner userChoice = new Scanner(System.in);
+            Scanner decodeChar = new Scanner(System.in);
+            Encoder myEncoder = new Encoder();
+            System.out.println("Chose what you want to do:");
+            System.out.println("1. Encode code to symbol");
+            System.out.println("2. Decode symbol to ASCII");
+            int choice = userChoice.nextInt();
 
-        if (choice == 1) {
-            myEncoder.encode();
-        }
+            if (choice == 1) {
+                System.out.println("Enter code: ");
+                int userCode = userChoice.nextInt();
+                myEncoder.encode(userCode);
+            }
 
-        if (choice == 2) {
-            myEncoder.decode();
-        }
+            if (choice == 2) {
+                System.out.println("Enter symbol: ");
+                String userInput = decodeChar.nextLine();
+                char firstChar = userInput.charAt(0);
+                myEncoder.decode(firstChar);
+            }
 
-        if (choice >2) {
-            System.out.println("There is no such option, restart the app!");
-        }
+            if (choice > 2) {
+                System.out.println("There is no such option, restart the app!");
+            }
 
-        if (choice < 1) {
-            System.out.println("There is no such option, restart the app");
-        }
+            if (choice < 1) {
+                System.out.println("There is no such option, restart the app");
+            }
+            System.out.println("Try again?");
+            Scanner again = new Scanner(System.in);
+            restart = again.nextBoolean();
+        } while (restart);
 
     }
 }
