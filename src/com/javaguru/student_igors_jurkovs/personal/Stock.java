@@ -8,37 +8,37 @@ class Stock {
 
     // Свойства (Property) fields
     @CodeReviewComment(teacher = "Нет необходимости явно говорить, что это property")
-    private final String propertyCompanyName;
-    private double propertyCurrentPrice;
-    private double propertyMinimalPrice;
-    private double propertyMaximalPrice;
+    private final String companyName;
+    private double currentPrice;
+    private double minimalPrice;
+    private double maximalPrice;
 
     // Конструктор (Constructor)
     public Stock(String companyName, double currentPrice) {
 
-        propertyCompanyName = companyName;
-        propertyCurrentPrice = currentPrice;
-        propertyMinimalPrice = currentPrice;
-        propertyMaximalPrice = currentPrice;
+        this.companyName = companyName;
+        this.currentPrice = currentPrice;
+        minimalPrice = currentPrice;
+        maximalPrice = currentPrice;
 
     }
 
     // Method
     public void updatePrice(double newPrice) {
 
-        propertyCurrentPrice = newPrice;
+        currentPrice = newPrice;
 
-        if (newPrice < propertyMinimalPrice) {
-            propertyMinimalPrice = newPrice;
+        if (newPrice < minimalPrice) {
+            minimalPrice = newPrice;
         }
-        if (newPrice > propertyMaximalPrice) {
-            propertyMaximalPrice = newPrice;
+        if (newPrice > maximalPrice) {
+            maximalPrice = newPrice;
         }
     }
 
     // Method
     public void printInformation() {
-        System.out.println(propertyCompanyName + ", Current Price = " + propertyCurrentPrice + ", Min Price = " + propertyMinimalPrice + ", Max Price " + propertyMaximalPrice);
+        System.out.println(companyName + ", Current Price = " + currentPrice + ", Min Price = " + minimalPrice + ", Max Price " + maximalPrice);
     }
 }
 
