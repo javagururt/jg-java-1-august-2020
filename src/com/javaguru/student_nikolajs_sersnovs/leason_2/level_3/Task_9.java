@@ -10,7 +10,7 @@ class Task_9 {
 
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Input a number: ");
+        System.out.println("Please Input a number: ");
         int number = in.nextInt();
         for(int i =1 ; i <=10; i++) {
             System.out.println("Expected Output: " + number + " x " + (i) + " = " + (number * i));

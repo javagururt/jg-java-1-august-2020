@@ -1,4 +1,4 @@
-Дан код, нужно сделать этот код запускаемым.
+package com.javaguru.student_nikolajs_sersnovs.leason_2.level_2;
 
 class LoginService {
 

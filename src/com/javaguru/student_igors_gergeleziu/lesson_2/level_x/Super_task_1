@@ -1,0 +1,12 @@
+book
+Bankaccount
+systemUnit
+Login_Service
+banktransaction
+task1
+
+class Book{}
+class SystemUnit{}
+class LoginService{}
+class BankTransaction{}
+class Task1{} or Task_1{}

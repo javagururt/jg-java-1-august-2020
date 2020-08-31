@@ -1,9 +1,6 @@
-package com.javaguru.student_roman_tasilov.Lesson_2;
+package com.javaguru.student_roman_tasilov.Lesson_1;
 
-import com.javaguru.teacher.codereview.CodeReview;
-
-@CodeReview(approved = true)
-public class Task_2 {
+public class Task_1_2 {
     public static void main(String[] args) {
         double a = 2.5;
         double b = 3.0;
