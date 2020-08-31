@@ -14,7 +14,7 @@ class Stock {
     private double maximalPrice;
 
     // Конструктор (Constructor)
-    public Stock(String companyName, double currentPrice) {
+    Stock(String companyName, double currentPrice) {
 
         this.companyName = companyName;
         this.currentPrice = currentPrice;
@@ -24,7 +24,7 @@ class Stock {
     }
 
     // Method
-    public void updatePrice(double newPrice) {
+    void updatePrice(double newPrice) {
 
         currentPrice = newPrice;
 
@@ -37,7 +37,7 @@ class Stock {
     }
 
     // Method
-    public void printInformation() {
+    void printInformation() {
         System.out.println(companyName + ", Current Price = " + currentPrice + ", Min Price = " + minimalPrice + ", Max Price " + maximalPrice);
     }
 }
