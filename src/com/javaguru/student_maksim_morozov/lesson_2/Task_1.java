@@ -11,8 +11,8 @@ import java.util.Scanner;
  class Task_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        short a = scan.nextShort();
-        short b = scan.nextShort();
+        int a = scan.nextInt();
+        int b = scan.nextInt();
         System.out.println(a + b);
         System.out.println(a - b);
         System.out.println(a * b);
