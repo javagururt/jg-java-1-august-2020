@@ -1,4 +1,4 @@
-package com.javaguru.student_stanislav_seleshcev;
+package com.javaguru.student_stanislav_seleshcev.Lesson_1;
 
 public class Task_10 {
     public static void main(String[] args) {
