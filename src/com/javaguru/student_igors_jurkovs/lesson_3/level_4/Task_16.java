@@ -1,7 +1,10 @@
+package com.javaguru.student_igors_jurkovs.lesson_3.level_4;
+/*
 Найти ошибку в коде.
 Исправить и запустить программу.
 Менять можно только класс Car.
 
+ */
 class Car {
 
     private String model;
@@ -10,8 +13,8 @@ class Car {
         this.model = newModel;
     }
 
-    public String getModel {
-        return this.model
+    public String getModel () { //пропущены круглые скобки
+        return this.model; // пропущена ";"
     }
 
 }

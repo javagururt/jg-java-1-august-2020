@@ -1,12 +1,15 @@
+package com.javaguru.student_igors_jurkovs.lesson_3.level_4;
+/*
 Найти ошибку в коде.
 Исправить и запустить программу.
 Менять можно только класс Phone.
 
+ */
 class Phone {
 
     private String model;
 
-    public Book(String newModel) {
+    public Phone (String newModel) { // неправильное название конструктора
         this.model = newModel;
     }
 

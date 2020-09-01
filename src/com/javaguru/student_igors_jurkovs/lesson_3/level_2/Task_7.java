@@ -1,4 +1,6 @@
-Учимся работать со строками.
+package com.javaguru.student_igors_jurkovs.lesson_3.level_2;
+
+/*Учимся работать со строками.
 
 Тема: создание переменной типа String.
 
@@ -8,5 +10,14 @@
 
 Пример кода:
 
-    String myName = "Viktor";
-    System.out.println(myName);
+String myName = "Viktor";
+System.out.println(myName); */
+
+public class Task_7 {
+
+    public static void main(String[] args) {
+
+        String myName = "Igor";
+        System.out.println(myName);
+    }
+}

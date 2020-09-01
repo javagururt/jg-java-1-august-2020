@@ -1,3 +1,6 @@
+package com.javaguru.student_igors_jurkovs.lesson_3.level_2;
+
+/*
 Учимся работать со строками.
 
 Тема: Конкатенация строк.
@@ -10,3 +13,12 @@
 
     String userName = "Viktor";
     String greeting = "Hi " + userName + "!";
+ */
+public class Task_8 {
+    public static void main(String[] args) {
+
+        String userName = "Igor";
+        String greeting = "Hi " + userName + "!";
+        System.out.println(greeting);
+    }
+}

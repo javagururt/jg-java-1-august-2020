@@ -1,13 +1,16 @@
-Найти ошибку в коде.
+package com.javaguru.student_igors_jurkovs.lesson_3.level_4;
+
+/*Найти ошибку в коде.
 Исправить и запустить программу.
-Менять можно только класс Book.
+Менять можно только класс Book.*/
 
 class Book {
 
-    private String title
+    private String title; // пропущена ";"
 
     Book(String bookTitle) {
-        this.title = newTitle
+//      this.title = newTitle пропущена ";" и вписана не правильная переменная
+        this.title = bookTitle;
     }
 
     public String getTitle() {
