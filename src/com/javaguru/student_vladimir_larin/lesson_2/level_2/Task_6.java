@@ -5,6 +5,7 @@ import com.javaguru.teacher.codereview.CodeReview;
 @CodeReview(approved = true)
 class Turtle {
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+    }
 
 }
