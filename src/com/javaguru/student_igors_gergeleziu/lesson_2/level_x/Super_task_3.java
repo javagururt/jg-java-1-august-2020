@@ -10,8 +10,9 @@ class CorrectDataTypes {
             System.out.println("Number 1 = " + numberOne);
             System.out.println("Number 2 = " + numberTwo);
 
-            float sum = numberOne + (float)numberTwo;
-            //double sum = numberOne + numberTwo;
+            double sum = numberOne + numberTwo;
+            //float sum = numberOne + (float)numberTwo;
+
 
             System.out.println("Sum = " + sum);
         }
