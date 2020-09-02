@@ -1,37 +1,22 @@
-package com.javaguru.student_roman_tasilov.Lesson_2.Level_1;
+package com.javaguru.student_roman_tasilov.lesson_2.level_1;
 
-import java.util.Scanner;
+public class Task_1
+{
+    public static void main(String[] args) {
+        int a = 74;
+        int b = 36;
+        int c = a + b;
+        System.out.println(c);
 
-public class Task_1 {
-    public static void main (String[] args) {
-        System.out.println("Please enter first number (int): ");
+        int d = 5;
+        int e = 10;
+        int f = e / d;
+        System.out.println("Result:" + f);
 
-        Scanner sc = new Scanner(System.in);
+        int g = f * c;
+        System.out.println("g =" + g);
 
-        int firstNumber = sc.nextInt();
-
-        System.out.println("First number : "+ firstNumber);
-
-        System.out.println("Please enter srcond number (int): ");
-
-        int secondNumber = sc.nextInt();
-
-        System.out.println("Second number : " + secondNumber);
-        int multiplyResult = firstNumber * secondNumber;
-
-        System.out.println("Multiply result: " + multiplyResult);
-
-        int divisionResult = secondNumber / firstNumber;
-
-        System.out.println("Division result: " + divisionResult);
-
-        int subtractionResult = secondNumber - firstNumber;
-
-        System.out.println("Subtraction result: " + subtractionResult);
-
-        int sumResult = multiplyResult + divisionResult + subtractionResult;
-
-        System.out.println("Sum result: " + sumResult);
-
+        int x = g - a;
+        System.out.println(x);
     }
 }

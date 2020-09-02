@@ -1,4 +1,4 @@
-package com.javaguru.student_roman_tasilov.Lesson_2.Level_2;
+package com.javaguru.student_roman_tasilov.lesson_2.level_2;
 
 class Phone {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.javaguru.student_roman_tasilov.Lesson_2.Level_3;
+package com.javaguru.student_roman_tasilov.lesson_2.level_3;
 
 import java.util.Scanner;
 

@@ -1,6 +1,5 @@
-package com.javaguru.student_roman_tasilov.Lesson_2.Level_2;
+package com.javaguru.student_roman_tasilov.lesson_2.level_2;
 
-import java.io.StringBufferInputStream;
 import java.util.Scanner;
 
 public class Task_8 {
