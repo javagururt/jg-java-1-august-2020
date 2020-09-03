@@ -1,6 +1,7 @@
-package com.javaguru.student_roman_tasilov.Lesson_1;
+package com.javaguru.student_roman_tasilov.lesson_2.level_1;
 
-public class Task_1 {
+public class Task_1
+{
     public static void main(String[] args) {
         int a = 74;
         int b = 36;

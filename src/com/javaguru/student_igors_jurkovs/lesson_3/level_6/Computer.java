@@ -1,15 +1,25 @@
+package com.javaguru.student_igors_jurkovs.lesson_3.level_6;
+
+/*
+Task_28
 Дописать код программы, что бы она запускалась
 и выводила на консоль производителя и модель компьютера.
 Менять можно только класс Computer.
-
+ */
 class Computer {
 
     private String manufacturer;
     private String model;
 
-    public Computer(String manufacturer, String model) {
+    Computer(String manufacturer, String model) {
         this.manufacturer = manufacturer;
         this.model = model;
+    }
+    String getManufacturer () {
+        return manufacturer;
+    }
+    String getModel () {
+        return model;
     }
 
 }

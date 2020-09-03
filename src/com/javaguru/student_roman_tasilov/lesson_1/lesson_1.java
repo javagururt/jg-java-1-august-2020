@@ -1,4 +1,4 @@
-package com.javaguru.student_roman_tasilov.Lesson_1;
+package com.javaguru.student_roman_tasilov.lesson_1;
 
 import com.javaguru.teacher.codereview.CodeReview;
 import com.javaguru.teacher.codereview.CodeReviewComment;
@@ -14,7 +14,7 @@ public class lesson_1 {
         }
     }
 
-    public static class Task_11 {
+    public static class Task_11_1 {
 
         public static void main(String[] args) {
             int a = 74;
