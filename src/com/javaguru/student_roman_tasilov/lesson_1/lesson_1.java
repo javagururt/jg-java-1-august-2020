@@ -14,7 +14,7 @@ public class lesson_1 {
         }
     }
 
-    public static class Task_11 {
+    public static class Task_11_1 {
 
         public static void main(String[] args) {
             int a = 74;
