@@ -1,4 +1,4 @@
-package com.javaguru.student_maksim_morozov.Robot;
+package com.javaguru.student_maksim_morozov.lesson_3.Level_1;
 
 class Robot { public Robot() {
 }
