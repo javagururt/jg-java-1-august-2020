@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_3.level_2;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*Учимся работать со строками.
 
 Тема: создание переменной типа String.
@@ -12,7 +14,7 @@ package com.javaguru.student_igors_jurkovs.lesson_3.level_2;
 
 String myName = "Viktor";
 System.out.println(myName); */
-
+@CodeReview(approved = true)
 public class Task_7 {
 
     public static void main(String[] args) {

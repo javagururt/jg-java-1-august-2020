@@ -9,4 +9,4 @@ class Book{}
 class SystemUnit{}
 class LoginService{}
 class BankTransaction{}
-class Task1{} or Task_1{}
+class Task1{} or Task_1{} //лучше без нижнего подчеркивания
