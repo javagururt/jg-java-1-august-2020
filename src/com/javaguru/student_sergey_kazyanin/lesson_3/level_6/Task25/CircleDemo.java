@@ -1,5 +1,8 @@
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_6.Task25;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class CircleDemo {
     public static void main(String[] args) {
         Circle circle = new Circle(7.2);

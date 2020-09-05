@@ -11,8 +11,10 @@ Demo класс для каждого описанного вами объект
 и продемонстрируйте работу с объектом.
  */
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class Cat {
 
     String name;

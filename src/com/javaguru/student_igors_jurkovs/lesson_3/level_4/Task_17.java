@@ -1,9 +1,12 @@
 package com.javaguru.student_igors_jurkovs.lesson_3.level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Найти ошибку в коде.
 Исправить и запустить программу.
  */
+@CodeReview(approved = true)
 class BankAccount {
 
     private String ownerFirstName;

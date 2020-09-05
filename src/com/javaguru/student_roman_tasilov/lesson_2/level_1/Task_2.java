@@ -1,7 +1,9 @@
 package com.javaguru.student_roman_tasilov.lesson_2.level_1;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 public class Task_2 {
     public static void main (String[] args) {
         System.out.println("Please enter first number (double): ");

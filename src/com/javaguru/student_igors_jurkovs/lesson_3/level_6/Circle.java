@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_3.level_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Task_25
 Разработать класс - круг, у которого должны быть следующие характеристики:
@@ -9,7 +11,7 @@ Task_25
 Класс с объявлением фигуры круг должен называться "Circle".
 Класс с демонстрацией работы должен называться "CircleDemo".
  */
-
+@CodeReview(approved = true)
 class Circle {
     double radius;
 

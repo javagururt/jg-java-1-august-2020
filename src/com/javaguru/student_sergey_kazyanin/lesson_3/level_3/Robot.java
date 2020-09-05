@@ -1,5 +1,8 @@
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Robot {
     // в этом свойстве наш виртуальный объект робот будет
     // запоминать своё имя. Мы используем тип String потому

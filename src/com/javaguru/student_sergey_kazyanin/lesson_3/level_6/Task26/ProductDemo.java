@@ -1,5 +1,8 @@
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_6.Task26;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ProductDemo {
     public static void main(String[] args) {
         Product comp = new Product("Ноутбук Lenovo X5 Carbon");

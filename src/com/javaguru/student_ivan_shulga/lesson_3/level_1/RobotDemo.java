@@ -1,8 +1,10 @@
 package com.javaguru.student_ivan_shulga.lesson_3.level_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 // пока что для себя буду порой писать много комментариев, чтобы самому разобраться что к чему, т.к.
 // после "Hello world!" для меня начинается тёмный лес в Java
-
+@CodeReview(approved = true)
 class RobotDemo {   // Создаём отдельный класс RobotDemo для демонстрации работы с классом Robot
 
     public static void main(String[] args) {

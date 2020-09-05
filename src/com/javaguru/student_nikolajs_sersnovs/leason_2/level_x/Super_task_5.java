@@ -1,7 +1,9 @@
 package com.javaguru.student_nikolajs_sersnovs.leason_2.level_x;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class Super_task_5 {
 
 

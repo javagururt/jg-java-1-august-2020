@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_3.level_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 Task_26
 Разработать класс - продукт,
@@ -18,7 +21,8 @@ Task_26
 Класс с объявлением продукта должен называться "Product".
 Класс с демонстрацией работы должен называться "ProductDemo".
  */
-
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Нет необходимости в поле finalPrice, в данном случае будет достаточно метода actualPrice()")
 class Product {
     String name;
     double regularPrice;

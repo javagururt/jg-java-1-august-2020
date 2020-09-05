@@ -1,5 +1,8 @@
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_6.Task24;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class PrinterDemo {
     public static void main(String[] args) {
         Printer printerHP = new Printer("HP 1020", "laser", true);

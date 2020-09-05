@@ -30,6 +30,9 @@ class ComputerDemo {
  */
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_6.Task28;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Computer {
 
     private String manufacturer;

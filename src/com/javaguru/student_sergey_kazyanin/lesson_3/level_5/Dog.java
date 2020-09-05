@@ -59,6 +59,9 @@ PS: научите собаку праздновать свой день рож�
  */
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_5;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Dog {
     private String dogName;
     private int dogAge;

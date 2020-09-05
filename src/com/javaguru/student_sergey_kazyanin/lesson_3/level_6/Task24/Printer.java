@@ -9,6 +9,9 @@ Demo класс для каждого описанного вами объект
  */
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_6.Task24;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Printer {
     private String modelName;
     private String printType;

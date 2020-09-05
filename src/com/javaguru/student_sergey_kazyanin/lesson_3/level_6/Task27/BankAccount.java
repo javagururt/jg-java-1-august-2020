@@ -38,6 +38,10 @@ class BankAccountDemo {
  */
 package com.javaguru.student_sergey_kazyanin.lesson_3.level_6.Task27;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 class BankAccount {
 
     private String owner;
@@ -52,6 +56,7 @@ class BankAccount {
         return this.owner;
     }
 
+    @CodeReviewComment(teacher = "лучшие использовать int как возвращаемый тип")
     public String getMoney() {
         String s = String.valueOf(this.money);
         return s;

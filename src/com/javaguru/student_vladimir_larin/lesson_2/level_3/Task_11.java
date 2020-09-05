@@ -1,7 +1,9 @@
 package com.javaguru.student_vladimir_larin.lesson_2.level_3;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class Task_11 {
     public static void main(String[] args) {
 

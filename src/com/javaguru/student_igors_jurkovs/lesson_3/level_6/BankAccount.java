@@ -1,9 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_3.level_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Task_27
  */
-
+@CodeReview(approved = true)
 class BankAccount {
 
     private String owner;
