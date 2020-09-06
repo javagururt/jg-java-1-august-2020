@@ -3,22 +3,14 @@ package com.javaguru.student_ivan_shulga.lesson_3.level_5;
 import com.javaguru.teacher.codereview.CodeReview;
 
 @CodeReview(approved = true)
-class Dog {
+class Dog20 {
 
     private String name;
     private int age;
 
-    public Dog(String name, int newAge) {
+    public Dog20(String name, int newAge) {
         this.name = name;
         age = newAge;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
     }
 
     public void happyBirthday() {
@@ -26,27 +18,25 @@ class Dog {
     }
 
     public void voice() {
-        System.out.println("Dog name is " + name + "\nDog age is " + age);
+        System.out.println("Dog20 name is " + name + "\nDog20 age is " + age);
     }
 
 }
 
-class DogDemo {
+class DogDemo20 {
 
     public static void main(String[] args) {
 
-        Dog newDog = new Dog("Gav", 9);
-        String dogName = newDog.getName();
-        int dogAge = newDog.getAge();
+        Dog20 newDog20 = new Dog20("Gav", 9);
 
-        newDog.voice();
-        newDog.happyBirthday();
+        newDog20.voice();
+        newDog20.happyBirthday();
 
-        newDog.voice();
-        newDog.happyBirthday();
+        newDog20.voice();
+        newDog20.happyBirthday();
 
-        newDog.voice();
-        newDog.happyBirthday();
+        newDog20.voice();
+        newDog20.happyBirthday();
 
     }
 

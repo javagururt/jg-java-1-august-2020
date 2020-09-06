@@ -10,8 +10,6 @@ class DogDemo {
     public static void main(String[] args) {
 
         Dog newDog = new Dog("Gav", 7);
-        String dogName = newDog.getName();
-        int dogAge = newDog.getAge();
 
         newDog.voice();
 

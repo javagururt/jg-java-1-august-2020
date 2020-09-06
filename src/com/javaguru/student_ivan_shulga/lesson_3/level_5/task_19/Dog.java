@@ -13,14 +13,6 @@ class Dog {
         age = newAge;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
     public void voice() {
         System.out.println("Dog name is " + name + "\nDog age is " + age);
     }
