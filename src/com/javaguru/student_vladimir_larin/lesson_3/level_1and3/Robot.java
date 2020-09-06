@@ -1,10 +1,12 @@
-package com.javaguru.student_vladimir_larin.lesson_3.level_1;
+package com.javaguru.student_vladimir_larin.lesson_3.level_1and3;
 
 import com.javaguru.teacher.codereview.CodeReview;
 
 @CodeReview(approved = true)
 class Robot {
-    public Robot() {
+    private String name;
+    public Robot(String robotName) {
+        this.name = robotName;
     }
 
     public void sayHello() {
@@ -12,6 +14,6 @@ class Robot {
     }
 
     public void sayYourName() {
-        System.out.println("My name is ROBO");
+        System.out.println("My name is " + this.name);
     }
 }
