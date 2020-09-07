@@ -1,7 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_3.level_x;
 
 class Game {
-    int roll[];
+    public static final int MAX_ROLLS = 21;
+    int roll[] = new int [MAX_ROLLS];
     int currentRoll = 0;
 
     void roll(int pins) {
