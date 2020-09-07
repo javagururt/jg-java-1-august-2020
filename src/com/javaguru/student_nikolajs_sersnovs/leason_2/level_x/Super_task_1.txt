@@ -8,3 +8,10 @@ banktransaction
 task1
 
 Создайте эти классы с корректными с точки зрения Java кода назнаниями.
+
+Book
+BankAccount
+SystemUnit
+LoginService
+BankTransaction
+Task_1

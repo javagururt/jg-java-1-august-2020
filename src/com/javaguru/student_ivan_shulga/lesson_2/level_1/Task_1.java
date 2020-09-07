@@ -1,5 +1,7 @@
 package com.javaguru.student_ivan_shulga.lesson_2.level_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 //integer
@@ -7,7 +9,7 @@ import java.util.Scanner;
 //subtraction
 //addition
 //division
-
+@CodeReview(approved = true)
 class Task_1 {
 
     public static void main(String[] args) {

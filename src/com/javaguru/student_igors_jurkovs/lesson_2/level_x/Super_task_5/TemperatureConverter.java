@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_jurkovs.lesson_2.level_x.Super_task_5;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class TemperatureConverter {
     static double fahrenheitConverter(double a) {
         return a * 9 / 5 + 32;
