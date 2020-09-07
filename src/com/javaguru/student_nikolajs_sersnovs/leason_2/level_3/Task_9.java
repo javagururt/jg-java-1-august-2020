@@ -1,14 +1,16 @@
 package com.javaguru.student_nikolajs_sersnovs.leason_2.level_3;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class Task_9 {
 
     public static void main(String[] args) {
 
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Input a number: ");
+        System.out.println("Please Input a number: ");
         int number = in.nextInt();
         for(int i =1 ; i <=10; i++) {
             System.out.println("Expected Output: " + number + " x " + (i) + " = " + (number * i));

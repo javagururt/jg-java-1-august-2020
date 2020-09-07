@@ -1,8 +1,12 @@
 package com.javaguru.student_ivan_shulga.lesson_1.level_4;
 
-import java.net.SocketOption;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
-public class Task_11 {
+import java.net.SocketOption;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "импорты, которые не используются лучше удалать")
+class Task_11 {
 
     public static void main(String[] args) {
 

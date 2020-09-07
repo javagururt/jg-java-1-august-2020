@@ -1,7 +1,10 @@
 package com.javaguru.student_igors_gergeleziu.lesson_2.level_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_2 {
     public static void main(String[] args) {
         Scanner numberInput = new Scanner(System.in);

@@ -1,2 +1,13 @@
 Найдите в интеренете ответ на вопрос:
 Как узнать какая версия JDK установлена на вашем компьютере?
+
+
+1) On keyboard press keys "WIN + R"
+2) In opened window write "cmd" and press "OK"
+3) In opened Windows Command Prompt, write java --version and press "Enter"
+
+Result:
+
+openjdk 11.0.8 2020-07-14
+OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.8+10)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.8+10, mixed mode)

@@ -21,7 +21,7 @@ class UserInputExample {
         int multiplyResult = firstNumber * secondNumber;
 
         System.out.println("Multiply result: " + multiplyResult);
-
+        //code review
         int result = firstNumber * secondNumber / (10 * 2);
         System.out.println("Result: " + result);
     }
