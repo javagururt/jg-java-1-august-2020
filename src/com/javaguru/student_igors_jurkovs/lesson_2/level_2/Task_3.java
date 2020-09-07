@@ -4,7 +4,7 @@ import com.javaguru.teacher.codereview.CodeReview;
 
 @CodeReview(approved = true)
 class Book {
-    public static void main(String[] arghs) {
+    public static void main(String[] args) {
 
     }
 }
