@@ -84,7 +84,8 @@ class CalculatorTest {
         calculatorTest.subtractionTest();
         calculatorTest.multiplyTest();
         calculatorTest.divisionTest();
-        calculatorTest.isEvenTest();
+        calculatorTest.isEvenTest1();
+        calculatorTest.isEvenTest2();
         calculatorTest.maxOfTwoNumbersTest1();
         calculatorTest.maxOfTwoNumbersTest2();
         calculatorTest.maxOfTwoNumbersTest3();
@@ -144,14 +145,24 @@ class CalculatorTest {
             System.out.println("Division test = FAIL");
         }
     }
-    void isEvenTest() {
+    void isEvenTest1() {
         int number = 6;
         Calculator calculator = new Calculator();
         boolean result = calculator.isEven(number);
         if (result) {
-            System.out.println("IsEven test = OK");
+            System.out.println("IsEven test(even number) = OK");
         } else {
-            System.out.println("IsEven test = FAIL");
+            System.out.println("IsEven test(even number) = FAIL");
+        }
+    }
+    void isEvenTest2() {
+        int number = 5;
+        Calculator calculator = new Calculator();
+        boolean result = calculator.isEven(number);
+        if (result) {
+            System.out.println("IsEven test(odd number) = OK");
+        } else {
+            System.out.println("IsEven test(odd number) = FAIL");
         }
     }
     void maxOfTwoNumbersTest1() {
