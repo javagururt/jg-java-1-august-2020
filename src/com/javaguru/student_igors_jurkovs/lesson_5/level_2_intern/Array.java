@@ -9,7 +9,7 @@ class Array {
     public static void main(String[] args) {
 
         int numbers[] = new int[3];
-        int i = 0;
+        int i;
         for(i = 0; i < 3; i++) {
             numbers[i] =(int) (Math.random() * 10);
             System.out.println(numbers[i]);
