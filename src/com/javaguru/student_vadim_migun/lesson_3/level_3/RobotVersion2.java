@@ -1,21 +1,5 @@
 package com.javaguru.student_vadim_migun.lesson_3.level_3;
 
-/*
- class Robot {
-
-     public Robot () {
-     }
-    public void sayHello() {
-        System.out.println("Hello!");
-    }
-    public void sayYourName() {
-        System.out.println("My name is ROBO1");
-    }
-    public void sayYourName2() {
-        System.out.println("My name is ROBO2");
-    }
-}
- */
 
 class RobotVersion2 {
 
@@ -36,23 +20,7 @@ class RobotVersion2 {
 
     }
 
-    /*
-    class RobotDemo {
-    public static void main(String[] args) {
 
-        Robot Robot1 = new Robot();
-        Robot1.sayHello();
-        Robot1.sayYourName();
-
-        Robot Robot2 = new Robot();
-        Robot2.sayHello();
-        Robot2.sayYourName2();
-
-        System.out.println(Robot1);
-        System.out.println(Robot2);
-    }
-}
-     */
 
 class RobotVersion2Demo {
     public static void main(String[] args) {
