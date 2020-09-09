@@ -21,25 +21,27 @@ class Calculator {
     int division(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
-/*
-Добавьте в класс Calculator метод для определения
-чётное число или не чётное.
- */
+
+    /*
+    Добавьте в класс Calculator метод для определения
+    чётное число или не чётное.
+     */
     boolean isEven(int number) {
         return number % 2 == 0;
     }
-/*
-Добавьте в класс Calculator метод для определения
-максимального из двух целых чисел.
 
-Добавьте в класс CalculatorTest тесты для этого метода.
-Тесты должны покрывать следующие тестовые сценарии:
-- первое число больше второго
-- второе число больше первого
-- оба числа равны
-Создайте по одному тесту на каждый из сценариев!
+    /*
+    Добавьте в класс Calculator метод для определения
+    максимального из двух целых чисел.
 
- */
+    Добавьте в класс CalculatorTest тесты для этого метода.
+    Тесты должны покрывать следующие тестовые сценарии:
+    - первое число больше второго
+    - второе число больше первого
+    - оба числа равны
+    Создайте по одному тесту на каждый из сценариев!
+
+     */
     int maxOfTwoNumbers(int firstNumber, int secondNumber) {
         if (firstNumber >= secondNumber) { // используем оператор >= чтобы охватить все случаи
             return firstNumber;
@@ -47,20 +49,21 @@ class Calculator {
             return secondNumber;
         }
     }
-/*
-Добавьте в класс Calculator метод для определения
-максимального из трёх целых чисел.
 
-Добавьте в класс CalculatorTest тесты для этого метода.
-Тесты должны покрывать следующие тестовые сценарии:
-- первое число больше второго и третьего
-- второе число больше первого и третьего
-- третье число больше первого и второго
-- первые два равны и больше третьего
-- ...
-- три числа равны
-По одному тесту на каждый из сценариев!
- */
+    /*
+    Добавьте в класс Calculator метод для определения
+    максимального из трёх целых чисел.
+
+    Добавьте в класс CalculatorTest тесты для этого метода.
+    Тесты должны покрывать следующие тестовые сценарии:
+    - первое число больше второго и третьего
+    - второе число больше первого и третьего
+    - третье число больше первого и второго
+    - первые два равны и больше третьего
+    - ...
+    - три числа равны
+    По одному тесту на каждый из сценариев!
+     */
     int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
         if (firstNumber >= secondNumber && secondNumber >= thirdNumber) {
             return firstNumber;
@@ -145,6 +148,7 @@ class CalculatorTest {
             System.out.println("Division test = FAIL");
         }
     }
+
     void isEvenTest1() {
         int number = 6;
         Calculator calculator = new Calculator();
@@ -155,6 +159,7 @@ class CalculatorTest {
             System.out.println("IsEven test(even number) = FAIL");
         }
     }
+
     void isEvenTest2() {
         int number = 5;
         Calculator calculator = new Calculator();
@@ -165,6 +170,7 @@ class CalculatorTest {
             System.out.println("IsEven test(odd number) = FAIL");
         }
     }
+
     void maxOfTwoNumbersTest1() {
         int firstNumber = 6;
         int secondNumber = 2;
@@ -176,6 +182,7 @@ class CalculatorTest {
             System.out.println("Max of two numbers test(first number is greater) = FAIL");
         }
     }
+
     void maxOfTwoNumbersTest2() {
         int firstNumber = 6;
         int secondNumber = 10;
@@ -187,6 +194,7 @@ class CalculatorTest {
             System.out.println("Max of two numbers test(second number is greater) = FAIL");
         }
     }
+
     void maxOfTwoNumbersTest3() {
         int firstNumber = 6;
         int secondNumber = 6;
@@ -198,6 +206,7 @@ class CalculatorTest {
             System.out.println("Max of two numbers test(numbers are equal) = FAIL");
         }
     }
+
     void maxOfThreeNumbersTest1() { // первое число больше второго и третьего
         int firstNumber = 3;
         int secondNumber = 2;
@@ -210,6 +219,7 @@ class CalculatorTest {
             System.out.println("Max of three numbers test(first number greater then 2 and 3 numbers) = FAIL");
         }
     }
+
     void maxOfThreeNumbersTest2() { // второе число больше первого и третьего
         int firstNumber = 2;
         int secondNumber = 3;
@@ -222,6 +232,7 @@ class CalculatorTest {
             System.out.println("Max of three numbers test(second number greater then 1 and 3 numbers) = FAIL");
         }
     }
+
     void maxOfThreeNumbersTest3() { // третье число больше первого и второго
         int firstNumber = 1;
         int secondNumber = 2;
@@ -234,6 +245,7 @@ class CalculatorTest {
             System.out.println("Max of three numbers test(third number greater then 1 and 2 numbers) = FAIL");
         }
     }
+
     void maxOfThreeNumbersTest4() { //первые два равны и больше третьего
         int firstNumber = 3;
         int secondNumber = 3;
@@ -246,6 +258,7 @@ class CalculatorTest {
             System.out.println("Max of three numbers test(1 and 2 numbers are equals and greater than 3 number) = FAIL");
         }
     }
+
     void maxOfThreeNumbersTest5() { // второе и третье число равно и больше первого
         int firstNumber = 1;
         int secondNumber = 3;
@@ -258,6 +271,7 @@ class CalculatorTest {
             System.out.println("Max of three numbers test(2 and 3 numbers are equals and greater than 1 number) = FAIL");
         }
     }
+
     void maxOfThreeNumbersTest6() { // первое и треть число равны и больше второго
         int firstNumber = 3;
         int secondNumber = 1;
@@ -270,6 +284,7 @@ class CalculatorTest {
             System.out.println("Max of three numbers test(1 and 3 numbers are equals and greater than 2 number) = FAIL");
         }
     }
+
     void maxOfThreeNumbersTest7() { // три числа равны
         int firstNumber = 3;
         int secondNumber = 3;
