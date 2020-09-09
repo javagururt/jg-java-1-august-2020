@@ -1,0 +1,18 @@
+1) в командной строке заходим в папку с нашей программой
+2) пишем javac и название файла с программой.java
+3) появляется скомпелированный файл.class
+...
+4) в командной строке пишем java и название файла
+5) запускается программа
+
+C:\Users\Lenovo>cd IdeaProjects\jg-java-1-august-2020\src\com\javaguru\student_vladimirs_filipovs\lesson_2\level_3
+
+C:\Users\Lenovo\IdeaProjects\jg-java-1-august-2020\src\com\javaguru\student_vladimirs_filipovs\lesson_2\level_3>javac Task_9.java
+
+C:\Users\Lenovo\IdeaProjects\jg-java-1-august-2020\src\com\javaguru\student_vladimirs_filipovs\lesson_2\level_3>java Task_9
+Error: Could not find or load main class Task_9
+Caused by: java.lang.NoClassDefFoundError: com/javaguru/student_vladimirs_filipovs/lesson_2/level_3/Task_9 (wrong name: Task_9)
+
+C:\Users\Lenovo\IdeaProjects\jg-java-1-august-2020\src\com\javaguru\student_vladimirs_filipovs\lesson_2\level_3>
+
+В итоге у меня файл Task_9.class создаётся, но ничего не запускается...

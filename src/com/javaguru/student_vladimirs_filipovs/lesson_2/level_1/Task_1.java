@@ -4,23 +4,18 @@ import java.util.Scanner;
 
 class Task_1 {
     public static void main (String[] args){
-        System.out.println("Please input first whole number:");
-
         Scanner scan = new Scanner(System.in);
+
+        System.out.println("Please input first whole number:");
         int firstNumber = scan.nextInt();
 
         System.out.println("Please input second whole number:");
         int secondNumber = scan.nextInt();
 
-        int result1;
-        int result2;
-        int result3;
-        int result4;
-
-        result1 = firstNumber + secondNumber;
-        result2 = firstNumber * secondNumber;
-        result3 = firstNumber - secondNumber;
-        result4 = firstNumber / secondNumber;
+        int result1 = firstNumber + secondNumber;
+        int result2 = firstNumber * secondNumber;
+        int result3 = firstNumber - secondNumber;
+        int result4 = firstNumber / secondNumber;
 
         System.out.println(firstNumber + " + " + secondNumber + " = " + result1);
         System.out.println(firstNumber + " * " + secondNumber + " = " + result2);
