@@ -3,7 +3,7 @@ package com.javaguru.student_igors_jurkovs.personal;
 import com.javaguru.teacher.codereview.CodeReview;
 
 @CodeReview(approved = true)
-public class fizzbuzz {
+class FizzBuzz {
     public static void main(String[] args) {
         int i = 1;
         while(i <= 100) {

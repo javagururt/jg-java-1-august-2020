@@ -164,7 +164,7 @@ class CalculatorTest {
         int number = 5;
         Calculator calculator = new Calculator();
         boolean result = calculator.isEven(number);
-        if (result) {
+        if (!result) {
             System.out.println("IsEven test(odd number) = OK");
         } else {
             System.out.println("IsEven test(odd number) = FAIL");
