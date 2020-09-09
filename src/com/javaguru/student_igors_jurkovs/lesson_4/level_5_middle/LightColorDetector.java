@@ -31,6 +31,14 @@ class LightColorDetector {
             return "Invisible Light";
         }
     }
+    void test(String expectedResult, String result) {
+        if (result.equals(expectedResult)) {
+            System.out.println(expectedResult + " color test: OK");
+        } else {
+            System.out.println(expectedResult + " color test: FAILED");
+        }
+    }
+
 }
 
 class LightColorDetectorTest {
@@ -46,86 +54,54 @@ class LightColorDetectorTest {
         lightColorDetectorTest.invisibleLightTest1();
         lightColorDetectorTest.invisibleLightTest2();
     }
-
+//  Оставил строку присваивания значения длине волны, хотя можно было сделать, чтобы длину вволны вводили в мейне.
     void violetTest() {
         int waveLength = 400;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Violet")) {
-            System.out.println("Violet color test: OK");
-        } else {
-            System.out.println("Violet color test: FAILED");
-        }
+        lightColorDetector.test("Violet", result);
     }
     void blueTest() {
         int waveLength = 480;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Blue")) {
-            System.out.println("Blue color test: OK");
-        } else {
-            System.out.println("Blue color test: FAILED");
-        }
+        lightColorDetector.test("Blue", result);
     }
     void greenTest() {
         int waveLength = 500;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Green")) {
-            System.out.println("Green color test: OK");
-        } else {
-            System.out.println("Green color test: FAILED");
-        }
+        lightColorDetector.test("Green", result);
     }
     void yellowTest() {
         int waveLength = 580;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Yellow")) {
-            System.out.println("Yellow color test: OK");
-        } else {
-            System.out.println("Violet color test: FAILED");
-        }
+        lightColorDetector.test("Yellow", result);
     }
     void orangeTest() {
         int waveLength = 600;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Orange")) {
-            System.out.println("Orange color test: OK");
-        } else {
-            System.out.println("Orange color test: FAILED");
-        }
+        lightColorDetector.test("Orange", result);
     }
     void redTest() {
         int waveLength = 700;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Red")) {
-            System.out.println("Red color test: OK");
-        } else {
-            System.out.println("Red color test: FAILED");
-        }
+        lightColorDetector.test("Red", result);
     }
     void invisibleLightTest1() {
         int waveLength = 200;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Invisible Light")) {
-            System.out.println("Invisible Light test(lower than 380 wave length): OK");
-        } else {
-            System.out.println("Invisible Light test: FAILED");
-        }
+        lightColorDetector.test("Invisible Light", result);
     }
     void invisibleLightTest2() {
         int waveLength = 800;
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.color(waveLength);
-        if (result.equals("Invisible Light")) {
-            System.out.println("Invisible Light test(greater than 750 wave length): OK");
-        } else {
-            System.out.println("Invisible Light test: FAILED");
-        }
+        lightColorDetector.test("Invisible Light", result);
     }
 }
 
