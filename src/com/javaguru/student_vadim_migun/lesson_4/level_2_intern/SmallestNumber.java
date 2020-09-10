@@ -1,14 +1,13 @@
-package com.javaguru.student_vadim_migun.lesson_4.level_2;
-
-import java.util.Scanner;
+package com.javaguru.student_vadim_migun.lesson_4.level_2_intern;
 
 /*
 Написать программу, которая запрашивает у пользователя
-два целых числа и выводит на консоль наибольшее из них.
-Нельзя пользоваться классом Math, можно использовать только if else.
+два целых числа и выводит на консоль наименьшее из них.
  */
 
-class LargestNumber  {
+import java.util.Scanner;
+
+class SmallestNumber {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -18,10 +17,9 @@ class LargestNumber  {
         int secondNumber = scan.nextInt();
 
         if (firstNumber>secondNumber) {
-            System.out.println("Largest number = " + firstNumber);
+            System.out.println(" = " + secondNumber);
         } else {
-            System.out.println("Largest number = " + secondNumber);
+            System.out.println("Smallest number = " + firstNumber);
         }
-
     }
 }

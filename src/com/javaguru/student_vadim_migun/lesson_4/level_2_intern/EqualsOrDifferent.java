@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_4.level_2;
+package com.javaguru.student_vadim_migun.lesson_4.level_2_intern;
 
 /*
 Написать программу, которая запрашивает у пользователя

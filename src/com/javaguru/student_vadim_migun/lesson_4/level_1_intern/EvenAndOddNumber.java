@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_4.level_1;
+package com.javaguru.student_vadim_migun.lesson_4.level_1_intern;
 /*
 Написать программу, которая запрашивает у пользователя
 целое число и выводит на консоль чётное оно или нет.
@@ -8,7 +8,6 @@ package com.javaguru.student_vadim_migun.lesson_4.level_1;
 равен нулю то число чётное, иначе не чётное.
  */
 
-import javax.security.sasl.SaslClient;
 import java.util.Scanner;
 
 class EvenAndOddNumber {
