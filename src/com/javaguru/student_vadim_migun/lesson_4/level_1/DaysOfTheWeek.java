@@ -20,7 +20,6 @@ class DaysOfTheWeek {
         Scanner scan = new Scanner(System.in);
         System.out.println("Input number from 1 to 7 ");
         int number = scan.nextInt();
-        System.out.println("Number = " + number);
 
         switch (number){
             case 1:
