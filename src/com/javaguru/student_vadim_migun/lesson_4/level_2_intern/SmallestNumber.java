@@ -17,7 +17,7 @@ class SmallestNumber {
         int secondNumber = scan.nextInt();
 
         if (firstNumber>secondNumber) {
-            System.out.println(" = " + secondNumber);
+            System.out.println("Smallest number = " + secondNumber);
         } else {
             System.out.println("Smallest number = " + firstNumber);
         }
