@@ -1,6 +1,6 @@
-package com.javaguru.student_igors_gergeleziu.lesson_3.level_4.Task_16;
+package com.javaguru.student_igors_gergeleziu.lesson_3.level_4.task_16;
 
-public class Car {
+ class Car {
     private String model;
 
     public Car(String newModel) {
