@@ -1,5 +1,9 @@
 package com.javaguru.student_nikolajs_sersnovs.leason_2.level_3;
-
+/*
+Напишите программу, которая запрашивает у пользователя
+три целых числа и выводит их среднее арифметическое
+(складывает все числа и делит на их количество).
+ */
 import java.util.Scanner;
 
 class Task_11 {
