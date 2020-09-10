@@ -24,7 +24,7 @@ class DayOfTheWeek {
         System.out.println("Please enter number:");
         int userInput = sc.nextInt();
 
-        System.out.println(daysOfTheWeek[userInput-1]);
+        System.out.println(daysOfTheWeek[userInput - 1]);
     }
 
 }

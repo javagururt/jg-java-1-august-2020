@@ -1,6 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_1_intern;
 
 import java.util.Scanner;
+
 /*
 Написать программу, которая запрашивает у пользователя
 целое число и выводит на консоль
@@ -13,7 +14,7 @@ class PositiveOrNegativeOrZero {
         int userInput = sc.nextInt();
         if (userInput > 0) {
             System.out.println("Your number is positive.");
-        }else if (userInput < 0) {
+        } else if (userInput < 0) {
             System.out.println("Your number is negative.");
         } else {
             System.out.println("Your number is zero.");
