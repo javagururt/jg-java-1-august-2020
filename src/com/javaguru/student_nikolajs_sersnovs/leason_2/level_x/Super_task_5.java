@@ -1,5 +1,8 @@
 package com.javaguru.student_nikolajs_sersnovs.leason_2.level_x;
-
+/*
+Напишите программу и продемонстрируйте в ней использование
+однострочного и многострочного коментариев.
+ */
 import com.javaguru.teacher.codereview.CodeReview;
 
 import java.util.Scanner;
