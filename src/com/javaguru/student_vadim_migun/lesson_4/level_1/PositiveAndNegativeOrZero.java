@@ -6,7 +6,7 @@ package com.javaguru.student_vadim_migun.lesson_4.level_1;
  */
 import java.util.Scanner;
 
-public class PositiveAndNegativeOrZero {
+class PositiveAndNegativeOrZero {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

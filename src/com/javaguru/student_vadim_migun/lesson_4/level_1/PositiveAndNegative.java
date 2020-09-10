@@ -7,7 +7,7 @@ package com.javaguru.student_vadim_migun.lesson_4.level_1;
  */
 import java.util.Scanner;
 
-public class PositiveAndNegative {
+class PositiveAndNegative {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Input integer number: ");
