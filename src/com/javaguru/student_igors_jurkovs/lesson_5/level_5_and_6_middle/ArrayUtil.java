@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_jurkovs.lesson_5.level_5_middle;
+package com.javaguru.student_igors_jurkovs.lesson_5.level_5_and_6_middle;
 
 import java.util.Arrays;
 
@@ -50,6 +50,47 @@ class ArrayUtil {
         Arrays.sort(array);
         return array[0];
     }
+
+    void test(boolean condition, String action) {
+        if (condition) {
+            System.out.println(action + " test: OK");
+        } else {
+            System.out.println(action + " test: FAILED");
+        }
+    }
+
+    boolean testWithLoopToFindMax(int[] array, int result) {
+        boolean isGreater = false;
+        for (int ar : array) {
+            if (ar > result) {
+                isGreater = true;
+                break;
+            }
+        }
+        return isGreater;
+    }
+
+    boolean testWithLoopToFindMin(int[] array, int result) {
+        boolean isLesser = false;
+        for (int ar : array) {
+            if (ar < result) {
+                isLesser = true;
+                break;
+            }
+        }
+        return isLesser;
+    }
+
+    boolean testWithLoopToCheckIsArrayFull(int[] array) {
+        boolean empty = false;
+        for (Integer ar : array) {
+            if (ar != null) {
+                empty = true;
+                break;
+            }
+        }
+        return empty;
+    }
 }
 
 /*
@@ -66,9 +107,9 @@ class ArrayUtil {
 
 class ArrayUtilTest {
 
-    private int length = 5;
-    private ArrayUtil arrayUtil = new ArrayUtil();
-    private int[] array = arrayUtil.createArray(length);
+    private final int length = 10;
+    private final ArrayUtil arrayUtil = new ArrayUtil();
+    private final int[] array = arrayUtil.createArray(length);
 
     public static void main(String[] args) {
 
@@ -83,27 +124,13 @@ class ArrayUtilTest {
     }
 
     void createArrayTest() {
-        if (array.length == 5) {
-            System.out.println("ArrayUtil test : OK");
-        } else {
-            System.out.println("ArrayUtil test : FAILED");
-        }
+        arrayUtil.test(isArrayCreated(), "Array creation");
     }
 
     void fillArrayWithRandomNumbersTest() {
         arrayUtil.fillArrayWithRandomNumbers(array);
-        boolean empty = true;
-        for (Integer ar : array) {
-            if (ar != null) {
-                empty = false;
-                break;
-            }
-        }
-        if (array.length > 0 && !empty) {
-            System.out.println("Array not empty");
-        } else {
-            System.out.println("Array empty");
-        }
+        arrayUtil.test(arrayUtil.testWithLoopToCheckIsArrayFull(array), "Array is filled with number");
+
     }
 
     void printArrayToConsoleTest() {
@@ -112,34 +139,16 @@ class ArrayUtilTest {
 
     void findMaxNumberTest() {
         int result = arrayUtil.findMaxNumber(array);
-        boolean isGreater = false;
-        for (int ar : array) {
-            if (ar > result) {
-                isGreater = true;
-                break;
-            }
-        }
-        if (isGreater) {
-            System.out.println("FindMaxNumber test: FAILED");
-        } else {
-            System.out.println("FindMaxNumber test: OK");
-        }
+        arrayUtil.test(!(arrayUtil.testWithLoopToFindMax(array, result)), "Find max number");
     }
 
     void findMinNumberTest() {
         int result = arrayUtil.findMinNumber(array);
-        boolean isLesser = false;
-        for (int ar : array) {
-            if (ar < result) {
-                isLesser = true;
-                break;
-            }
-        }
-        if (isLesser) {
-            System.out.println("FindMinNumber test: FAILED");
-        } else {
-            System.out.println("FindMinNumber test: OK");
-        }
+        arrayUtil.test(!(arrayUtil.testWithLoopToFindMin(array, result)), "Fin min number");
+
     }
 
+    boolean isArrayCreated() {
+        return array.length == length;
+    }
 }
