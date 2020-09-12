@@ -1,6 +1,6 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_4_junior;
 
-// здесь также задания level_4_junior - Task_13, Task_14, Task_15
+// здесь также задания level_4_junior - Task_13, Task_14, Task_15, т.е весь level_4_junior
 
 class CalculatorTest {
 

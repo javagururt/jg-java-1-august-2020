@@ -1,6 +1,6 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_4_junior;
 
-// здесь также задания level_4_junior - Task_13, Task_14, Task_15
+// здесь также задания level_4_junior - Task_13, Task_14, Task_15, т.е весь level_4_junior
 
 class Calculator {
 
@@ -16,9 +16,11 @@ class Calculator {
     public int division(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
+
     public boolean even(int number) {     //level_4_junior Task_13
         return number % 2 == 0;           //level_4_junior Task_13
     }                                     //level_4_junior Task_13
+
     public int maxOfTwoNumbers(int firstNumber, int secondNumber) {         // level_4_junior Task_14
         if (firstNumber > secondNumber) {                                   // level_4_junior Task_14
             return firstNumber;                                             // level_4_junior Task_14
