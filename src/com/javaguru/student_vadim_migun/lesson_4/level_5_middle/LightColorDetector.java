@@ -21,11 +21,12 @@ package com.javaguru.student_vadim_migun.lesson_4.level_5_middle;
 class LightColorDetector {
 ​
   public String detect(int wavelength) {
-    
+
   }
 
 }
  */
+
 class LightColorDetector {
 
     public String detect(int waveLength) {
