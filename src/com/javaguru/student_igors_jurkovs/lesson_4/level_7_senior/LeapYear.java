@@ -31,7 +31,7 @@ class LeapYearTest {
         LeapYear leapYear = new LeapYear();
         if (leapYear.leapYear(year)) {
             System.out.println(year + " is a leap year");
-        }else {
+        } else {
             System.out.println("Leap year test: FAILED");
         }
     }
@@ -40,7 +40,7 @@ class LeapYearTest {
         LeapYear leapYear = new LeapYear();
         if (!leapYear.leapYear(year)) {
             System.out.println(year + " is a normal year");
-        }else {
+        } else {
             System.out.println("Normal year test: FAILED");
         }
     }

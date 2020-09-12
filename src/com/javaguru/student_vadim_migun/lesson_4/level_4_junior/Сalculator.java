@@ -41,5 +41,31 @@ class Calculator {
             return true;
         } else return false;
     }
+    /*Добавьте в класс Calculator метод для определения
+    максимального из двух целых чисел. */
+
+    public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
+        if (firstNumber>secondNumber){
+            return firstNumber;
+        } else {
+            return secondNumber;
+        }
+    }
+
+    /* Добавьте в класс Calculator метод для определения
+    максимального из трёх целых чисел.*/
+
+    public  int maxOfThreeNumber(int firstNumber, int secondNumber, int thirdNumber){
+        if (firstNumber>=secondNumber && firstNumber>=thirdNumber) {
+            return firstNumber;
+        } else if (secondNumber>=firstNumber && secondNumber>=thirdNumber){
+            return (secondNumber);
+        } else {
+            return (thirdNumber);
+        }
+
+    }
+
+
 }
 

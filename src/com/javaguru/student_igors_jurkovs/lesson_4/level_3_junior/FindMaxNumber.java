@@ -21,7 +21,7 @@ class FindMaxNumber {
         System.out.println("Please enter third number:");
         int thirdNumber = sc.nextInt();
         int maxNumber = 0;
- //     ставим оператор >= чтобы охватить все случаи
+        //     ставим оператор >= чтобы охватить все случаи
         if (firstNumber >= secondNumber && firstNumber >= thirdNumber) { // 1. Первое число больше 2 и 3 числа
             maxNumber = firstNumber;
         } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) { // 2. Второе число больше 1 и 3 числа
