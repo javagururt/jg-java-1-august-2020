@@ -1,5 +1,8 @@
 package com.javaguru.student_nikolajs_sersnovs.leason_2.level_1;
-
+/*
+Написать консольную программу, которая запрашивает у пользователя два целых числа и
+выводит на консоль результаты: сложения, вычитания, умножения и деления.
+ */
 import com.javaguru.teacher.codereview.CodeReview;
 
 import java.util.Scanner;

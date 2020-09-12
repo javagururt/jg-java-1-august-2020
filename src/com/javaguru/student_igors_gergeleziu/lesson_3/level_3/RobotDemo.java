@@ -2,7 +2,7 @@ package com.javaguru.student_igors_gergeleziu.lesson_3.level_3;
 
 import java.util.Scanner;
 
-public class RobotDemo {
+class RobotDemo {
     /*
     I already done exercise with robot name parameter in constructor in lesson_3.level_1,so
     I decided to experiment with loop and class instance.

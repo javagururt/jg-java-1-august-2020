@@ -23,5 +23,6 @@ class EqualOrDifferent {
             System.out.println("All numbers are different");
         } else {
             System.out.println("Neither all are equal or different");
-        }    }
+        }
+    }
 }

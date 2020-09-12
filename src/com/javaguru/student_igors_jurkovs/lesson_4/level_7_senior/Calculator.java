@@ -20,6 +20,7 @@ class Calculator {
     boolean isEven(int number) {
         return number % 2 == 0;
     }
+
     void test(int expectedResult, int result, String action) {
         if (result == expectedResult) {
             System.out.println(action + " test = OK");
@@ -27,6 +28,7 @@ class Calculator {
             System.out.println(action + "test = FAIL");
         }
     }
+
     void evenTest(boolean expectedResult, boolean result) {
         if (expectedResult == result) {
             System.out.println("IsEven test = OK");
@@ -40,17 +42,18 @@ class Calculator {
 class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
-        calculatorTest.sumTest(35,40, 75);
-        calculatorTest.subTest(35,15,20);
-        calculatorTest.mulTest(5,5,25);
-        calculatorTest.divTest(40,8,5);
+        calculatorTest.sumTest(35, 40, 75);
+        calculatorTest.subTest(35, 15, 20);
+        calculatorTest.mulTest(5, 5, 25);
+        calculatorTest.divTest(40, 8, 5);
         calculatorTest.isEvenTest1(40, true);
-        calculatorTest.isEvenTest2(41,false);
+        calculatorTest.isEvenTest2(41, false);
     }
-/*
-Старался убрать количество строчек по максимуму, поэтому сделал ввод данных в мейне. Мне кажется что удобнее
-менять значения в одном месте.
- */
+
+    /*
+    Старался убрать количество строчек по максимуму, поэтому сделал ввод данных в мейне. Мне кажется что удобнее
+    менять значения в одном месте.
+     */
     void sumTest(int firstNumber, int secondNumber, int expectedResult) {
         Calculator calculator = new Calculator();
         int result = calculator.sum(firstNumber, secondNumber);

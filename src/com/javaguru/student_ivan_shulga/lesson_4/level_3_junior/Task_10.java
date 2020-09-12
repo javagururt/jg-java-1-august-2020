@@ -25,7 +25,13 @@ class Task_10 {
             System.out.println("Max of Three: " + thirdNumber);
         } else if (firstNumber == secondNumber && secondNumber < thirdNumber) {
             System.out.println("Max of Three: " + thirdNumber);
+        } else if (firstNumber == secondNumber && secondNumber > thirdNumber) {
+            System.out.println("Max of Three: " + firstNumber);
         } else if (firstNumber > secondNumber && secondNumber == thirdNumber) {
+            System.out.println("Max of Three: " + firstNumber);
+        } else if (firstNumber < secondNumber && secondNumber == thirdNumber) {
+            System.out.println("Max of Three: " + secondNumber);
+        } else if (firstNumber > secondNumber && firstNumber == thirdNumber) {
             System.out.println("Max of Three: " + firstNumber);
         } else {
             System.out.println("Numbers are EQUALS");

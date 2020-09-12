@@ -1,7 +1,7 @@
 package com.javaguru.student_igors_gergeleziu.lesson_3.level_3;
 
 
-public class Robot {
+ class Robot {
     String roboName;
     public Robot(String roboName){
      this.roboName=roboName;
