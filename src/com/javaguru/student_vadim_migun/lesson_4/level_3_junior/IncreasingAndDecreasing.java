@@ -14,8 +14,7 @@ class IncreasingAndDecreasing {
         System.out.println("Please enter first number: ");
         int firstNumber = scan.nextInt();
         System.out.println("Please enter second number: ");
-        int secondNumber;
-        secondNumber = scan.nextInt();
+        int secondNumber = scan.nextInt();
         System.out.println("Please enter third number: ");
         int thirdNumber = scan.nextInt();
 
