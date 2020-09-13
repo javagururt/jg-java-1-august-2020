@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_3.level_4;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Найти ошибку в коде.
 Исправить и запустить программу.
@@ -28,7 +31,7 @@ class BookDemo {
 
 }
  */
-
+@CodeReview(approved = true)
 class Book {
 
     private String title;

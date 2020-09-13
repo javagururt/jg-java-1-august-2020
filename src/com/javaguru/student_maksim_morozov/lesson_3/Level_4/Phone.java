@@ -1,9 +1,14 @@
 package com.javaguru.student_maksim_morozov.lesson_3.Level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
 class Phone {
 
     private String model;
 
+    @CodeReviewComment(teacher = "конструктор работает некорректно")
     public Phone(Object huawei) {
 
     }

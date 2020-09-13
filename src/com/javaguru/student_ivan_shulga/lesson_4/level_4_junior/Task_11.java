@@ -1,7 +1,10 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_4_junior;
 
-// здесь также задания level_4_junior - Task_13, Task_14, Task_15, т.е весь level_4_junior
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+// здесь также задания level_4_junior - Task_13, Task_14, Task_15, т.е весь level_4_junior
+@CodeReview(approved = true)
 class Calculator {
 
     public int addition(int firstNumber, int secondNumber) {
@@ -32,6 +35,7 @@ class Calculator {
 //   ниже  // level_4_junior Task_15 \\  ниже   \\
 //  ниже   // level_4_junior Task_15 \\  ниже   \\
 
+    @CodeReviewComment(teacher = "можно оптимизировать решение")
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
         if (firstNumber > secondNumber && secondNumber > thirdNumber) {
             return firstNumber;

@@ -1,5 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_4.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -14,7 +16,7 @@ import java.util.Scanner;
 Ввод: 5
 Вывод: Friday
  */
-
+@CodeReview(approved = true)
 class DaysOfTheWeek {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

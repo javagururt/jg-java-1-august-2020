@@ -6,8 +6,10 @@ Write a program that accepts three numbers from the user and prints:
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_3_junior.Task_9;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class NumberOrder {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,7 +1,9 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_4_junior;
 
-// здесь также задания level_4_junior - Task_13, Task_14, Task_15, т.е весь level_4_junior
+import com.javaguru.teacher.codereview.CodeReview;
 
+// здесь также задания level_4_junior - Task_13, Task_14, Task_15, т.е весь level_4_junior
+@CodeReview(approved = true)
 class CalculatorTest {
 
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_4.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создайте класс CalculatorTest и напишите тесты для
 всех методов класса Calculator из предыдущего задания.
@@ -28,7 +30,7 @@ class CalculatorTest {
 
 }
  */
-
+@CodeReview(approved = true)
 class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();

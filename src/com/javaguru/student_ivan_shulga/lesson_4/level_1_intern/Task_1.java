@@ -2,8 +2,10 @@ package com.javaguru.student_ivan_shulga.lesson_4.level_1_intern;
 
 // хотел немного поэкспеременитровать с Task_1, в итоге сделал и Task_2 тут же, уберать лишнее не стал
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class Task_1 {
 
     public static void main(String[] args) {

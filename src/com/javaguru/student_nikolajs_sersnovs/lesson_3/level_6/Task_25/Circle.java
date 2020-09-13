@@ -1,4 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_6.Task_25;
+
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 Разработать класс - круг, у которого должны быть следующие характеристики:
 Свойства: радиус (double radius),
@@ -13,6 +16,7 @@ class Circle {
 
     }
 
+    @CodeReviewComment(teacher = "название метода не соответствует логике внутри него")
     public double getRadius() {
         return this.radius * this.radius;
     }

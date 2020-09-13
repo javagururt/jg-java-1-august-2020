@@ -1,8 +1,12 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_5_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 // в данном случае не разделял на два файла, и программу, и тесты вписал в один файл
 // проверял верхнюю и нижнюю границы каждого спектра и по одной проверке вне спектра вверху и внизу, итого 14 тестов
-
+@CodeReview(approved = true)
+@CodeReviewComment()
 class LightColorDetector {    // программа
 
     String violet = "Фиолетовый";

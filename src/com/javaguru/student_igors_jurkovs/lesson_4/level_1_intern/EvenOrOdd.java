@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -10,6 +12,7 @@ import java.util.Scanner;
 операцию остаток от деления (%). Если остаток от деления на 2
 равен нулю то число чётное, иначе не чётное.
  */
+@CodeReview(approved = true)
 class EvenOrOdd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

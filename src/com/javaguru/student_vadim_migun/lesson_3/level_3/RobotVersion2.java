@@ -1,6 +1,8 @@
 package com.javaguru.student_vadim_migun.lesson_3.level_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class RobotVersion2 {
 
     private String name;

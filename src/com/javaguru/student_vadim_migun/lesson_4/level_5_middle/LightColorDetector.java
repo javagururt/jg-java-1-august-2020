@@ -1,4 +1,8 @@
 package com.javaguru.student_vadim_migun.lesson_4.level_5_middle;
+
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 Разработать программу,
 которая работает в соответствии с требованиями, описанными ниже.
@@ -26,9 +30,10 @@ class LightColorDetector {
 
 }
  */
-
+@CodeReview(approved = true)
 class LightColorDetector {
 
+    @CodeReviewComment(teacher = "в данной конструкции можнто не писать else, а просто в конце метода сделать return")
     public String detect(int waveLength) {
 
         if (waveLength >= 380 && waveLength <= 449) {

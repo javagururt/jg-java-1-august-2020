@@ -6,6 +6,8 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_6;
 Менять можно только класс BankAccount.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 В задании сказано что можно менять только BankAccount, но без вмешательства в BankAccountDemo невозможно было запустить код.
 В этих трех строках были ошибки:
@@ -13,6 +15,7 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_6;
         System.out.println("Owner = " + owner);
         System.out.println("Money = " + money);
  */
+@CodeReview(approved = true)
 class BankAccount {
 
     private String owner;
