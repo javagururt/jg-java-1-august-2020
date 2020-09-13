@@ -5,7 +5,7 @@ import com.javaguru.teacher.codereview.CodeReviewComment;
 
 @CodeReview(approved = true)
 @CodeReviewComment(teacher = "Классы желательно называть с заглавной буквы")
-public class task_10 {
+public class Task_10 {
 
     public static void main(String[] args){
        System.out.println("Hello World");
