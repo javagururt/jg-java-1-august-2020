@@ -17,12 +17,12 @@ class Circle {
     }
 
     @CodeReviewComment(teacher = "название метода не соответствует логике внутри него")
-    public double getRadius() {
+    public double radius() {
         return this.radius * this.radius;
     }
 
     public void calculateArea(){
-        double calculateArea = Math.PI * (getRadius());
+        double calculateArea = Math.PI * (radius());
         System.out.println("Circle are: " + calculateArea );
 
     }
