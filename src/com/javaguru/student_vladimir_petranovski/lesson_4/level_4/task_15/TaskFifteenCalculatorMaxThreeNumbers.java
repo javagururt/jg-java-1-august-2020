@@ -14,8 +14,10 @@ package com.javaguru.student_vladimir_petranovski.lesson_4.level_4.task_15;
 По одному тесту на каждый из сценариев!
  */
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 public class TaskFifteenCalculatorMaxThreeNumbers {
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
         if(firstNumber >= secondNumber && firstNumber >= thirdNumber) {

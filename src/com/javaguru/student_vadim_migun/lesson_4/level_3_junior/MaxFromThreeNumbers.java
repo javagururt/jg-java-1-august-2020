@@ -12,8 +12,13 @@ PS: перед решением этой задачи распишите на б
 // 1, 3, 2
 // 1, 2, 3
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "проверьте со значениями 3, 3, 1")
 class MaxFromThreeNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

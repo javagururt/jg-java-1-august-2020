@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -7,6 +9,7 @@ import java.util.Scanner;
 два целых числа и выводит на консоль наибольшее из них.
 Нельзя пользоваться классом Math, можно использовать только if else.
  */
+@CodeReview(approved = true)
 class MaxOfTwoNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,5 +1,8 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_x.solutions.super_task_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class User {
 
 	private static final int MAX_ATTEMPTS_COUNT = 3;

@@ -5,8 +5,10 @@ package com.javaguru.student_vadim_migun.lesson_4.level_2_intern;
 два целых числа и выводит на консоль наименьшее из них.
  */
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class SmallestNumber {
     public static void main(String[] args) {
 

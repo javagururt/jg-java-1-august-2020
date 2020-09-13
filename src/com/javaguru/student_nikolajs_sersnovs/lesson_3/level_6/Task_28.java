@@ -1,9 +1,13 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_6;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
     Дописать код программы, что бы она запускалась
     и выводила на консоль производителя и модель компьютера.
     Менять можно только класс Computer.
  */
+@CodeReview(approved = true)
     class Computer {
 
         private String manufacturer;

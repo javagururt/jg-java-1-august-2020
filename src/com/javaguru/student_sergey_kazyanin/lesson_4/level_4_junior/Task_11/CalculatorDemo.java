@@ -1,5 +1,10 @@
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_4_junior.Task_11;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "в Java названия переменных не принятно сокращать")
 class CalculatorDemo {
     public static void main(String[] args) {
         Calculator calc = new Calculator();

@@ -7,8 +7,10 @@ package com.javaguru.student_vadim_migun.lesson_4.level_2_intern;
 - "Numbers are different" - если числа не равны
  */
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class EqualsOrDifferent {
     public static void main(String[] args) {
 

@@ -1,4 +1,8 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_6.Task_26;
+
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 Разработать класс - продукт,
 у которого должны быть следующие характеристики:
@@ -13,11 +17,13 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_6.Task_26;
 Вывод информации о продукте в консоль (void printInformation())1P
 2. Название продукта нужно задавать через конструктор, а стоимость и скидку через оператор ".".
  */
+@CodeReview(approved = true)
 class Product {
 
     private String name;
     private double regularPrice;
     private double discount;
+    @CodeReviewComment(teacher = "нет необходимости в данном поле")
     private double actualPrice;
 
 

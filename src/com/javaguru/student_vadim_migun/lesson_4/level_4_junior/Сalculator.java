@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_4.level_4_junior;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создайте класс Calculator. В этом классе создайте методы
 для сложения, вычитания, деления и умножения двух целых чисел.
@@ -15,6 +18,7 @@ class Calculator {
 
 }
  */
+@CodeReview(approved = true)
 class Calculator {
 
 

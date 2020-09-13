@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_3_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -11,6 +13,7 @@ PS: перед решением этой задачи распишите на б
 Это поможет вам правильно написать программу!
 Нельзя пользоваться классом Math.
  */
+@CodeReview(approved = true)
 class FindMaxNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,11 +1,14 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
 Написать программу, которая запрашивает у пользователя
 два целых числа и выводит на консоль наименьшее из них.
  */
+@CodeReview(approved = true)
 class MinOfTwoNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

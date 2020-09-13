@@ -1,10 +1,15 @@
 package com.javaguru.student_igors_jurkovs.lesson_3.level_x;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class Game {
     public static final int MAX_ROLLS = 21;
+    @CodeReviewComment(teacher = "java style: int[] array = new int[size];")
     int roll[] = new int [MAX_ROLLS];
     int currentRoll = 0;
 
+    @CodeReviewComment(teacher = "лучше разделить на несколько строк. Запись с count++ в качестве индекса немного может сбивать с толку")
+    @CodeReviewComment(teacher = "имеет смысл добавить доп проверки на некорректные данные")
     void roll(int pins) {
         roll[currentRoll++] = pins;
     }
@@ -49,9 +54,9 @@ class GameTest {
     public static void main(String[] args) {
 
         Game game = new Game();
-        game.roll(10);
-        game.roll(6);
-        game.roll(1);
+        game.score();
+        game.roll(2);
+        game.roll(2);
         System.out.println(game.score());
     }
 }

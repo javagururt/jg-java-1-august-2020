@@ -6,8 +6,10 @@ Write a program that accepts three numbers from the user and prints:
 - "Neither increasing or decreasing order" otherwise.
  */
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class IncreasingAndDecreasing {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

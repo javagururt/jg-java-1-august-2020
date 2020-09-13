@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -8,6 +10,7 @@ import java.util.Scanner;
 - "Numbers are equals" - если числа равны
 - "Numbers are different" - если числа не равны
  */
+@CodeReview(approved = true)
 class EqualNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
