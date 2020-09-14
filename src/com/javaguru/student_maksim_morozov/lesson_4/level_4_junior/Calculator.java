@@ -32,3 +32,4 @@ class Calculator {
             return thirdNumber;
         }
     }
+}
