@@ -1,8 +1,10 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_x.solutions.super_task_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 import com.javaguru.teacher.lesson_3.homework.level_x.solutions.super_task_1.User;
 import com.javaguru.teacher.lesson_3.homework.level_x.solutions.super_task_1.UserLoginService;
-
+@CodeReview(approved = true)
 public class UserLoginServiceTest {
 
 	public static void main(String[] args) {
@@ -14,6 +16,7 @@ public class UserLoginServiceTest {
 		test.shouldSetAttemptsLeftTo3AfterSuccessfulLogin();
 	}
 
+	@CodeReviewComment(teacher = "нет необходимости писать весь путь до класса")
 	public void shouldSuccessfullyLogin() {
 		com.javaguru.teacher.lesson_3.homework.level_x.solutions.super_task_1.UserLoginService service = new com.javaguru.teacher.lesson_3.homework.level_x.solutions.super_task_1.UserLoginService();
 		com.javaguru.teacher.lesson_3.homework.level_x.solutions.super_task_1.User user = new com.javaguru.teacher.lesson_3.homework.level_x.solutions.super_task_1.User("javaguru", "abcd");

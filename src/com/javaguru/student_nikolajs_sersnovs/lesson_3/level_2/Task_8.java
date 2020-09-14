@@ -1,4 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_2;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Учимся работать со строками.
 
@@ -13,6 +16,7 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_2;
     String userName = "Viktor";
     String greeting = "Hi " + userName + "!";
  */
+@CodeReview(approved = true)
 class Task_8 {
     public static void main(String[] args) {
         String userName = "Nikolajs";

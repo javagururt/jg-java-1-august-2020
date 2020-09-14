@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_5_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Функциональные требования:
 Программа должна определять цвет в зависимости
@@ -13,6 +15,7 @@ package com.javaguru.student_igors_jurkovs.lesson_4.level_5_middle;
 620 ... 750 - Красный ("Red")
 Вне диапазонов - невидимый спектр ("Invisible Light")
  */
+@CodeReview(approved = true)
 class LightColorDetector {
 
     String color(int waveLength) {

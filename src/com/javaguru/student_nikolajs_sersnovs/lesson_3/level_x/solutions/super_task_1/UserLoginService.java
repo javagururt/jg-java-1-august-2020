@@ -1,7 +1,8 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_x.solutions.super_task_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import com.javaguru.teacher.lesson_3.homework.level_x.solutions.super_task_1.User;
-
+@CodeReview(approved = true)
 public class UserLoginService {
 
 	public boolean login(User user, String password){

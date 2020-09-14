@@ -5,8 +5,10 @@ package com.javaguru.student_vadim_migun.lesson_4.level_1_intern;
 целое число и выводит на консоль
 положительное оно или отрицательное.
  */
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class PositiveAndNegative {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

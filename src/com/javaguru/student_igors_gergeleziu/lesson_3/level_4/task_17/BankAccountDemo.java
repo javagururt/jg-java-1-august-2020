@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_gergeleziu.lesson_3.level_4.task_17;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
  class BankAccountDemo {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Jack", "Daniels", 1500000);

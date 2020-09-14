@@ -5,10 +5,15 @@
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_1_intern.Task_2;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class InputConsoleZero {
 
+    @CodeReviewComment(teacher = ">= можно исправить на >")
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите число:");

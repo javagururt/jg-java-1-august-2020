@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_gergeleziu.lesson_3.level_6.task_24;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class Flashlight {
     private int brightness;
     private int chargeLevel=100;

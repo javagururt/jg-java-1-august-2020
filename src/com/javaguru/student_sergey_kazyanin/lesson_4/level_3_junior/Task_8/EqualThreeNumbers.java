@@ -6,6 +6,9 @@ Write a Java program that accepts three numbers and prints:
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_3_junior.Task_8;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class EqualThreeNumbers {
     public static void main(String[] args) {
         EqualThreeNumbers numEq = new EqualThreeNumbers();

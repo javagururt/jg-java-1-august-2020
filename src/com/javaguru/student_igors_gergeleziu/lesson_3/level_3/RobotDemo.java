@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_gergeleziu.lesson_3.level_3;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class RobotDemo {
     /*
     I already done exercise with robot name parameter in constructor in lesson_3.level_1,so

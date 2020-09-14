@@ -1,9 +1,12 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создайте класс Calculator. В этом классе создайте методы
 для сложения, вычитания, деления и умножения двух целых чисел.
  */
+@CodeReview(approved = true)
 class Calculator {
 
     int sum(int firstNumber, int secondNumber) {

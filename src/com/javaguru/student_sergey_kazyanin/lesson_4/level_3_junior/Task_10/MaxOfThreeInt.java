@@ -9,8 +9,10 @@ PS: перед решением этой задачи распишите на б
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_3_junior.Task_10;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class MaxOfThreeInt {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

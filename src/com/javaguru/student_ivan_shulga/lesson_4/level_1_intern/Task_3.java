@@ -1,11 +1,14 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 // сделано два варианта для практики
 // с switch и с if
 // if закомментирован ниже
 
+@CodeReview(approved = true)
 class Task_3 {
 
     public static void main(String[] args) {

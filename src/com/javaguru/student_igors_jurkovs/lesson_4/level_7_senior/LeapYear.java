@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_7_senior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class LeapYear {
 
     boolean leapYear(int year) {
