@@ -9,17 +9,12 @@ class Phone {
     private String model;
 
     @CodeReviewComment(teacher = "конструктор работает некорректно")
-    public Phone(Object huawei) {
-
-    }
 
     public Phone(String newModel) {
         this.model = newModel;
     }
 
-    public String getModel() {
-        return this.model;
-    }
+    public String getModel() { return this.model; }
 
 }
 
