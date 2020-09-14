@@ -1,4 +1,4 @@
-package com.javaguru.student_maksim_morozov.level_1_intern;
+package com.javaguru.student_maksim_morozov.lesson_4.level_1_intern;
 
 import java.util.Scanner;
 
