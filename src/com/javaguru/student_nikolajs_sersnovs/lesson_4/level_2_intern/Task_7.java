@@ -5,6 +5,7 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_2_intern;
 - "Numbers are equals" - если числа равны
 - "Numbers are different" - если числа не равны
  */
+
 import java.util.Scanner;
 
 class Task_7 {
@@ -15,12 +16,12 @@ class Task_7 {
         System.out.println("Please write second number (Integer): ");
         int secondNumber = scanner.nextInt();
 
-        if (firstNumber == secondNumber){
+        if (firstNumber == secondNumber) {
             System.out.println("Numbers are equals!");
         }
-        else if (secondNumber != firstNumber){
+        else {
             System.out.println("Numbers are different!");
-        }
 
+        }
     }
 }

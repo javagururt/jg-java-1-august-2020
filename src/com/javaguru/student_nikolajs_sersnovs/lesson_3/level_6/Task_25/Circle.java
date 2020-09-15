@@ -12,17 +12,15 @@ class Circle {
     private double radius;
 
     public Circle(double radius) {
-        this.radius = radius;
+        this.radius = radius * radius;
 
     }
 
     @CodeReviewComment(teacher = "название метода не соответствует логике внутри него")
-    public double radius() {
-        return this.radius * this.radius;
-    }
+    //а сейчас?
 
     public void calculateArea(){
-        double calculateArea = Math.PI * (radius());
+        double calculateArea = Math.PI * (this.radius);
         System.out.println("Circle are: " + calculateArea );
 
     }

@@ -22,9 +22,9 @@ class Task_9 {
 
     public static void main(String[] args){
         @CodeReviewComment(teacher = "переменные называют с маленькой буквы. camelCase")
-        Scanner Scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Write your name:");
-        String userName = Scanner.next();
+        String userName = scanner.next();
         System.out.println("Hello " + userName + "!");
 
     }

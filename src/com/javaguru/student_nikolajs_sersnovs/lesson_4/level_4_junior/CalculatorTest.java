@@ -28,9 +28,9 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.addition(firstNumber, secondNumber);
         if (result == 15) {
-            System.out.println("Addition test = OK");
+            System.out.println("Addition test = SUCCESS");
         } else {
-            System.out.println("Addition test = FAIL");
+            System.out.println("Addition test = FAILURE");
         }
     }
 
@@ -39,22 +39,22 @@ class CalculatorTest {
         int secondNumber = 5;
         Calculator calculator = new Calculator();
         int result = calculator.subtraction(firstNumber, secondNumber);
-        if (result == 15) {
-            System.out.println("Subtraction test = OK");
+        if (result == 5) {
+            System.out.println("Subtraction test = SUCCESS");
         } else {
-            System.out.println("Subtraction test = FAIL");
+            System.out.println("Subtraction test = FAILURE");
         }
     }
 
     public void multiplicationTest() {
-        int firstNumber = 10;
+        int firstNumber = 3;
         int secondNumber = 5;
         Calculator calculator = new Calculator();
         int result = calculator.multiplication(firstNumber, secondNumber);
         if (result == 15) {
-            System.out.println("Multiplication test = OK");
+            System.out.println("Multiplication test = SUCCESS");
         } else {
-            System.out.println("Multiplication test = FAIL");
+            System.out.println("Multiplication test = FAILURE");
         }
     }
 
@@ -63,10 +63,10 @@ class CalculatorTest {
         int secondNumber = 5;
         Calculator calculator = new Calculator();
         int result = calculator.division(firstNumber, secondNumber);
-        if (result == 15) {
-            System.out.println("Division test = OK");
+        if (result == 2) {
+            System.out.println("Division test = SUCCESS");
         } else {
-            System.out.println("Division test = FAIL");
+            System.out.println("Division test = FAILURE");
         }
     }
 
@@ -89,8 +89,8 @@ class CalculatorTest {
     }
 
     public void maxOfTwoNumbers1() {
-        int firstNumber = 10;
-        int secondNumber = 5;
+        int firstNumber = 5;
+        int secondNumber = 10;
         if (secondNumber > firstNumber) {
             System.out.println("Max of two numbers 1: SUCCESS");
         } else {
@@ -100,7 +100,7 @@ class CalculatorTest {
     }
 
     public void maxOfTwoNumbers2() {
-        int firstNumber = 10;
+        int firstNumber = 5;
         int secondNumber = 5;
         if (firstNumber == secondNumber) {
             System.out.println("Max of two numbers 2: SUCCESS");
@@ -113,7 +113,7 @@ class CalculatorTest {
     public void maxOfThreeNumbers() {
         int firstNumber = 10;
         int secondNumber = 5;
-        int thirdNumber = 10;
+        int thirdNumber = 5;
         if (firstNumber > secondNumber & firstNumber > thirdNumber) {
             System.out.println("Max of three numbers : SUCCESS");
         } else {
@@ -123,9 +123,9 @@ class CalculatorTest {
     }
 
     public void maxOfThreeNumbers1() {
-        int firstNumber = 10;
-        int secondNumber = 5;
-        int thirdNumber = 10;
+        int firstNumber = 5;
+        int secondNumber = 10;
+        int thirdNumber = 5;
         if (secondNumber > firstNumber & secondNumber > thirdNumber) {
             System.out.println("Max of three numbers 1: SUCCESS");
         } else {
@@ -135,7 +135,7 @@ class CalculatorTest {
     }
 
     public void maxOfThreeNumbers2() {
-        int firstNumber = 10;
+        int firstNumber = 5;
         int secondNumber = 5;
         int thirdNumber = 10;
         if (thirdNumber > firstNumber & thirdNumber > secondNumber) {
@@ -160,8 +160,8 @@ class CalculatorTest {
 
     public void maxOfThreeNumbers4() {
         int firstNumber = 10;
-        int secondNumber = 5;
-        int thirdNumber = 10;
+        int secondNumber = 10;
+        int thirdNumber = 5;
         if (secondNumber == firstNumber & secondNumber > thirdNumber) {
             System.out.println("Max of three numbers 4: SUCCESS");
         } else {
