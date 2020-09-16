@@ -18,13 +18,13 @@ public class Task_9 {
         Scanner scThird = new Scanner(System.in);
         int thirdNumber = scThird.nextInt();
 
-        if (firstNumber == secondNumber && secondNumber== thirdNumber) {
-            System.out.println("All numbers are equal");
+        if (firstNumber < secondNumber && secondNumber < thirdNumber) {
+            System.out.println("Increasing");
         }
-        else if (secondNumber != firstNumber && firstNumber != thirdNumber && secondNumber != thirdNumber) {
-            System.out.println("All numbers are different");}
-        else if ((firstNumber == secondNumber || secondNumber == thirdNumber || firstNumber == thirdNumber)
-                || secondNumber != firstNumber && firstNumber != thirdNumber && secondNumber != thirdNumber ) {
-            System.out.println("Neither all are equal or different");
+        else if (firstNumber > secondNumber && secondNumber > thirdNumber) {
+            System.out.println("Decreasing");}
+        else  {
+            System.out.println("Neither increasing or decreasing order");
         }}
 }
+
