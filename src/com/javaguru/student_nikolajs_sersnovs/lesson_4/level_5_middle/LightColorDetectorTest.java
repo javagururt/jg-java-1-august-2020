@@ -73,7 +73,7 @@ class LightColorDetectorTest {
     }
 
     public void orangeColorTest() { // Оранжевый цвет не нашёл в консольных цветах от JAVA,
-                                    // а вот с помощью РГБ кода выдает ошибку и цвет не меняет  java.awt.Color[r=255,g=200,b=0]
+                                    // а вот с помощью RGB выдает ошибку и цвет не меняет  java.awt.Color[r=255,g=200,b=0]
         int wavelength = 600;
         if (wavelength >= 590 & wavelength <= 619) {
             System.out.println(ORANGE + "Wavelength test = OK" + RESET);
