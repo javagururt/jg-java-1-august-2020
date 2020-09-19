@@ -8,20 +8,17 @@ class Policy {
     private static final double THEFT_INSURANCE_COEFFICIENT_LESSER_2000 = 0.01;
     private static final double THEFT_INSURANCE_COEFFICIENT_GREATER_2000 = 0.02;
 
-    private final double[] costArrayForFireInsurance = {500, 1200, 400};
-    private final double[] costArrayForTheftInsurance = {300, 500, 200};
+    UserMenu userMenu = new UserMenu();
 
 
-
-
-    double calculate(Policy policy, int insuranceType) {
+    double calculate(Policy policy, UserMenu userMenu) {
         double finalPrice;
-        if (insuranceType == 1) {
+        int userInput = userMenu.insuranceTypeChoice();
+        if (userInput == 1) {
             finalPrice = policy.fireInsurancePrice();
-        } else if (insuranceType == 2) {
+        } else if (userInput == 2) {
             finalPrice = policy.theftInsurancePrice();
         } else finalPrice = policy.fireInsurancePrice() + policy.theftInsurancePrice();
-
         return finalPrice;
     }
 
@@ -33,13 +30,15 @@ class Policy {
         return sum;
     }
     double fireInsurancePrice() {
+        double[] costArrayForFireInsurance = userMenu.electronicsArray("fire");
         double totalCost = electronicsCost(costArrayForFireInsurance);
-        return priceForInsurance(isGreaterThan2000ForFire(), totalCost, FIRE_INSURANCE_COEFFICIENT_GREATER_2000, FIRE_INSURANCE_COEFFICIENT_LESSER_2000);
+        return priceForInsurance(totalCost >= 2000, totalCost, FIRE_INSURANCE_COEFFICIENT_GREATER_2000, FIRE_INSURANCE_COEFFICIENT_LESSER_2000);
     }
 
     double theftInsurancePrice() {
+        double[] costArrayForTheftInsurance = userMenu.electronicsArray("theft");
         double totalCost = electronicsCost(costArrayForTheftInsurance);
-        return priceForInsurance(isGreaterThan2000ForTheft(), totalCost, THEFT_INSURANCE_COEFFICIENT_GREATER_2000, THEFT_INSURANCE_COEFFICIENT_LESSER_2000);
+        return priceForInsurance(totalCost >= 2000, totalCost, THEFT_INSURANCE_COEFFICIENT_GREATER_2000, THEFT_INSURANCE_COEFFICIENT_LESSER_2000);
     }
 
     void printInformation(double price) {
@@ -63,12 +62,5 @@ class Policy {
         }
     }
 
-    boolean isGreaterThan2000ForFire() {
-        return electronicsCost(costArrayForFireInsurance) >= 2000;
-    }
-
-    boolean isGreaterThan2000ForTheft() {
-        return electronicsCost(costArrayForTheftInsurance) >= 2000;
-    }
 
 }
