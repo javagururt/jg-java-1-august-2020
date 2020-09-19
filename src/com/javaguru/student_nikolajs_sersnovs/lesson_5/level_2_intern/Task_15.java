@@ -19,23 +19,12 @@ class Task_15 {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
-            adding = array[0] + 2;
-            adding2 = array[1] + 2;
-            adding3 = array[2] + 2;
+            System.out.println("Generated numbers: " + array[i]);
         }
-
-        System.out.println("Generated numbers: " + array[0]);
-        System.out.println("Generated numbers: " + array[1]);
-        System.out.println("Generated numbers: " + array[2]);
-        System.out.println();
-        System.out.println("Generated numbers with adding + 2: " + adding);
-        System.out.println("Generated numbers with adding + 2: " + adding2);
-        System.out.println("Generated numbers with adding + 2: " + adding3);
-
-
-
-
-
+        for (int i = 0; i < array.length; i++) {
+            array[i] = array[i] + 2;
+            System.out.println("Generated numbers with adding + 2: " + array[i]);
+        }
 
     }
 }

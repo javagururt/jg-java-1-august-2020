@@ -16,13 +16,10 @@ class Task_13 {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
+            System.out.println(array[i]);
             sum += array[i];
         }
-        System.out.println(array[0]);
-        System.out.println(array[1]);
-        System.out.println(array[2]);
-        System.out.println(array[3]);
-        System.out.println(array[4]);
+
         System.out.println("Total sum of generated numbers: " + sum);
     }
 }
