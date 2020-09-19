@@ -1,25 +1,24 @@
 package com.javaguru.student_ivan_shulga.lesson_5.level_3_junior;
 
-class ForLoopDefinition3 {
+class ForLoopDefinition5_5 { // тут сбита нумерация в условиях задач поэтому назвал 5_5
 
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             System.out.println(i);
         }
     }
-
 }
 
 /*
-Найдите ошибку в программе и исправить её:
+Найдите логическую ошибку в программе и исправить её:
 
-class ForLoopDefinition3 {
+class ForLoopDefinition5 {
 
     public static void main(String[] args) {
-        for (int i = 0; i < 10 i++) {
+        for (int i = 0; i < 10; i++)
             System.out.println(i);
         }
     }
 
 }
-*/
+ */
