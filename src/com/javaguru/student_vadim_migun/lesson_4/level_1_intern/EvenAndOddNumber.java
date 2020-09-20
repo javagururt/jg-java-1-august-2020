@@ -8,8 +8,10 @@ package com.javaguru.student_vadim_migun.lesson_4.level_1_intern;
 равен нулю то число чётное, иначе не чётное.
  */
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class EvenAndOddNumber {
     public static void main(String[] args) {
 

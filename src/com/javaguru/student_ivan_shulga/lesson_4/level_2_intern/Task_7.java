@@ -1,7 +1,11 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_2_intern;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "можно использовать так же  !=")
 class Task_7 {
 
     public static void main(String[] args) {

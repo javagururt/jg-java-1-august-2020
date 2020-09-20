@@ -1,7 +1,11 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_2.level_3;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "нет смысла умножения на 1")
 class Task_9 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);

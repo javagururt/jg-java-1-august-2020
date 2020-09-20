@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_3_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -8,6 +10,7 @@ Write a Java program that accepts three numbers and prints:
 - "All numbers are different" if all three numbers are different
 - "Neither all are equal or different" otherwise.
  */
+@CodeReview(approved = true)
 class EqualOrDifferent {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,0 +1,40 @@
+ -  В соответствии со спецификацией виртуальной машины Java область для хранения
+ строковых литералов находится в пуле постоянных времени выполнения.
+
+ - Чтобы узнать длинну строки необходимо истользовать метод length().
+ Пример:
+ String sentence = "Please enter number";
+ System.out.println("In sentence: " + sentence + " - are " + sentence.length() + " symbols");
+
+ - Чтобы сравнить длины строк надо их преобразовать в int и сравнить используя "if"
+ Пример:
+
+ String sentence1 = "Please enter number ";
+ String sentence2 = "Please enter second number ";
+
+ System.out.println("In sentence: " + sentence1 + " - are " + sentence1.length() + " symbols");
+ System.out.println("In sentence: " + sentence2 + " - are " + sentence2.length() + " symbols");
+
+ int numSymbols1 = sentence1.length();
+ int numSymbols2 = sentence2.length();
+
+ if (numSymbols1 > numSymbols2) {
+ System.out.println("First sentence number of symbols more than second sentence");
+ }
+ if (numSymbols1 < numSymbols2) {
+ System.out.println("Second sentence number of symbols more than first sentence");
+ }
+ else {
+ System.out.println("First sentence number of symbols more equal to second sentence");
+ }
+
+ - Пул строк используется для ортимизации компилятора.
+ Все упоминания этой строки в исходном коде компилятор заменяет
+ ссылками на её экземпляр в метаданных.
+ Благодаря этому заметно уменьшается размер модуля.
+
+ Пример (если пишем строку в кучи):
+ String sentence = "I love my dog";
+
+ Пример (если пишем строку в пул):
+ String sentence = new String("I love my dog");

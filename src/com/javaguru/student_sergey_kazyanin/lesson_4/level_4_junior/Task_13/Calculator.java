@@ -19,7 +19,10 @@ class Calculator {
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_4_junior.Task_13;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+@CodeReview(approved = true)
 class Calculator {
 
     public int sum(int firstNumber, int secondNumber) {
@@ -38,12 +41,9 @@ class Calculator {
         return firstNumber * secondNumber;
     }
 
+    @CodeReviewComment(teacher = "можно сократить до return number % 2 == 0;")
     public boolean isEven(int number) {
-        if (number % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return number % 2 == 0;
     }
 
 

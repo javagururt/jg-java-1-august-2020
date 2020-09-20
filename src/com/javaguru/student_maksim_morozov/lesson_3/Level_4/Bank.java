@@ -1,5 +1,10 @@
 package com.javaguru.student_maksim_morozov.lesson_3.Level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "пекеджи лучше называть только маленькими буквами")
 class BankAccount {
 
     private String ownerFirstName;

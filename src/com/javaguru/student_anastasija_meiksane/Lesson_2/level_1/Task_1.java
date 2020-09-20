@@ -2,14 +2,14 @@ package com.javaguru.student_anastasija_meiksane.Lesson_2.level_1;
 
 import java.util.Scanner;
 
- class Task_1 {
+class Task_1 {
 
 
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter first number(int) : " );
+        System.out.println("Please enter first number(int) : ");
 
         int firstNumber = scanner.nextInt();
 
@@ -17,22 +17,22 @@ import java.util.Scanner;
 
         int secondNumber = scanner.nextInt();
 
-       System.out.print(firstNumber + "+" + secondNumber);
+        System.out.print(firstNumber + "+" + secondNumber);
 
-       int sumResult = firstNumber + secondNumber ;
-       System.out.println( " = " + sumResult) ;
+        int sumResult = firstNumber + secondNumber;
+        System.out.println(" = " + sumResult);
 
-       int minResult = firstNumber - secondNumber;
-       System.out.print(firstNumber + "-" + secondNumber);
-       System.out.println(" = " + minResult);
+        int minResult = firstNumber - secondNumber;
+        System.out.print(firstNumber + "-" + secondNumber);
+        System.out.println(" = " + minResult);
 
-       int multiplyResult = firstNumber * secondNumber ;
-       System.out.print(firstNumber + "*" + secondNumber);
-       System.out.println(" = " + multiplyResult);
+        int multiplyResult = firstNumber * secondNumber;
+        System.out.print(firstNumber + "*" + secondNumber);
+        System.out.println(" = " + multiplyResult);
 
-       double divideResult = firstNumber / secondNumber;
-       System.out.print(firstNumber + " / " + secondNumber);
-       System.out.println(" = " + divideResult);
+        double divideResult = firstNumber / (double) secondNumber;
+        System.out.print(firstNumber + " / " + secondNumber);
+        System.out.println(" = " + divideResult);
 
 
 
@@ -44,7 +44,6 @@ import java.util.Scanner;
 Написать консольную программу, которая запрашивает у пользователя два целых числа и
 выводит на консоль результаты: сложения, вычитания, умножения и деления.
  */
-
 
 
     }

@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_1.level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Task_11 {
     public static void main (String[] args){
         int firstNumber1 = 74;

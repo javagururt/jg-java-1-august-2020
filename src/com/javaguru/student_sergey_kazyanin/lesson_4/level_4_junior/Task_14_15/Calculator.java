@@ -19,7 +19,10 @@ class Calculator {
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_4_junior.Task_14_15;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+@CodeReview(approved = true)
 class Calculator {
 
     public int sum(int firstNumber, int secondNumber) {
@@ -54,6 +57,7 @@ class Calculator {
         }
     }
 
+    @CodeReviewComment(teacher = "нет необходимости в переменной temp")
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
         int temp = firstNumber;
         int max = maxOfTwoNumbers(temp, secondNumber);

@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_3_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -8,6 +10,7 @@ Write a program that accepts three numbers from the user and prints:
 - "decreasing" if the numbers are in decreasing order,
 - "Neither increasing or decreasing order" otherwise.
  */
+@CodeReview(approved = true)
 public class AscendingOrDescendingOrder {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

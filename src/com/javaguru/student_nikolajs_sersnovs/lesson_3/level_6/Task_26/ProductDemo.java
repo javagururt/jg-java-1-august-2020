@@ -1,5 +1,8 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_6.Task_26;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ProductDemo {
     public static void main(String[] args){
         Product milk = new Product("Milk");

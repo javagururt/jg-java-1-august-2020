@@ -28,6 +28,9 @@ class CalculatorTest {
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_4_junior.Task_12;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();

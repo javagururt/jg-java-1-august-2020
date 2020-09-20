@@ -12,13 +12,19 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_3.level_2;
 обьект Scanner. Загуглите как это можно сделать:
 "как в Java считать строку с консоли".
  */
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_9 {
+
     public static void main(String[] args){
-        Scanner Scanner = new Scanner(System.in);
+        @CodeReviewComment(teacher = "переменные называют с маленькой буквы. camelCase")
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Write your name:");
-        String userName = Scanner.next();
+        String userName = scanner.next();
         System.out.println("Hello " + userName + "!");
 
     }
