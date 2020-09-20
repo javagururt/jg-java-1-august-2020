@@ -35,7 +35,19 @@ class CalculatorTest {
          calculatorTest.divisionTest();
          calculatorTest.multiplicationTest();
          calculatorTest.isEven();
-         calculatorTest.greatestOfTwoNumbers();
+         calculatorTest.maxOfTwoNumbers1();
+         calculatorTest.maxOfTwoNumbers2();
+         calculatorTest.maxOfTwoNumbers3();
+         calculatorTest.maxOfThreeNumbers1();
+         calculatorTest.maxOfThreeNumbers2();
+         calculatorTest.maxOfThreeNumbers3();
+         calculatorTest.maxOfThreeNumbers4();
+         calculatorTest.maxOfThreeNumbers5();
+         calculatorTest.maxOfThreeNumbers6();
+
+
+
+
 
 
      }
@@ -96,15 +108,101 @@ class CalculatorTest {
 
          }
 
-         public void greatestOfTwoNumbers() {
+         public void maxOfTwoNumbers1() {
          int firstNumber = 10;
          int secondNumber = 5;
          if (firstNumber > secondNumber) {
-             System.out.println("Greatest of two numbers = OK");
+             System.out.println("Max of two numbers (first number) = OK");
+         }
+         else {
+             System.out.println("Max of two numbers (second number) = Fail");
          }
          }
+         public void maxOfTwoNumbers2() {
+         int firstNumber = 10;
+         int secondNumber = 5;
+         if (secondNumber > firstNumber) {
+             System.out.println("Max of two numbers (second number) = OK");}
+         else {
+             System.out.println("Max of two numbers (second number) = Fail");}}
 
-     }
+             public void maxOfTwoNumbers3() {
+                 int firstNumber = 10;
+                 int secondNumber = 5;
+                 if (firstNumber == secondNumber) {
+                     System.out.println("Max of two numbers (first number equal second number) = OK"); }
+                 else{
+                     System.out.println("Max of two numbers (first number equal second number) = Fail");
+
+                 }
+             }
+public void maxOfThreeNumbers1() {
+         int firstNumber = 10;
+         int secondNumber = 5;
+         int thirdNumber = 20;
+         if (firstNumber > secondNumber & firstNumber > thirdNumber) {
+             System.out.println("Max of three numbers (first number) = OK");}
+         else {
+             System.out.println("Max of three numbers (first number) = Fail");
+
+         }}
+    public void maxOfThreeNumbers2() {
+        int firstNumber = 10;
+        int secondNumber = 5;
+        int thirdNumber = 20;
+        if (secondNumber > firstNumber & secondNumber > thirdNumber) {
+            System.out.println("Max of three numbers (second number) = OK");
+        } else {
+            System.out.println("Max of three numbers (second number) = Fail");
+
+        }}
+     public void maxOfThreeNumbers3() {
+         int firstNumber = 10;
+         int secondNumber = 5;
+         int thirdNumber = 20;
+         if (thirdNumber > firstNumber & secondNumber < thirdNumber) {
+             System.out.println("Max of three numbers (third number) = OK");
+         } else {
+             System.out.println("Max of three numbers (third number) = Fail");
+
+         }}
+     public void maxOfThreeNumbers4() {
+         int firstNumber = 10;
+         int secondNumber = 10;
+         int thirdNumber = 20;
+         if (firstNumber == secondNumber & secondNumber > thirdNumber) {
+             System.out.println("Max of three numbers (first number equal secondNumber and more than third number) = OK");
+         } else {
+             System.out.println("Max of three numbers (first number equal secondNumber and more than third number) = Fail");
+
+         }}
+     public void maxOfThreeNumbers5() {
+         int firstNumber = 10;
+         int secondNumber = 20;
+         int thirdNumber = 20;
+         if (firstNumber < secondNumber & secondNumber == thirdNumber) {
+             System.out.println("Max of three numbers (third number equal secondNumber and more than first number) = OK");
+         } else {
+             System.out.println("Max of three numbers (first number equal secondNumber and more than third number) = Fail");
+
+         }}
+     public void maxOfThreeNumbers6() {
+         int firstNumber = 20;
+         int secondNumber = 20;
+         int thirdNumber = 20;
+         if (firstNumber == secondNumber & secondNumber == thirdNumber) {
+             System.out.println("Max of three numbers (numbers are equal) = OK");
+         } else {
+             System.out.println("Max of three numbers (numbers are equal) = Fail");
+
+         }}
+
+    }
+
+
+
+
+
 
 
 
