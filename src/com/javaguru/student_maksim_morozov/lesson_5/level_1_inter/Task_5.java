@@ -1,4 +1,4 @@
-package com.javaguru.student_maksim_morozov.level_1_inter;
+package com.javaguru.student_maksim_morozov.lesson_5.level_1_inter;
 
 class ArrayDefinition5 {
 
