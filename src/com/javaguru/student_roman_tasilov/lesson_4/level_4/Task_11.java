@@ -38,11 +38,14 @@ class Calculator {
     public boolean isEven(int number)
     { return (number % 2 == 0); }
 
-public int greatestOfTwoNumbers(int firstNumber, int secondNumber) {
+public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
         return firstNumber & secondNumber;}
+        public int maxThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
+        return firstNumber & secondNumber & thirdNumber;}
+        }
 
 
-}
+
 
 
 

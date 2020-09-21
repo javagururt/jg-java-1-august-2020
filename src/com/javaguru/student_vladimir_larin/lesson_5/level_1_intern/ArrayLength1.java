@@ -1,9 +1,9 @@
-package com.javaguru.student_maksim_morozov.level_1_inter;
+package com.javaguru.student_vladimir_larin.lesson_5.level_1_intern;
 
 class ArrayLength1 {
 
     public static void main(String[] args) {
-        int [] numbers = new int[2];
+        int[] numbers = new int[2];
         System.out.println(numbers[1]);
     }
 
