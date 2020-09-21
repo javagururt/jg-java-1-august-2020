@@ -45,7 +45,7 @@ class InsurancePolicyPremiumCalculator {
         } else if (insuranceType == InsuranceType.THEFT) {
             insurancePrice = allSubObjectsPriceSum * theftCoefficient;
         } else if (insuranceType == InsuranceType.FULL) {
-            insurancePrice = allSubObjectsPriceSum * fireCoefficient + allSubObjectsPriceSum * theftCoefficient;
+            insurancePrice = allSubObjectsPriceSum * (fireCoefficient + theftCoefficient);
         }
 
         return insurancePrice;
