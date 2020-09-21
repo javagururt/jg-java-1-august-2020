@@ -1,7 +1,9 @@
 package com.javaguru.student_ivan_shulga.lesson_4.level_6_middle;
 
-// при случае самому ещё раз рассмотреть код с нуля
+import com.javaguru.teacher.codereview.CodeReview;
 
+// при случае самому ещё раз рассмотреть код с нуля
+@CodeReview(approved = true)
     class Stock {
 
         String companyName;

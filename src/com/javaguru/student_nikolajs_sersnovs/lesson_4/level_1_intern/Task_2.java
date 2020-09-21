@@ -4,8 +4,9 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_1_intern;
 целое число и выводит на консоль
 положительное оно, отрицательное или равно нулю.
  */
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
-
+@CodeReview(approved = true)
 class Task_2 {
 
     public static void main(String[] args) {

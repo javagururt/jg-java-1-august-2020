@@ -1,5 +1,6 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
 /*
@@ -9,6 +10,7 @@ import java.util.Scanner;
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива.
  */
+@CodeReview(approved = true)
 class Array2 {
     public static void main(String[] args) {
 

@@ -1,6 +1,10 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "тесты написаны некорректно. Тесты не проверяют методы в калькуляторе, а лишь отдельную логику (написанную в тесте)")
 class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();

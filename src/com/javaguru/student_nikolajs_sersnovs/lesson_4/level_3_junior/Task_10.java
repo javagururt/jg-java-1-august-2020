@@ -3,8 +3,10 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_3_junior;
 Написать программу, которая запрашивает у пользователя
 три целых числа и выводит на консоль наибольшее из них.
  */
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

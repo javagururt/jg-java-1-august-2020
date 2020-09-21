@@ -6,8 +6,10 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_1_intern;
 положительное оно или отрицательное.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,4 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_2_intern;
+
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 Написать программу, в которой:
  - создать массив целых чисел длиной 3,
@@ -12,6 +16,8 @@ package com.javaguru.student_igors_jurkovs.lesson_5.level_2_intern;
  - вывести значение каждой ячейки на консоль.
 
  */
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "удобнее использовать Random")
 class Array {
     public static void main(String[] args) {
 

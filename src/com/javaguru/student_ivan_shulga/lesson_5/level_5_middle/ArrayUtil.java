@@ -2,8 +2,9 @@ package com.javaguru.student_ivan_shulga.lesson_5.level_5_middle;
 
 // Здесь задания lesson_5 - level_5_middle и level_6_middle
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Random;
-
+@CodeReview(approved = true)
 class ArrayUtil {
 
     public int[] createArray(int arrayLength) {

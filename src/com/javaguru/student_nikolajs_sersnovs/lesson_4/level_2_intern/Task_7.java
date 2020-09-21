@@ -6,8 +6,10 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_2_intern;
 - "Numbers are different" - если числа не равны
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

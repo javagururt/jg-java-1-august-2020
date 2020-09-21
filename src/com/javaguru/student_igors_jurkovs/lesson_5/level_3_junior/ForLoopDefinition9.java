@@ -5,7 +5,9 @@ package com.javaguru.student_igors_jurkovs.lesson_5.level_3_junior;
 выводила на консоль числа от 0 до 100:
 */
 
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class ForLoopDefinition9 {
 
     public static void main(String[] args) {

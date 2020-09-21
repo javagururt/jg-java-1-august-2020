@@ -1,5 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 import java.time.MonthDay;
 import java.util.Scanner;
 
@@ -8,6 +10,8 @@ import java.util.Scanner;
 целое число от 1 до 7 и выводит на консоль соотметствующий
 этому числу день недели.
  */
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "лучше использовать else в том числе. Так как программа проверит каждое условие, а это неэффективно")
 class Task_3 {
 
     public static void main(String[] args) {

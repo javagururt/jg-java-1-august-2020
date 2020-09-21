@@ -1,5 +1,10 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_5_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "для того, чтобы в условии указать 'И' необходимо использовать '&&'")
 class LightColorDetector {
 
 
