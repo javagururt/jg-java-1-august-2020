@@ -13,7 +13,7 @@ class InsurancePolicyPremiumCalculatorTest {
 //        List<InsuranceSubObject> subObjects = new ArrayList<>();
 //        subObjects.add(subObject1);
 //        subObjects.add(subObject2);
-
+//
 //        InsuranceObject insuranceObject = new InsuranceObject("Home", subObjects);
 //        List<InsuranceObject> insuranceObjects = new ArrayList<>();
 //        insuranceObjects.add(insuranceObject);
