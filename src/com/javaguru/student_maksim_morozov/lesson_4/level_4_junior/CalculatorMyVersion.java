@@ -1,7 +1,6 @@
 package com.javaguru.student_maksim_morozov.lesson_4.level_4_junior;
 
 import java.util.Scanner;
-
 class CalculatorMyVersion {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {

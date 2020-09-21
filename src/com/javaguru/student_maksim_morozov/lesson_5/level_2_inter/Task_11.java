@@ -1,7 +1,8 @@
 package com.javaguru.student_maksim_morozov.lesson_5.level_2_inter;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
-
+@CodeReview(approved = true)
 class Task_11 {
     public static void main(String[] args) {
         int [] number = new int[3];

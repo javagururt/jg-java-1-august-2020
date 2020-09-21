@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_5_and_6_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 import java.util.Arrays;
 
 /*
@@ -11,6 +13,7 @@ import java.util.Arrays;
 Создайте в классе ArrayUtil метод для
 заполнения массива целых чисел случайными числами.
  */
+@CodeReview(approved = true)
 class ArrayUtil {
 
     int[] createArray(int arrayLength) {
@@ -81,6 +84,7 @@ class ArrayUtil {
         return isLesser;
     }
 
+    @CodeReviewComment(teacher = "если массив создавался как int, то там не может быть null")
     boolean testWithLoopToCheckIsArrayFull(int[] array) {
         boolean empty = false;
         for (Integer ar : array) {

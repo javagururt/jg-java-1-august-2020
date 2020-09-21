@@ -1,11 +1,13 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
 /*
 Написать программу, которая запрашивает у пользователя
 целое число и выводит на консоль чётное оно или нет.
  */
+@CodeReview(approved = true)
 class Task_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -7,8 +7,10 @@ package com.javaguru.student_igors_jurkovs.lesson_5.level_4_junior;
 - найдите наибольшее число в массиве и выведети его на консоль.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Arrays;
 
+@CodeReview(approved = true)
 class MaxFromArray {
     public static void main(String[] args) {
         int index = (int) (Math.random() * 100);

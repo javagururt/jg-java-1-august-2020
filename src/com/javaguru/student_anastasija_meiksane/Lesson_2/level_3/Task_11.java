@@ -1,7 +1,9 @@
 package com.javaguru.student_anastasija_meiksane.Lesson_2.level_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_11 {
 
 

@@ -1,7 +1,8 @@
 package com.javaguru.student_ivan_shulga.lesson_5.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Random;
-
+@CodeReview(approved = true)
 class Task_30 {
 
     public static void main(String[] args) {

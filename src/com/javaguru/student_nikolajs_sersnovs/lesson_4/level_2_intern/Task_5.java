@@ -4,8 +4,10 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_2_intern;
 два целых числа и выводит на консоль наибольшее из них.
 Нельзя пользоваться классом Math, можно использовать только if else.
  */
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

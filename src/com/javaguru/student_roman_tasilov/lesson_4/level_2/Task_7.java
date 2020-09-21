@@ -4,8 +4,10 @@ package com.javaguru.student_roman_tasilov.lesson_4.level_2;
 - "Numbers are equals" - если числа равны
 - "Numbers are different" - если числа не равны*/
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_7 {
     public static void main(String[] args) {
         System.out.println("Please enter first number int: ");

@@ -1,5 +1,8 @@
 package com.javaguru.student_maksim_morozov.lesson_4.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Calculator {
     public int sum(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;

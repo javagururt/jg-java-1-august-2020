@@ -6,8 +6,10 @@ package com.javaguru.student_ivan_shulga.lesson_3.level_6;
 Менять можно только класс BankAccount.
 */
 
-// !!! В данный момент смог решить задачу только меняя оба класса, изменения отмечены!!!
+import com.javaguru.teacher.codereview.CodeReview;
 
+// !!! В данный момент смог решить задачу только меняя оба класса, изменения отмечены!!!
+@CodeReview(approved = true)
 class BankAccount {
 
     private String owner;
@@ -27,7 +29,7 @@ class BankAccount {
     }
 
 }
-
+@CodeReview(approved = true)
 class BankAccountDemo {
 
     public static void main(String[] args) {

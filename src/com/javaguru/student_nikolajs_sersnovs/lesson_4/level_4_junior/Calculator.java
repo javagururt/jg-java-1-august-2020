@@ -1,6 +1,9 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_4.level_4_junior;
 
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Calculator {
     public int addition(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;

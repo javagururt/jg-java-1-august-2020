@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_5_and_6_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayUtilTest {
 
     private final int length = 10;
@@ -18,15 +21,23 @@ class ArrayUtilTest {
 
     }
 
-    void createArrayTest() {
-        arrayUtil.test(isArrayCreated(), "Array creation");
-    }
-
     void fillArrayWithRandomNumbersTest() {
         arrayUtil.fillArrayWithRandomNumbers(array);
         arrayUtil.test(arrayUtil.testWithLoopToCheckIsArrayFull(array), "Array is filled with number");
 
     }
+
+    void findMinNumberTest() {
+        int result = arrayUtil.findMinNumber(array);
+        arrayUtil.test(!(arrayUtil.testWithLoopToFindMin(array, result)), "Find min number");
+
+    }
+
+    void createArrayTest() {
+        arrayUtil.test(isArrayCreated(), "Array creation");
+    }
+
+
 
     void printArrayToConsoleTest() {
         arrayUtil.printArrayToConsole(array);
@@ -37,11 +48,7 @@ class ArrayUtilTest {
         arrayUtil.test(!(arrayUtil.testWithLoopToFindMax(array, result)), "Find max number");
     }
 
-    void findMinNumberTest() {
-        int result = arrayUtil.findMinNumber(array);
-        arrayUtil.test(!(arrayUtil.testWithLoopToFindMin(array, result)), "Find min number");
 
-    }
 
     boolean isArrayCreated() {
         return array.length == length;

@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class OddNumberArray {
     public static void main(String[] args) {
         int index = (int) (Math.random() * 10);

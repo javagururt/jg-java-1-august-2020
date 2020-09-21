@@ -1,5 +1,6 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
 /*
@@ -9,6 +10,7 @@ import java.util.Scanner;
  - вывести значение каждой ячейки на консоль.
 
  */
+@CodeReview(approved = true)
 class Array2 {
     public static void main(String[] args) {
         int number[] = new int[3];
