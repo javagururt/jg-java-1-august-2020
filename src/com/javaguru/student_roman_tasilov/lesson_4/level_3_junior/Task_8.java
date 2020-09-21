@@ -4,8 +4,13 @@ package com.javaguru.student_roman_tasilov.lesson_4.level_3_junior;
 - "All numbers are different" if all three numbers are different
 - "Neither all are equal or different" otherwise.*/
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "лучше упростить условия, иначе сложно понять")
 public class Task_8 {
     public static void main(String[] args) {
         System.out.println("Please enter first number int: ");

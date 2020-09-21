@@ -7,9 +7,12 @@
  */
 package com.javaguru.student_sergey_kazyanin.lesson_5.level_4_junior.Task_26;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class ArrayRandomWithUserSize {
     public static void main(String[] args) {
         System.out.print("Введите размер целочисленного массива: ");

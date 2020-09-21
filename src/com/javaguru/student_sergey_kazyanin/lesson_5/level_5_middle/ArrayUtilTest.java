@@ -25,6 +25,9 @@ Task_34
  */
 package com.javaguru.student_sergey_kazyanin.lesson_5.level_5_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayUtilTest {
 
     public static void main(String[] args) {

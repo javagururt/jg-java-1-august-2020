@@ -9,8 +9,11 @@
  */
 package com.javaguru.student_sergey_kazyanin.lesson_5.level_2_intern.Task_15;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
+@CodeReview(approved = true)
 class IntArrayIncrease {
 
     public static void main(String[] args) {

@@ -1,5 +1,8 @@
 package com.javaguru.student_roman_tasilov.lesson_4.level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
 /* Создайте класс Calculator. В этом классе создайте методы
@@ -18,7 +21,10 @@ class Calculator {
 }
 
  */
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "maxOf* реализованы неверно")
  class Calculator {
+
     public int sum(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
     }

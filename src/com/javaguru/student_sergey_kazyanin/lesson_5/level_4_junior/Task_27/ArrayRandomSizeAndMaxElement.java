@@ -7,8 +7,11 @@
  */
 package com.javaguru.student_sergey_kazyanin.lesson_5.level_4_junior.Task_27;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
+@CodeReview(approved = true)
 class ArrayRandomSizeAndMaxElement {
 
     public static void main(String[] args) {

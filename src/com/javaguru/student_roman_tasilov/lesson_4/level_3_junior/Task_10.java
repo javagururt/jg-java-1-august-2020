@@ -7,8 +7,13 @@ PS: перед решением этой задачи распишите на б
 Это поможет вам правильно написать программу!
 Нельзя пользоваться классом Math.*/
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "можно упростить условия")
 public class Task_10 {
     public static void main(String[] args) {
         System.out.println("Please enter first number int: ");
@@ -26,7 +31,8 @@ public class Task_10 {
         }
         else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
             System.out.println(secondNumber);}
-        else if (thirdNumber >= firstNumber && thirdNumber >= secondNumber) {
+        else {
             System.out.println(thirdNumber);
-        }}
+        }
+    }
 }

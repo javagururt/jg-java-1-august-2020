@@ -7,8 +7,11 @@
  */
 package com.javaguru.student_sergey_kazyanin.lesson_5.level_2_intern.Task_11;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class IntArrayUserInput {
 
     public static void main(String[] args) {

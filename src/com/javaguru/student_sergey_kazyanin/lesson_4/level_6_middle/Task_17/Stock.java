@@ -54,6 +54,9 @@ Company = "GOOG", Current Price = 14, Min Price = 7, Max Price = 15
  */
 package com.javaguru.student_sergey_kazyanin.lesson_4.level_6_middle.Task_17;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Stock {
     private String companyName;
     private int currentPrice;
