@@ -7,6 +7,7 @@ package com.javaguru.student_vadim_migun.lesson_5.level_4_junior;
 - распечатайте на консоль все элементы массива.
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 class ArrayFromUser {
@@ -26,9 +27,11 @@ class ArrayFromUser {
         }
         System.out.println();
 
-        for (int j : numbers) {         //   for (int j=0; j<numbers.length; j++) {
-            System.out.println(j);
-        }
+     //   for (int j : numbers) {
+     //   for (int j=0; j<numbers.length; j++) {
+
+        System.out.println(Arrays.toString(numbers));
+
 
     }
 }
