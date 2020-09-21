@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_5.level_5_middle;
+package com.javaguru.student_vadim_migun.lesson_5.level_5_6_middle;
 /*
 Создайте класс ArrayUtilTest.
 В этом классе напишите автоматический тест
@@ -19,7 +19,6 @@ class ArrayUtilTest {
 }
  */
 
-import javax.crypto.MacSpi;
 import java.util.Arrays;
 
 class ArrayUtilTest {
@@ -27,6 +26,9 @@ class ArrayUtilTest {
         ArrayUtilTest test = new ArrayUtilTest();
         test.shouldCreateArray();
         test.shouldFillArrayWithRandomNumbers();
+        test.printArrayToConsoleTest();
+        test.shouldFindMaxNumber();
+        test.shouldFindMinNumber();
 
 
     }
@@ -79,11 +81,13 @@ class ArrayUtilTest {
         }
         System.out.println();
     }
-/*
+
     public void printArrayToConsoleTest() {
         ArrayUtil arrayUtil = new ArrayUtil();
-        int [] array = arrayUtil.createArray(length);
+        int [] array = arrayUtil.createArray(3);
         arrayUtil.printArrayToConsole(array);
+        System.out.println(Arrays.toString(array));
+        System.out.println();
     }
 
     /*
@@ -92,12 +96,53 @@ class ArrayUtilTest {
     из предыдущего задания.
 
     */
- /*   public void shouldFindMaxNumber() {
-        ArrayUtil arrayUtil = new ArrayUtil();
-        int [] array = new int [arrayNumbers];
 
+    public void shouldFindMaxNumber() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int [] arrayNew = new int [7];
+        arrayUtil.fillArrayWithRandomNumbers(arrayNew);
+        System.out.println(Arrays.toString(arrayNew));
+        int maxNumberTest = arrayNew[0];
+        for (int i = 0; i < arrayNew.length; i++) {
+            if (maxNumberTest > arrayNew[i]) {
+                maxNumberTest = arrayNew[i];
+            }
+        }
+        System.out.println(maxNumberTest);
+
+            int maxNumber = arrayUtil.findMaxNumber(arrayNew);
+        System.out.println(maxNumber);
+            System.out.println("Max number test:");
+            if (maxNumber == maxNumberTest) {
+                System.out.println("Test - OK");
+            } else {
+                System.out.println("Test - FAIL");
+            }
+        System.out.println();
     }
-*/
+
+    public void shouldFindMinNumber() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int [] arrayNew = new int [7];
+        arrayUtil.fillArrayWithRandomNumbers(arrayNew);
+        System.out.println(Arrays.toString(arrayNew));
+        int minNumberTest = arrayNew[0];
+        for (int i = 0; i < arrayNew.length; i++) {
+            if (minNumberTest < arrayNew[i]) {
+                minNumberTest = arrayNew[i];
+            }
+        }
+        System.out.println(minNumberTest);
+
+        int minNumber = arrayUtil.findMinNumber(arrayNew);
+        System.out.println(minNumber);
+        System.out.println("Min number test:");
+        if (minNumber == minNumberTest) {
+            System.out.println("Test - OK");
+        } else {
+            System.out.println("Test - FAIL");
+        }
+    }
 
 
 }

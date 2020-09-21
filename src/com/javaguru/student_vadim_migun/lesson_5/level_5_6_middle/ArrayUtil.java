@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_5.level_5_middle;
+package com.javaguru.student_vadim_migun.lesson_5.level_5_6_middle;
 /*
 Создайте класс ArrayUtil.
 Создайте в этом классе метод для создания
@@ -33,12 +33,10 @@ class ArrayUtil {
  */
 
     public int[] fillArrayWithRandomNumbers(int [] array) {
-  //      int[] arrayTwo = new int[4];
-
         Random randomNumbers = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = randomNumbers.nextInt(50);
-            System.out.println("Random numbers " + i + " = " + array[i]);
+            array[i] = randomNumbers.nextInt(20);
+//            System.out.println("Random numbers (из метода) [" + i + "] = " + array[i]);
         }
         return array;
     }
@@ -54,7 +52,7 @@ class ArrayUtil {
 
     public void printArrayToConsole(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.println("[" + i + "]" + array[i]);
+            System.out.println("[" + i + "]" + " - " + array[i]);
 
         }
     }
