@@ -21,22 +21,35 @@ class Calculator {
         return firstNumber / secondNumber;
     }
 
-
     public boolean isEven(int number) {
         return (number % 2 == 0);
     }
 
     public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        return firstNumber & secondNumber;
+        if (firstNumber > secondNumber) {
+            return firstNumber;
+        } else if (secondNumber > firstNumber) {
+            return secondNumber;
+        } else {
+            return firstNumber & secondNumber;
+        }
     }
 
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        return firstNumber & secondNumber & thirdNumber;
+        if (firstNumber >= secondNumber && firstNumber > thirdNumber) {
+            return firstNumber;
+        } else if (secondNumber >= firstNumber && secondNumber > thirdNumber) {
+            return secondNumber;
+        } else if (thirdNumber >= firstNumber && thirdNumber > secondNumber) {
+            return thirdNumber;
+        }  else {
+            return firstNumber & secondNumber & thirdNumber;
 
+        }
     }
-
-
 }
+
+
 
 
 
