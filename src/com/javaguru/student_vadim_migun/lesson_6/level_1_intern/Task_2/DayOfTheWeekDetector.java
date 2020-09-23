@@ -41,9 +41,6 @@ class DayOfTheWeekDetector {
         } else {
             System.out.println("Please input a valid number between 1 and 7");
         }
-
         return null;
     }
-
-
 }

@@ -5,6 +5,7 @@ package com.javaguru.student_vadim_migun.lesson_6.level_1_intern.Task_2;
  */
 
 class DayOfTheWeekDetectorTest {
+
     public static void main(String[] args) {
 
         DayOfTheWeekDetectorTest test = new DayOfTheWeekDetectorTest();
@@ -89,7 +90,5 @@ class DayOfTheWeekDetectorTest {
             System.out.println("Test - FALSE");
         }
     }
-
-
 }
 
