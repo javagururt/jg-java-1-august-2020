@@ -21,6 +21,18 @@ class CarParkFuelCalculator {
 //        System.out.println("Empty space for trucks fuel is: " + allTrucksFreeSpaceForFuel(carPark));
     }
 
+    double calculateCarDistanceForCurrentFuel(CarPark carPark, int carIndex) {
+        double distance = carPark.getAllCars().get(carIndex).currentFuel / Car.CAR_FUEL_CONSUMPTION;
+
+        return distance;
+    }
+
+    double calculateTruckDistanceForCurrentFuel(CarPark carPark, int truckIndex) {
+        double distance = carPark.getAllTrucks().get(truckIndex).currentFuel / Truck.TRUCK_FUEL_CONSUMPTION;
+
+        return distance;
+    }
+
     double allCarsCurrentFuel(CarPark carPark) {
         double currentFuel = 0;
         for (Car car: carPark.getAllCars()) {
