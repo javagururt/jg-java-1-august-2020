@@ -1,6 +1,6 @@
-package com.javaguru.student_anastasija_meiksane.lesson_3;
+package com.javaguru.student_anastasija_meiksane.lesson_3.level_1;
 
- public class Robot {
+public class Robot {
 
      public static void main(String[] args) {
 

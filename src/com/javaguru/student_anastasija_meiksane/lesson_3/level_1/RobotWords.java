@@ -1,4 +1,4 @@
-package com.javaguru.student_anastasija_meiksane.lesson_3;
+package com.javaguru.student_anastasija_meiksane.lesson_3.level_1;
 
 public class RobotWords {
 
