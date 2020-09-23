@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_jurkovs.personal.autopark;
+package com.javaguru.student_igors_jurkovs.personal.CarPark;
 
 import java.util.ArrayList;
 import java.util.List;
