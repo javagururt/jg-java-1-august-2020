@@ -1,12 +1,8 @@
 package com.javaguru.student_igors_jurkovs.personal.CarPark;
 
-class Truck {
-
-    double maxFuel;
-    double currentFuel;
+class Truck extends Car {
 
     Truck(double maxFuel, double currentFuel) {
-        this.maxFuel = maxFuel;
-        this.currentFuel = currentFuel;
+        super(maxFuel, currentFuel);
     }
 }
