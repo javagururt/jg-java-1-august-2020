@@ -9,14 +9,14 @@ import java.util.Scanner;
 class UserMenu {
 
     Scanner scanner = new Scanner(System.in);
+    InsuranceType insuranceTypeChoice = null;
+    List<InsuranceObject> insuranceObjects = new ArrayList<>();
+    List<InsuranceSubObject> subObjects = new ArrayList<>();
+    String userChoice;
 
     InsuranceType insuranceTypeChoice() {
-        InsuranceType insuranceTypeChoice = null;
+        printMenu();
         do {
-            System.out.println("Please enter insurance type:");
-            System.out.println("1. Fire insurance only.");
-            System.out.println("2. Theft insurance only.");
-            System.out.println("3. Fire and theft insurance.");
             int userChoice = scanner.nextInt();
             if (userChoice == 1) {
                 insuranceTypeChoice = InsuranceType.FIRE;
@@ -25,16 +25,16 @@ class UserMenu {
             } else if (userChoice == 3) {
                 insuranceTypeChoice = InsuranceType.FULL;
             }
-        } while (!Objects.equals(insuranceTypeChoice, InsuranceType.FULL) && !Objects.equals(insuranceTypeChoice, InsuranceType.FIRE) && !Objects.equals(insuranceTypeChoice, InsuranceType.THEFT));
+        } while (isUserEnteredValidType());
+
         return insuranceTypeChoice;
     }
 
     List<InsuranceObject> insuranceObjects() {
-        List<InsuranceObject> insuranceObjects = new ArrayList<>();
         String userChoice;
         System.out.println("Type 'YES' if you want to insure home, flat, car etc: ");
         userChoice = scanner.next();
-        while(userChoice.equals("YES")) {
+        while (userChoice.equals("YES")) {
             System.out.println("First enter name of the object:");
             String objectName = scanner.next();
             InsuranceObject insuranceObject = new InsuranceObject(objectName, subObjects());
@@ -46,16 +46,13 @@ class UserMenu {
             }
         }
 
-
         return insuranceObjects;
     }
 
     List<InsuranceSubObject> subObjects() {
-        List<InsuranceSubObject> subObjects = new ArrayList<>();
-        String userChoice;
         System.out.println("Type 'YES' if you want to add items you want to insure: ");
         userChoice = scanner.next();
-        while(userChoice.equals("YES")) {
+        while (isUsersAnswerIsYes()) {
             System.out.println("First enter name of the item:");
             String subObjectName = scanner.next();
             System.out.println("Now enter price of the items:");
@@ -64,12 +61,27 @@ class UserMenu {
             subObjects.add(subObject);
             System.out.println("Type 'YES' if you want to add something to sub object insurance");
             userChoice = scanner.next();
-            if (!(userChoice.equals("YES"))) {
+            if (!isUsersAnswerIsYes()) {
                 break;
             }
         }
 
         return subObjects;
+    }
+
+    void printMenu() {
+        System.out.println("Please enter insurance type:");
+        System.out.println("1. Fire insurance only.");
+        System.out.println("2. Theft insurance only.");
+        System.out.println("3. Fire and theft insurance.");
+    }
+
+    boolean isUserEnteredValidType() {
+        return !Objects.equals(insuranceTypeChoice, InsuranceType.FULL) && !Objects.equals(insuranceTypeChoice, InsuranceType.FIRE) && !Objects.equals(insuranceTypeChoice, InsuranceType.THEFT);
+    }
+
+    boolean isUsersAnswerIsYes() {
+        return userChoice.equals("YES");
     }
 
 }
