@@ -5,19 +5,19 @@ import com.javaguru.teacher.codereview.CodeReviewComment;
 class Game {
     public static final int MAX_ROLLS = 21;
     @CodeReviewComment(teacher = "java style: int[] array = new int[size];")
-    int roll[] = new int [MAX_ROLLS];
+    int[] roll = new int [MAX_ROLLS];
     int currentRoll = 0;
+    int score = 0;
+    int rollNumber = 0;
 
     @CodeReviewComment(teacher = "лучше разделить на несколько строк. Запись с count++ в качестве индекса немного может сбивать с толку")
     @CodeReviewComment(teacher = "имеет смысл добавить доп проверки на некорректные данные")
     void roll(int pins) {
-        roll[currentRoll++] = pins;
+        roll[currentRoll] = pins;
+        currentRoll++;
     }
 
     int score() {
-        int score = 0;
-        int rollNumber = 0;
-
         for (int frame = 0; frame < 10; frame++) {
             if (isStrike(rollNumber)) {
                 score += 10 + strikeBonus(rollNumber);
@@ -30,6 +30,7 @@ class Game {
                 rollNumber += 2;
             }
         }
+
         return score;
     }
     boolean isStrike (int rollNumber) {
