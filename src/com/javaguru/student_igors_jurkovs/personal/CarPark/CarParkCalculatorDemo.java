@@ -35,6 +35,10 @@ class CarParkCalculatorDemo {
         System.out.println(carParkFuelCalculator.calculateFuel(carPark, VehicleType.TRUCK, FuelInformationType.CURRENT));
         System.out.println(carParkFuelCalculator.calculateFuel(carPark, VehicleType.CAR, FuelInformationType.EMPTY));
         System.out.println(carParkFuelCalculator.calculateFuel(carPark, VehicleType.TRUCK, FuelInformationType.EMPTY));
+        System.out.println();
+        System.out.println(carParkFuelCalculator.calculateCarDistanceForCurrentFuel(carPark, 1));
+        System.out.println();
+        System.out.println(carParkFuelCalculator.calculateTruckDistanceForCurrentFuel(carPark, 4));
 
     }
 }
