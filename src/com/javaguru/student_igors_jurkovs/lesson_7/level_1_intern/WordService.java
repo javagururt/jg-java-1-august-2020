@@ -2,21 +2,29 @@ package com.javaguru.student_igors_jurkovs.lesson_7.level_1_intern;
 
 class WordService {
 
-    String findMostFrequentWord(String text) {
-        String[] parts = formattedText(text).split(" ");
-        return parts[findMostFrequentWordIndex(howManyTimesEachWordRepeated(text))];
+    String text;
+
+    WordService(String text) {
+        this.text = text;
     }
 
-    String formattedText(String text) {
+    String findMostFrequentWord() {
+        return splitFormattedTextOnWords()[mostFrequentWordIndex()];
+    }
+
+    String formattedText() {
         return text.toLowerCase().replaceAll(",", "").replaceAll("\\.", "");
     }
 
-    int[] howManyTimesEachWordRepeated(String text) {
-        String[] parts = formattedText(text).split(" ");
-        int[] wordCount = new int[parts.length];
-        for (int i = 0; i < parts.length; i++) {
-            for (String str: parts) {
-                if (str.equals(parts[i])) {
+    String[] splitFormattedTextOnWords() {
+        return formattedText().split(" ");
+    }
+
+    int[] howManyTimesEachWordRepeated() {
+        int[] wordCount = new int[splitFormattedTextOnWords().length];
+        for (int i = 0; i < splitFormattedTextOnWords().length; i++) {
+            for (String str: splitFormattedTextOnWords()) {
+                if (str.equals(splitFormattedTextOnWords()[i])) {
                     wordCount[i]++;
                 }
             }
@@ -24,12 +32,12 @@ class WordService {
         return wordCount;
     }
 
-    int findMostFrequentWordIndex(int[] wordCount) {
+    int mostFrequentWordIndex() {
         int max = 0;
         int indexMax = 0;
-        for (int i = 0; i < wordCount.length; i++) {
-            if (max < wordCount[i]) {
-                max = wordCount[i];
+        for (int i = 0; i < howManyTimesEachWordRepeated().length; i++) {
+            if (max < howManyTimesEachWordRepeated()[i]) {
+                max = howManyTimesEachWordRepeated()[i];
                 indexMax = i;
             }
         }
