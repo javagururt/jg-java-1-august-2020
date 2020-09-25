@@ -10,6 +10,7 @@ class TicTacToe {
         for (int[] ints : field) {
             Arrays.fill(ints, -1);
         }
+
         return field;
     }
 
@@ -19,14 +20,15 @@ class TicTacToe {
         int x = sc.nextInt() - 1;
         System.out.println("Chose Y coordinate for your move:");
         int y = sc.nextInt() - 1;
+
         return new Move(x, y);
 
     }
 
     void printFieldToConsole(int[][] field) {
-        System.out.println(Arrays.toString(field[0]));
-        System.out.println(Arrays.toString(field[1]));
-        System.out.println(Arrays.toString(field[2]));
+        for (int[] fi: field) {
+            System.out.println(Arrays.toString(fi));
+        }
         System.out.println();
     }
 

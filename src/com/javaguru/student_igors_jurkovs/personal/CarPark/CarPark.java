@@ -5,30 +5,51 @@ import java.util.List;
 
 class CarPark {
 
-    List<Car> cars;
-    List<Truck> trucks;
+    private List<Car> cars;
+    private List<Truck> trucks;
+    private List<Vehicle> vehicles;
 
     CarPark(List<Car> cars, List<Truck> trucks) {
         this.cars = cars;
         this.trucks = trucks;
+        this.vehicles = mergeAllVehicle(cars, trucks);
+    }
+
+    private List<Vehicle> mergeAllVehicle(List<Car> cars, List<Truck> trucks) {
+        List<Vehicle> vehicles = new ArrayList<>();
+
+        vehicles.addAll(cars);
+        vehicles.addAll(trucks);
+
+        return vehicles;
+    }
+
+    List<Vehicle> getAllVehicles() {
+        return vehicles;
     }
 
     List<Car> getAllCars() {
-        List<Car> allCars = new ArrayList<>();
-        for (Car car: cars) {
-            allCars.add(car);
-        }
-        return allCars;
-
+        return cars;
     }
 
     List<Truck> getAllTrucks() {
-        List<Truck> allTrucks = new ArrayList<>();
-        for (Truck truck: trucks) {
-            allTrucks.add(truck);
-        }
-        return allTrucks;
+        return trucks;
     }
 
+    Vehicle getVehicle(String registrationNumber) {
+        Vehicle vehicle = null;
+        for (Vehicle veh: vehicles) {
+            if (veh.getRegistrationNumber().equals(registrationNumber)) {
+                vehicle = veh;
+            }
+        }
 
+        return vehicle;
+    }
+
+    void printEachVehiclesRemainingDistance() {
+        for (Vehicle vehicle: vehicles) {
+            System.out.println(vehicle.calculateRemainingDistance());
+        }
+    }
 }
