@@ -5,7 +5,7 @@ class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
         calculatorTest.sumTest();
-        calculatorTest.substractTest();
+        calculatorTest.subtractTest();
         calculatorTest.divideTest();
         calculatorTest.multiplyTest();
         calculatorTest.isEvenTest();
@@ -33,15 +33,15 @@ class CalculatorTest {
         }
     }
 
-    public void substractTest() {
+    public void subtractTest() {
         int firstNumber = 10;
         int secondNumber = 5;
         Calculator calculator = new Calculator();
-        int result = calculator.substract(firstNumber, secondNumber);
+        int result = calculator.subtract(firstNumber, secondNumber);
         if (result == 5) {
-            System.out.println("Substract test = OK");
+            System.out.println("Subtract test = OK");
         } else {
-            System.out.println("Substract test = FAIL");
+            System.out.println("Subtract test = FAIL");
         }
     }
 
