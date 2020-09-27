@@ -1,4 +1,7 @@
 package com.javaguru.student_anastasija_meiksane.lesson_3.level_4;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 class Phone {
 
@@ -12,7 +15,7 @@ class Phone {
         return this.model;
     }
  */
-
+@CodeReview(approved = true)
     class Phone {
 
         private String model;

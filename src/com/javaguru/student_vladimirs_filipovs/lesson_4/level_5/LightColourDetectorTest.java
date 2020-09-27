@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_4.level_5;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class LightColourDetectorTest {
     public static void main(String[] args) {
         LightColourDetectorTest testRunner = new LightColourDetectorTest();

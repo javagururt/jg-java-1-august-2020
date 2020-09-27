@@ -1,7 +1,9 @@
 package com.javaguru.student_vladimir_larin.lesson_3.level_6;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 public class CircleDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

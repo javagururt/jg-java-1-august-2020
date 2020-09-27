@@ -1,5 +1,8 @@
 package com.javaguru.student_anastasija_meiksane.lesson_3.level_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class RobotDemo2 {
     public static void main(String[] args) {
         Robot2 robotGalina = new Robot2("Galina");

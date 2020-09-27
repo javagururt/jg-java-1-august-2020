@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class DayOfTheWeek {
     private final String[] daysOfTheWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 

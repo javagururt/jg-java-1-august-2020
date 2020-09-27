@@ -1,7 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_5_middle;
 
-import java.util.Arrays;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Arrays;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "имеет смысл подумать на вынесением дублирующегося кода в отдельный метод")
 class TicTacToe {
 
     private final int[][] field = new int[3][3];

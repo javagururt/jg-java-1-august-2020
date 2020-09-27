@@ -1,5 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
 /*
@@ -9,6 +11,7 @@ import java.util.Random;
 - распечатайте на консоль все элементы массива
 - найдите все нечётные числа в массиве и выведети их на консоль.
  */
+@CodeReview(approved = true)
 class Task_30 {
     public static void main(String[] args) {
         int[] array = new int[5];

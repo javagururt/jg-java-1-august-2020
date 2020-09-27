@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_5_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class TicTacToeTest {
 
     TicTacToe ticTacToe = new TicTacToe();

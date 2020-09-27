@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_5.level_2_intern;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Написать программу, в которой:
  - создать массив целых чисел длиной 3,
@@ -7,7 +10,7 @@ package com.javaguru.student_vadim_migun.lesson_5.level_2_intern;
  - увеличить значение каждой ячейки на 2,
  - вывести значение каждой ячейки на консоль.
  */
-
+@CodeReview(approved = true)
 class ArrayIncreaseByTwo {
     public static void main(String[] args) {
         int[] array = new int[3];

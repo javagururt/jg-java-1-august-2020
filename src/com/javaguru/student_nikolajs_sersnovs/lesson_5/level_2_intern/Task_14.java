@@ -1,5 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
 /*
@@ -9,6 +11,7 @@ import java.util.Random;
  - посчитать среднее значение и вывести его на консоль.
 
  */
+@CodeReview(approved = true)
 class Task_14 {
     public static void main(String[] args) {
         int [] array = new int[3];

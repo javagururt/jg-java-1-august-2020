@@ -1,8 +1,10 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_5.level_5_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Arrays;
 import java.util.Random;
-
+@CodeReview(approved = true)
 class ArrayUtil {
     public int[] createArray(int arrayLength) {
         int[] array = new int[arrayLength];

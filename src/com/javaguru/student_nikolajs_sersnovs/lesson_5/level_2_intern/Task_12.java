@@ -1,5 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
 /*
@@ -9,6 +11,7 @@ import java.util.Random;
  - вывести значение каждой ячейки на консоль.
 
  */
+@CodeReview(approved = true)
 class Task_12 {
 
     public static void main(String[] args) {

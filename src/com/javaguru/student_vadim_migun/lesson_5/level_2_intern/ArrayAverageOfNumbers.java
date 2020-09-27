@@ -1,5 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_5.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Написать программу, в которой:
  - создать массив целых чисел длиной 3,
@@ -7,7 +9,7 @@ package com.javaguru.student_vadim_migun.lesson_5.level_2_intern;
  - посчитать среднее значение и вывести его на консоль.
 
  */
-
+@CodeReview(approved = true)
 class ArrayAverageOfNumbers {
     public static void main(String[] args) {
 

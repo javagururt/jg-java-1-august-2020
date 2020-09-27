@@ -1,5 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_6.level_1_intern.Task_2;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -13,6 +15,7 @@ import java.util.Scanner;
 
  */
 
+@CodeReview(approved = true)
 class DayOfTheWeekDetector {
 
     String detectDayName(int number) {

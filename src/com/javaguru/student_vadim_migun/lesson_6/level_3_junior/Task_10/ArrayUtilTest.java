@@ -1,5 +1,10 @@
 package com.javaguru.student_vadim_migun.lesson_6.level_3_junior.Task_10;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "удаляйте неиспользованные переменные")
 public class ArrayUtilTest {
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();

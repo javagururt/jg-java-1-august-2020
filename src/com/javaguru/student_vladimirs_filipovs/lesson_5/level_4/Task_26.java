@@ -1,8 +1,10 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_5.level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 import java.util.Scanner;
-
+@CodeReview(approved = true)
 class Task_26 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

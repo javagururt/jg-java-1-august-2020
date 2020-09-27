@@ -1,7 +1,9 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_5.level_2;
 
-import java.util.Random;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Random;
+@CodeReview(approved = true)
 class Task_14 {
     public static void main(String[] args) {
         int[] numbrs = new int[3];
