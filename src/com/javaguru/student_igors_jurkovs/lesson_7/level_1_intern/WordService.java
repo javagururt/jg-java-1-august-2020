@@ -29,6 +29,7 @@ class WordService {
                 }
             }
         }
+
         return wordCount;
     }
 
@@ -41,8 +42,8 @@ class WordService {
                 indexMax = i;
             }
         }
-        return indexMax;
 
+        return indexMax;
     }
     void test(boolean condition, String action) {
         if (condition) {
@@ -51,5 +52,4 @@ class WordService {
             System.out.println(action + " test: FAILED");
         }
     }
-
 }
