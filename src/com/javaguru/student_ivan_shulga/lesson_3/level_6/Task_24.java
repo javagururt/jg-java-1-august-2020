@@ -1,5 +1,9 @@
 package com.javaguru.student_ivan_shulga.lesson_3.level_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 class Employee {
 
     String name;
@@ -7,6 +11,7 @@ class Employee {
     double salary;
     // ^^^ объявление переменных
 
+    @CodeReviewComment(teacher = "можно назвать сеттерами")
     public void employeeName(String employeeName) { name = employeeName; }
     // ^^^ Присвоение имени работника переменной name
 

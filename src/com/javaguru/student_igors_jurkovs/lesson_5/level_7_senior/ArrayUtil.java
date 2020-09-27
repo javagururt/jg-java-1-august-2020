@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_7_senior;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Arrays;
 
+@CodeReview(approved = true)
 class ArrayUtil {
 
     int[] createArray(int arrayLength) {

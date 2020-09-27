@@ -5,8 +5,10 @@ Write a Java program that accepts three numbers and prints:
 - "All numbers are different" if all three numbers are different
 - "Neither all are equal or different" otherwise.
  */
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

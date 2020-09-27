@@ -1,4 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_2_intern;
+
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 Написать программу, в которой:
  - создать массив целых чисел длиной 3,
@@ -6,6 +10,8 @@ package com.javaguru.student_igors_jurkovs.lesson_5.level_2_intern;
  - посчитать среднее значение и вывести его на консоль.
 
  */
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "лучше основываться на длине массива, а так же учесть, что среднее это дробное")
 class Array4 {
     public static void main(String[] args) {
 

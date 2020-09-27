@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Arrays;
 
+@CodeReview(approved = true)
 class MinFromArrayV2 {
     public static void main(String[] args) {
         int index = 5;

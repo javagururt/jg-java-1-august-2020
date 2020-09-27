@@ -5,8 +5,10 @@ Write a program that accepts three numbers from the user and prints:
 - "decreasing" if the numbers are in decreasing order,
 - "Neither increasing or decreasing order" otherwise.
  */
+import com.javaguru.teacher.codereview.CodeReview;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class Task_9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

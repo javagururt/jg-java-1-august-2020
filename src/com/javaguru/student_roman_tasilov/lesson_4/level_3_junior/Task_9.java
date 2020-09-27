@@ -4,8 +4,11 @@ package com.javaguru.student_roman_tasilov.lesson_4.level_3_junior;
 - "decreasing" if the numbers are in decreasing order,
 - "Neither increasing or decreasing order" otherwise.*/
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_9 {
     public static void main(String[] args) {
         System.out.println("Please enter first number int: ");
@@ -18,13 +21,13 @@ public class Task_9 {
         Scanner scThird = new Scanner(System.in);
         int thirdNumber = scThird.nextInt();
 
-        if (firstNumber == secondNumber && secondNumber== thirdNumber) {
-            System.out.println("All numbers are equal");
+        if (firstNumber < secondNumber && secondNumber < thirdNumber) {
+            System.out.println("Increasing");
         }
-        else if (secondNumber != firstNumber && firstNumber != thirdNumber && secondNumber != thirdNumber) {
-            System.out.println("All numbers are different");}
-        else if ((firstNumber == secondNumber || secondNumber == thirdNumber || firstNumber == thirdNumber)
-                || secondNumber != firstNumber && firstNumber != thirdNumber && secondNumber != thirdNumber ) {
-            System.out.println("Neither all are equal or different");
+        else if (firstNumber > secondNumber && secondNumber > thirdNumber) {
+            System.out.println("Decreasing");}
+        else  {
+            System.out.println("Neither increasing or decreasing order");
         }}
 }
+

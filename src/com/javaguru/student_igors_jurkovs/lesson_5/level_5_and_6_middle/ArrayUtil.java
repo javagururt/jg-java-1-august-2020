@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_5.level_5_and_6_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 import java.util.Arrays;
 
 /*
@@ -11,6 +13,7 @@ import java.util.Arrays;
 Создайте в классе ArrayUtil метод для
 заполнения массива целых чисел случайными числами.
  */
+@CodeReview(approved = true)
 class ArrayUtil {
 
     int[] createArray(int arrayLength) {
@@ -81,6 +84,7 @@ class ArrayUtil {
         return isLesser;
     }
 
+    @CodeReviewComment(teacher = "если массив создавался как int, то там не может быть null")
     boolean testWithLoopToCheckIsArrayFull(int[] array) {
         boolean empty = false;
         for (Integer ar : array) {
@@ -105,50 +109,3 @@ class ArrayUtil {
 из предыдущего задания.
  */
 
-class ArrayUtilTest {
-
-    private final int length = 10;
-    private final ArrayUtil arrayUtil = new ArrayUtil();
-    private final int[] array = arrayUtil.createArray(length);
-
-    public static void main(String[] args) {
-
-
-        ArrayUtilTest createArrayTest = new ArrayUtilTest();
-        createArrayTest.createArrayTest();
-        createArrayTest.fillArrayWithRandomNumbersTest();
-        createArrayTest.printArrayToConsoleTest();
-        createArrayTest.findMaxNumberTest();
-        createArrayTest.findMinNumberTest();
-
-    }
-
-    void createArrayTest() {
-        arrayUtil.test(isArrayCreated(), "Array creation");
-    }
-
-    void fillArrayWithRandomNumbersTest() {
-        arrayUtil.fillArrayWithRandomNumbers(array);
-        arrayUtil.test(arrayUtil.testWithLoopToCheckIsArrayFull(array), "Array is filled with number");
-
-    }
-
-    void printArrayToConsoleTest() {
-        arrayUtil.printArrayToConsole(array);
-    }
-
-    void findMaxNumberTest() {
-        int result = arrayUtil.findMaxNumber(array);
-        arrayUtil.test(!(arrayUtil.testWithLoopToFindMax(array, result)), "Find max number");
-    }
-
-    void findMinNumberTest() {
-        int result = arrayUtil.findMinNumber(array);
-        arrayUtil.test(!(arrayUtil.testWithLoopToFindMin(array, result)), "Fin min number");
-
-    }
-
-    boolean isArrayCreated() {
-        return array.length == length;
-    }
-}

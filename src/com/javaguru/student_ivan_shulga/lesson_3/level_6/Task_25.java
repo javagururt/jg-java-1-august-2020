@@ -1,8 +1,11 @@
 package com.javaguru.student_ivan_shulga.lesson_3.level_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 import java.util.Scanner;
 
 // по мотивам lesson_2 - level_3 - Task_10
+@CodeReview(approved = true)
 class Circle {
 
     double radius;
@@ -12,6 +15,7 @@ class Circle {
 
     public double calculateArea() { return pi * (radius * radius); }
 
+    @CodeReviewComment(teacher = "можно заполнить метод выводом на консоль")
     public void print () {
 
     }
