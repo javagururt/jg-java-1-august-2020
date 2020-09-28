@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_4.level_7;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class FizzBuzz {
     public String detect(int number) {
         if ((number % 3 == 0) && (number % 5 == 0)) {

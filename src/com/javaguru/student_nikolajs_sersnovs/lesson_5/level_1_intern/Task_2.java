@@ -8,6 +8,9 @@ class ArrayDefinition2 {
         int numbers = new byte[10];
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayDefinition2 {
 
     public static void main(String[] args) {

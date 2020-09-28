@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_5.level_3_junior;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Найдите ошибку в программе и исправить её:
 
@@ -12,7 +15,7 @@ class ForLoopDefinition1 {
 
 }
  */
-
+@CodeReview(approved = true)
 class ForLoopDefinition1 {
 
     public static void main(String[] args) {

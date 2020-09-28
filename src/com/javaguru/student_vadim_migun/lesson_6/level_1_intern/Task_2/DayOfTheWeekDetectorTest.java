@@ -1,9 +1,12 @@
 package com.javaguru.student_vadim_migun.lesson_6.level_1_intern.Task_2;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создайте класс DayOfTheWeekDetectorTest и напишите
 автоматические тесты для всех сценариев.
  */
-
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorTest {
 
     public static void main(String[] args) {

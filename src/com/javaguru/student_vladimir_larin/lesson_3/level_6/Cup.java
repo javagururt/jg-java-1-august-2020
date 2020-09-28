@@ -1,7 +1,9 @@
 package com.javaguru.student_vladimir_larin.lesson_3.level_6;
 
-// Task_24
+import com.javaguru.teacher.codereview.CodeReview;
 
+// Task_24
+@CodeReview(approved = true)
 class Cup {
     public boolean isFull;
     public String color;

@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class TwoDimensionalArrayTest {
 
     private final TwoDimensionalArray twoDimensionalArray = new TwoDimensionalArray();

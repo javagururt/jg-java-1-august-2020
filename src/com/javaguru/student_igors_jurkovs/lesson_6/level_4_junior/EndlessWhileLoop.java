@@ -1,7 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_4_junior;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Task 15 and 16
  */
+@CodeReview(approved = true)
 public class EndlessWhileLoop {
     public static void main(String[] args) {
 

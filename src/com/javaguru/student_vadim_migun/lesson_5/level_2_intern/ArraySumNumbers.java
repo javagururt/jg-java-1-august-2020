@@ -7,8 +7,10 @@ package com.javaguru.student_vadim_migun.lesson_5.level_2_intern;
 
  */
 
-import java.util.Random;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Random;
+@CodeReview(approved = true)
 class ArraySumNumbers {
     public static void main(String[] args) {
 

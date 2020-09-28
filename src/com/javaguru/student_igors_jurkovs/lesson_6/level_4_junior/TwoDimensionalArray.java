@@ -1,14 +1,19 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Arrays;
 import java.util.Random;
-
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "для тестов не стоит менять работу методов")
 class TwoDimensionalArray {
 
     int[][] createTwoDimensionalArray(int firstLength, int secondLength) {
         return new int[firstLength][secondLength];
     }
 
+    @CodeReviewComment(teacher = "неверная логика метода (закомментирована верная)")
     void fillTwoDimensionalArrayWithRandomNumbers(int[][] array) {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {

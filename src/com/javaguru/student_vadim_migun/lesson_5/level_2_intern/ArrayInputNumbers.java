@@ -1,5 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_5.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -8,6 +10,7 @@ import java.util.Scanner;
  - заполнить каждую ячейку массива числом, запрошенным у пользователя,
  - вывести значение каждой ячейки на консоль.
  */
+@CodeReview(approved = true)
 class ArrayInputNumbers {
     public static void main(String[] args) {
         int[] numbers = new int[3];

@@ -13,8 +13,11 @@ class ArrayUtil {
 }
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
+@CodeReview(approved = true)
 class ArrayUtil {
 
     public int[] createArray(int arrayLength) {

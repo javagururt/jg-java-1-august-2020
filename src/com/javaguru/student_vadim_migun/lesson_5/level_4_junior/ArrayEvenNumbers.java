@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_5.level_4_junior;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Напишите программу, в которой:
 - создайте массив произвольной длины
@@ -6,7 +9,7 @@ package com.javaguru.student_vadim_migun.lesson_5.level_4_junior;
 - распечатайте на консоль все элементы массива
 - найдите все чётные числа в массиве и выведети их на консоль.
  */
-
+@CodeReview(approved = true)
 class ArrayEvenNumbers {
 
     public static void main(String[] args) {

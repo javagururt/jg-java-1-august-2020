@@ -1,5 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
 /*
@@ -8,6 +10,7 @@ import java.util.Random;
  - заполнить каждую ячейку массива случайным числом,
  - посчитать сумму всех ячеек и вывести ее на консоль.
  */
+@CodeReview(approved = true)
 class Task_13 {
 
     public static void main(String[] args) {

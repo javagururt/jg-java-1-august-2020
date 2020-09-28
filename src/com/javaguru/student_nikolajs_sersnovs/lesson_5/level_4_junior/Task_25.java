@@ -1,5 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
 /*
@@ -9,6 +11,7 @@ import java.util.Scanner;
 - заполните массив числами полученными от пользователя
 - распечатайте на консоль все элементы массива.
  */
+@CodeReview(approved = true)
 class Task_25 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

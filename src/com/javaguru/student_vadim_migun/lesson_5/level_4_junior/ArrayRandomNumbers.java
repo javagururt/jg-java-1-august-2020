@@ -7,8 +7,11 @@ package com.javaguru.student_vadim_migun.lesson_5.level_4_junior;
 - распечатайте на консоль все элементы массива.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class ArrayRandomNumbers {
     public static void main(String[] args) {
 

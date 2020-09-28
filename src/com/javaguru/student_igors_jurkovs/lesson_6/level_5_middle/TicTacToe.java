@@ -1,68 +1,75 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_5_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Arrays;
 
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "имеет смысл подумать на вынесением дублирующегося кода в отдельный метод")
 class TicTacToe {
 
     private final int[][] field = new int[3][3];
-    /*
-    boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
-        if (field[0][0] == playerToCheck && field[0][1] == playerToCheck && field[0][2] == playerToCheck) {
-            return true;
-        }else if (field[1][0] == playerToCheck && field[1][1] == playerToCheck && field[1][2] == playerToCheck) {
-            return true;
-        }else return field[2][0] == playerToCheck && field[2][1] == playerToCheck && field[2][2] == playerToCheck;
-    }*/
 
     boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
-        boolean win = false;
-        for (int[] ints : field) {
-            int counter = 0;
-            for (int j = 0; j < field[0].length; j++) {
-                if (ints[j] == playerToCheck) {
-                    counter++;
-                }
-            }
-            if (counter == 3) {
-                win =  true;
-                break;
-            }
-        }
-        return win;
+        return fieldsCheckForWin(field, playerToCheck, "Horizontal");
     }
 
-    boolean isWinPositionForVerticals(int[][] field, int playerToCheck){
+    boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
+        return fieldsCheckForWin(field, playerToCheck, "Vertical");
+    }
+
+    boolean fieldsCheckForWin(int[][] field, int playerToCheck, String direction) {
         boolean win = false;
-        for (int j = 0; j < field[0].length; j++) {
-            int counter = 0;
+        if (direction.equals("Horizontal")) {
             for (int[] ints : field) {
-                if (ints[j] == playerToCheck) {
-                    counter++;
+                int counter = 0;
+                for (int j = 0; j < field[0].length; j++) {
+                    if (ints[j] == playerToCheck) {
+                        counter++;
+                    }
+                }
+                if (counter == 3) {
+                    win = true;
+                    break;
                 }
             }
-            if (counter == 3) {
-                win =  true;
-                break;
-            }
+
+            return win;
         }
-        return win;
+        if (direction.equals("Vertical")) {
+            for (int j = 0; j < field[0].length; j++) {
+                int counter = 0;
+                for (int[] ints : field) {
+                    if (ints[j] == playerToCheck) {
+                        counter++;
+                    }
+                }
+                if (counter == 3) {
+                    win = true;
+                    break;
+                }
+            }
+            return win;
+        }
+        return false;
     }
 
     boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
         int[] diagonalArray = new int[3];
-        int[] sidDiagonalArray = new int[3];
+        int[] sideDiagonalArray = new int[3];
         for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field[0].length; j++){
+            for (int j = 0; j < field[0].length; j++) {
                 if (i == j) {
                     diagonalArray[i] = field[i][j];
                 }
-                sidDiagonalArray[i] = field[i][field.length - 1 - i];
+                sideDiagonalArray[i] = field[i][field.length - 1 - i];
             }
         }
         int[] checkArray = {playerToCheck, playerToCheck, playerToCheck};
         if (Arrays.equals(diagonalArray, checkArray)) {
             return true;
-        } else return Arrays.equals(sidDiagonalArray, checkArray);
+        } else return Arrays.equals(sideDiagonalArray, checkArray);
     }
 
     boolean isDrawPosition(int[][] field) {
@@ -90,6 +97,7 @@ class TicTacToe {
             System.out.println(action + " test: FAILED");
         }
     }
+
     boolean isWin() {
         boolean win = false;
         if (isWinPositionForHorizontals(field, 0) || isWinPositionForHorizontals(field, 1)

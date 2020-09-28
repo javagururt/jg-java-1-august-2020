@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_6.level_1_intern.Task_3;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Разберитесь, что делает класс указанный ниже.
 Это реализация одного из супер тасков предыдущего урока.
@@ -23,7 +26,7 @@ class FizzBuzz {
 
 }
  */
-
+@CodeReview(approved = true)
 class FizzBuzz {
 
 //    private int initialNumber;

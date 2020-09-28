@@ -11,6 +11,9 @@ class ArrayUtil {
  */
 package com.javaguru.student_sergey_kazyanin.lesson_5.level_6_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayUtil {
 
     public void printArrayToConsole(int[] array) {

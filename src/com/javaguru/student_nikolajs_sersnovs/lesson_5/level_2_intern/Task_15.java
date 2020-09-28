@@ -1,5 +1,8 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Random;
 
 /*
@@ -10,6 +13,8 @@ import java.util.Random;
  - увеличить значение каждой ячейки на 2,
  - вывести значение каждой ячейки на консоль.
  */
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "переменные которые неиспользуются должны быть удалены")
 class Task_15 {
     public static void main(String[] args) {
         int [] array = new int[3];

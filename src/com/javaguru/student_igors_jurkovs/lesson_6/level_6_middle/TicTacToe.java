@@ -1,8 +1,10 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_6_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Arrays;
 import java.util.Scanner;
-
+@CodeReview(approved = true)
 class TicTacToe {
 
     int[][] createField() {

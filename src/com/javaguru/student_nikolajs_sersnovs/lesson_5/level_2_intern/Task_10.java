@@ -1,4 +1,7 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_2_intern;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Написать программу, в которой:
  - создать массив целых чисел длиной 3,
@@ -6,6 +9,7 @@ package com.javaguru.student_nikolajs_sersnovs.lesson_5.level_2_intern;
  - вывести значение каждой ячейки на консоль.
 
  */
+@CodeReview(approved = true)
 class Task_10 {
 
     public static void main(String[] args) {

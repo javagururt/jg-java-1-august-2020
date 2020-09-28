@@ -11,7 +11,10 @@ import com.javaguru.teacher.codereview.CodeReviewComment;
          class Book {
          }
      }
-}
+ }
+
+
+
  /*
  Дан код, нужно исправить ошибку компиляции.
 
