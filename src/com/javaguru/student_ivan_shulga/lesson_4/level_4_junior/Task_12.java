@@ -15,6 +15,8 @@ class CalculatorTest {
         calculatorTest.multiplicationTest();
         calculatorTest.divisionTest();
 
+        calculatorTest.evenTest();
+
         calculatorTest.maxOfTwoNumbersTest1();
         calculatorTest.maxOfTwoNumbersTest2();
         calculatorTest.maxOfTwoNumbersTest3();
@@ -26,6 +28,9 @@ class CalculatorTest {
         calculatorTest.maxOfThreeNumbersTest5();
         calculatorTest.maxOfThreeNumbersTest6();
         calculatorTest.maxOfThreeNumbersTest7();
+        calculatorTest.maxOfThreeNumbersTest8();
+        calculatorTest.maxOfThreeNumbersTest9();
+        calculatorTest.maxOfThreeNumbersTest10();
     }
 
     public void additionTest() {

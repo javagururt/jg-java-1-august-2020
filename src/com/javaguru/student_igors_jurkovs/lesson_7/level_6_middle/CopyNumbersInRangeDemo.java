@@ -12,6 +12,7 @@ class CopyNumbersInRangeDemo {
         copyNumbersInRangeDemo.shouldCopyFrom5To10();
         copyNumbersInRangeDemo.shouldCopyFrom0To1();
         copyNumbersInRangeDemo.shouldNotCopyAnything();
+        copyNumbersInRangeDemo.shouldCopyFrom5To15();
 
 
     }
@@ -31,6 +32,12 @@ class CopyNumbersInRangeDemo {
     void shouldNotCopyAnything() {
         int[] expected = {};
         int[] result = copyNumbersInRange.copyInRange(new int[]{0, 3, 6}, 7, 10);
-        copyNumbersInRange.test(Arrays.equals(expected, result), "Nothing to copy");
+        copyNumbersInRange.test(Arrays.equals(expected, result), "Out of range");
+    }
+
+    void shouldCopyFrom5To15() {
+        int[] expected = {5, 7, 8, 10, 15, 10, 15};
+        int[] result = copyNumbersInRange.copyInRange(new int[]{1, 5, 7, 8, 10, 15, 25, 10, 15}, 5, 15);
+        copyNumbersInRange.test(Arrays.equals(expected, result), "Copy in range from 5 to 15");
     }
 }
