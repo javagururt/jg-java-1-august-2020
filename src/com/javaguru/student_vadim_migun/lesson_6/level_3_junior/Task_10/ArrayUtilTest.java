@@ -10,7 +10,7 @@ public class ArrayUtilTest {
     }
 
     ArrayUtil array = new ArrayUtil();
-    int [] arr = {0, 1, 2, 3, 3, 2, 2};
+ //   int [] arr = {0, 1, 2, 3, 3, 2, 2};
 
     public void countNumberTest1(){
         int expected = 3;
