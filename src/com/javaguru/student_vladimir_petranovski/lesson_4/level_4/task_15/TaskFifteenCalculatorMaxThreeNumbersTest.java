@@ -3,8 +3,6 @@ package com.javaguru.student_vladimir_petranovski.lesson_4.level_4.task_15;
 import com.javaguru.teacher.codereview.CodeReview;
 import com.javaguru.teacher.codereview.CodeReviewComment;
 
-@CodeReview(approved = false)
-@CodeReviewComment(teacher = "тесты написаны неверно. Лучше посмотреть пример и сдалть по аналогии.")
 public class TaskFifteenCalculatorMaxThreeNumbersTest {
     private TaskFifteenCalculatorMaxThreeNumbers test = new TaskFifteenCalculatorMaxThreeNumbers();
 
