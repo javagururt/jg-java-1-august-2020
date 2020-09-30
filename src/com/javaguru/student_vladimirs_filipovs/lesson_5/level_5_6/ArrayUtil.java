@@ -13,32 +13,35 @@ class ArrayUtil {
         return array;
     }
 
-    public void fillArrayWithRandomNumbers(int[] array) {
+    public int[] fillArrayWithRandomNumbers(int[] array) {
         Random randomGenerator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = randomGenerator.nextInt();
+            array[i] = randomGenerator.nextInt(99);
         }
+        return array;
     }
 
-    public void printArrayToConsole(int[] array) {
-        System.out.println(Arrays.toString(array));
+    public String printArrayToConsole(int[] array) {
+       return Arrays.toString(array);
     }
 
-    public void findMaxNumber(int[] array) {
+    public int findMaxNumber(int[] array) {
         int maxNumber = array[0];
-        for (int ourNumber1 : array) {
-            if (ourNumber1 > maxNumber) {
-                maxNumber = ourNumber1;
+        for (int ourNumber : array) {
+            if (ourNumber > maxNumber) {
+                maxNumber = ourNumber;
             }
         }
+        return maxNumber;
     }
 
-    public void findMinNumber(int[] array) {
+    public int findMinNumber(int[] array) {
         int minNumber = array[0];
-        for (int ourNumber2 : array) {
-            if (ourNumber2 < minNumber) {
-                minNumber = ourNumber2;
+        for (int ourNumber : array) {
+            if (ourNumber < minNumber) {
+                minNumber = ourNumber;
             }
         }
+        return minNumber;
     }
 }
