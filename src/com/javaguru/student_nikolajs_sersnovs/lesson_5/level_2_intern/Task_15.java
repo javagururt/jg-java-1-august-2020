@@ -18,9 +18,6 @@ import java.util.Random;
 class Task_15 {
     public static void main(String[] args) {
         int [] array = new int[3];
-        int adding = 0;
-        int adding2 = 0;
-        int adding3 = 0;
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
