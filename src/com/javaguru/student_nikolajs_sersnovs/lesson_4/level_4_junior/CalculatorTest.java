@@ -75,7 +75,7 @@ class CalculatorTest {
 
     public void isEven() {
         Calculator calculator = new Calculator();
-        if (calculator.isEven(8)) {
+        if (calculator.isEven(5)) {
             System.out.println("Your number is Even: ");
         } else {
             System.out.println("Your number is odd: ");
