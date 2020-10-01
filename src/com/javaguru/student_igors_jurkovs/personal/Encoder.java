@@ -23,23 +23,6 @@ class Encoder {
         aCode = userChar;
         System.out.println("Your ASCII is: " + aCode);
     }
-
-/*    public void encode() {
-
-        System.out.println("Enter ASCII code:");
-        Scanner userCode = new Scanner(System.in);
-        int aCode = userCode.nextShort();
-        char userChar = (char) aCode;
-        System.out.println(userChar);
-    }
-
-    public void decode() {
-        System.out.println("Enter symbol: ");
-        Scanner userChar = new Scanner(System.in);
-        String userInput = userChar.nextLine();
-        char firstChar = userInput.charAt(0);
-        System.out.println((int) firstChar);
-    }*/
 }
 
 class EncoderDemo {
