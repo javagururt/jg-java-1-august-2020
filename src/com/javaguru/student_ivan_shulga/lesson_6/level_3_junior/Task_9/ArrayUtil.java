@@ -2,14 +2,42 @@ package com.javaguru.student_ivan_shulga.lesson_6.level_3_junior.Task_9;
 
 // основа класса скопирована из задания lesson_5 -> level_5_middle дописаны текущие задачи из lesson_6
 
+import java.util.Arrays;
 import java.util.Random;
 
 class ArrayUtil {
+
+
+    public int[] sortingNumbersInArray(int[] array) {
+        Arrays.sort(array);
+        return array;
+    }
+// ^^^ lesson_6 -> level_4_junior -> Task_14 -> Добавьте в класс ArrayUtil метод для сортировки массива целых чисел.
+
+    public int[] reverseAllIntegers(int[] array) {
+        int[] newArray = new int[array.length];
+        int i = 0;
+        while (i < array.length) {
+            newArray[i] = array[array.length - 1 - i];
+            i++;
+        } return newArray;
+    }
+// ^^^ lesson_6 -> level_3_junior -> Task_13 -> Добавьте в класс ArrayUtil метод для переворота массива целых чисел.
+
+    public int replaceAllInteger(int[] array, int numberToReplace, int newNumber) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == numberToReplace) {
+                array[i] = newNumber;
+            }
+        } return newNumber;
+    }
+// ^^^ lesson_6 -> level_3_junior -> Task_12 -> Добавьте в класс ArrayUtil метод для замены вхождений указанного числа в массиве целых чисел на другое число.
 
     public int replaceInteger(int[] array, int numberToReplace, int newNumber) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == numberToReplace) {
                 array[i] = newNumber;
+                break;
             }
         } return newNumber;
     }

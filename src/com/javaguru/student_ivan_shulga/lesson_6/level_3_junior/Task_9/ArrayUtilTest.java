@@ -10,25 +10,69 @@ class ArrayUtilTest {
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();
 
-        test.shouldCreateArray();                   // из задания lesson_5 -> level_5_middle
-        test.shouldFillArrayWithRandomNumbers();    // из задания lesson_5 -> level_5_middle
-        test.shouldFindMaxNumber();                 // из задания lesson_5 -> level_5_middle
-        test.shouldFindMinNumber();                 // из задания lesson_5 -> level_5_middle
+        test.shouldCreateArray();                 // из задания lesson_5 -> level_5_middle
+        test.shouldFillArrayWithRandomNumbers();  // из задания lesson_5 -> level_5_middle
+        test.shouldFindMaxNumber();               // из задания lesson_5 -> level_5_middle
+        test.shouldFindMinNumber();               // из задания lesson_5 -> level_5_middle
 
-        test.shouldFindSpecifiedNumber();           // lesson_6 -> level_3_junior -> Task_9
-        test.shouldCountIntegers();                 // lesson_6 -> level_3_junior -> Task_10
-        test.shouldReplaceInteger();                // lesson_6 -> level_3_junior -> Task_11
+        test.shouldFindSpecifiedNumber();         // lesson_6 -> level_3_junior -> Task_9
+        test.shouldCountIntegers();               // lesson_6 -> level_3_junior -> Task_10
+        test.shouldReplaceInteger();              // lesson_6 -> level_3_junior -> Task_11
+        test.shouldReplaceAllInteger();           // lesson_6 -> level_3_junior -> Task_12
+        test.shouldReverseAllIntegers();          // lesson_6 -> level_3_junior -> Task_13
+        test.shouldSortingNumbersInArray();       // lesson_6 -> level_4_junior -> Task_14
     }
+
+    public void shouldSortingNumbersInArray() {
+        ArrayUtil arrayTest = new ArrayUtil();
+        int[] array = {9, 7, 8, 6, 5, 3, 4, 2, 1, 0};
+        int[] expectedResult = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] actualResult = arrayTest.sortingNumbersInArray(array);
+        if (Arrays.equals(actualResult, expectedResult)) {
+            System.out.println("shouldSortingNumbersInArray ---> SUCCESSFUL! ---> " + " actualResult = " + Arrays.toString(actualResult) + " ---> expectedResult = " + Arrays.toString(expectedResult));
+        } else {
+            System.out.println("shouldSortingNumbersInArray ---> FAILED! ---> " + " actualResult = " + Arrays.toString(actualResult) + " ---> expectedResult = " + Arrays.toString(expectedResult));
+        }
+    }
+// ^^^ lesson_6 -> level_4_junior -> Task_14 -> Добавьте в класс ArrayUtil метод для сортировки массива целых чисел.
+
+    public void shouldReverseAllIntegers() {
+        ArrayUtil arrayTest = new ArrayUtil();
+        int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] expectedResult = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] actualResult = arrayTest.reverseAllIntegers(array);
+        if (Arrays.equals(actualResult, expectedResult)) {  // были сложности со сравнением массивов, с помощью подсказок среды вышел на это, позже углубиться, по возможности
+            System.out.println("shouldReplaceInteger ---> SUCCESSFUL! ---> " + " actualResult = " + Arrays.toString(actualResult) + " ---> expectedResult = " + Arrays.toString(expectedResult));
+        } else {
+            System.out.println("shouldCountIntegers ---> FAILED! ---> " + " actualResult = " + Arrays.toString(actualResult) + " ---> expectedResult = " + Arrays.toString(expectedResult));
+        }
+    }
+// ^^^ lesson_6 -> level_3_junior -> Task_12 -> Добавьте в класс ArrayUtil метод для замены вхождений указанного числа в массиве целых чисел на другое число.
+
+    public void shouldReplaceAllInteger() {
+        ArrayUtil arrayTest = new ArrayUtil();
+        int[] array = {5, 4, 3, 2, 1, 0, 3, 3, 2, 3};
+        int numberToReplace = 3;
+        int newNumber = 7;
+        int expectedResult = 7;
+        int actualResult = arrayTest.replaceAllInteger(array, numberToReplace, newNumber);
+        if (actualResult == expectedResult) {
+            System.out.println("shouldReplaceInteger ---> SUCCESSFUL! ---> " + "at array of numbers " + Arrays.toString(array) + " ---> all " + numberToReplace + " replaced to " + newNumber);
+        } else {
+            System.out.println("shouldCountIntegers ---> FAILED! ---> " + " actualResult = " + actualResult + " ---> expectedResult = " + expectedResult);
+        }
+    }
+// ^^^ lesson_6 -> level_3_junior -> Task_12 -> Добавьте в класс ArrayUtil метод для замены вхождений указанного числа в массиве целых чисел на другое число.
 
     public void shouldReplaceInteger() {
         ArrayUtil arrayTest = new ArrayUtil();
-        int[] array = {5, 4, 3, 2, 1, 0};
+        int[] array = {5, 4, 3, 2, 1, 0, 3, 3};
         int numberToReplace = 3;
         int newNumber = 7;
         int expectedResult = 7;
         int actualResult = arrayTest.replaceInteger(array, numberToReplace, newNumber);
         if (actualResult == expectedResult) {
-            System.out.println("shouldReplaceInteger ---> SUCCESSFUL! ---> " + "at array of numbers " + Arrays.toString(array) + " ---> " + numberToReplace + " replaced to " + newNumber);
+            System.out.println("shouldReplaceInteger ---> SUCCESSFUL! ---> " + "at array of numbers " + Arrays.toString(array) + " ---> first " + numberToReplace + " replaced to " + newNumber);
         } else {
             System.out.println("shouldCountIntegers ---> FAILED! ---> " + " actualResult = " + actualResult + " ---> expectedResult = " + expectedResult);
         }
