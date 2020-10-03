@@ -3,18 +3,14 @@ package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.FileSystem;
 import java.util.ArrayList;
 import java.util.List;
 
-class Folder {
+class Folder extends VirtualDiskObject{
 
-    static final int FOLDER_SIZE = 5;
-    static final int MAX_CHAR = 20;
-
-    private final String name;
-    int size;
-    List<SubFolder> subFolders;
+    private final List<Folder> subFolders;
 
     Folder(String name) {
         this.name = name;
-        this.size = FOLDER_SIZE;
+        this.size = MIN_SIZE;
+        this.uniqueNumber = setUniqueNumber();
         this.subFolders = new ArrayList<>();
     }
 
@@ -22,21 +18,13 @@ class Folder {
         subFolders.add(subFolderName);
     }
 
-    int getSize() {
-        return size;
-    }
-
-    String getName() {
-        return name;
-    }
-
-
     @Override
     public String toString() {
         return "Folder{" +
-                "name='" + name + '\'' +
+                "subFolders=" + subFolders +
+                ", name='" + name + '\'' +
                 ", size=" + size +
-                ", subFolders=" + subFolders +
+                ", uniqueNumber=" + uniqueNumber +
                 '}';
     }
 }

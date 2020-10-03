@@ -4,6 +4,14 @@ class SubFolder extends Folder {
 
     SubFolder(String name) {
         super(name);
-        this.size = FOLDER_SIZE;
+    }
+
+    @Override
+    public String toString() {
+        return "SubFolder{" +
+                "name='" + name + '\'' +
+                ", size=" + size +
+                ", uniqueNumber=" + uniqueNumber +
+                '}';
     }
 }
