@@ -4,6 +4,7 @@ class SubFolder extends Folder {
 
     SubFolder(String name) {
         super(name);
-        this.size = FOLDER_SIZE;
+        this.size = MIN_SIZE;
+        this.uniqueNumber = setUniqueNumber();
     }
 }
