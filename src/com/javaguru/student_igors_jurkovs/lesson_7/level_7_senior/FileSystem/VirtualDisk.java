@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.FileSystem;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,6 +84,7 @@ class VirtualDisk {
         }
     }
 
+    @CodeReviewComment(teacher = "в будущем мы будем проходить исключения, стоит посмотреть, возможно, что будет удобнее, чем возвращать null")
     private VirtualDiskObject findVirtualDiskObject(String name) {
         for (VirtualDiskObject virtualDiskObject : virtualDiskObjects) {
             if (virtualDiskObject.getName().equals(name)) {

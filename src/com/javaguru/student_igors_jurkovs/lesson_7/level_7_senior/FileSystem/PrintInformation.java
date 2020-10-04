@@ -1,7 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.FileSystem;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Arrays;
 
+@CodeReviewComment(teacher = "если внутри только статик методы, то можно в название добавить Utils," +
+        " а так же сделал приватный конструктор")
 class PrintInformation {
 
     static void printVirtualDiskName(VirtualDisk virtualDisk) {

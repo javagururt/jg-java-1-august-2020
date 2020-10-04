@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.FileSystem;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class File extends VirtualDiskObject {
 
     FileType fileType;
@@ -11,6 +13,7 @@ class File extends VirtualDiskObject {
         this.uniqueNumber = setUniqueNumber();
     }
 
+    @CodeReviewComment(teacher = "зачем метод, если он пустой?")
     void addSubFolderToFolderList(SubFolder subFolder) {
     }
 
