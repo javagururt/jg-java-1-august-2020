@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_6.level_4_junior.Task_14;
+package com.javaguru.student_vadim_migun.lesson_6.level_4_junior.Task_14.Task_14;
 /*
 Добавьте в класс ArrayUtil метод для сортировки массива целых чисел.
 Напишите автоматические тесты в классе ArrayUtilTest доказывающие,
