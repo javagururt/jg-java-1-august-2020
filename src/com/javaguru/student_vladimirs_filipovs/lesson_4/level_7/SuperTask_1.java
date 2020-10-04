@@ -43,19 +43,19 @@ class FizzBuzzTest {
         if (expectedResult == result) {
             System.out.println("testNumberCanDivide3And5: OK");
         } else {
-            System.out.println("testNumberCanDivide3And5: FAIL");
+            System.out.println("testNumberCanDivide3And5: FAIL, expected result: " + expectedResult + ", actual result: " + result);
         }
     }
 
-        void testNumberCanDivide3() {
-            FizzBuzz fizzBuzz = new FizzBuzz();
-            String expectedResult = "Fizz";
-            String result = fizzBuzz.detect(9);
-            if (expectedResult == result) {
-                System.out.println("testNumberCanDivide3: OK");
-            } else {
-                System.out.println("testNumberCanDivide3: FAIL");
-            }
+    void testNumberCanDivide3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expectedResult = "Fizz";
+        String result = fizzBuzz.detect(9);
+        if (expectedResult == result) {
+            System.out.println("testNumberCanDivide3: OK");
+        } else {
+            System.out.println("testNumberCanDivide3: FAIL, expected result: " + expectedResult + ", actual result: " + result);
+        }
     }
 
     void testNumberCanDivide5() {
@@ -65,19 +65,18 @@ class FizzBuzzTest {
         if (expectedResult == result) {
             System.out.println("testNumberCanDivide5: OK");
         } else {
-            System.out.println("testNumberCanDivide5: FAIL");
+            System.out.println("testNumberCanDivide5: FAIL, expected result: " + expectedResult + ", actual result: " + result);
         }
     }
 
-    //не понимаю как сделать последний тест, чтобы не было фэйла..
     void testNumberCantDivide3And5() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String expectedResult = "" + 22;
         String result = fizzBuzz.detect(22);
-        if (expectedResult == result) {
+        if (expectedResult.equals(result)) {
             System.out.println("testNumberCantDivide3And5: OK");
         } else {
-            System.out.println("testNumberCantDivide3And5: FAIL");
+            System.out.println("testNumberCantDivide3And5: FAIL, expected result: " + expectedResult + ", actual result: " + result);
         }
     }
 

@@ -27,9 +27,8 @@ class LightColorDetector {
         }
         if (wavelength >= 620 && wavelength <= 750) {
             return "Red";
-        } else {
+        } {
             return "Invisible Light";
-
         }
 
     }

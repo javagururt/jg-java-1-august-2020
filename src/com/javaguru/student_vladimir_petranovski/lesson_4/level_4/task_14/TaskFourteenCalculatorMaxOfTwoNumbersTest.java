@@ -3,9 +3,6 @@ package com.javaguru.student_vladimir_petranovski.lesson_4.level_4.task_14;
 import com.javaguru.teacher.codereview.CodeReview;
 import com.javaguru.teacher.codereview.CodeReviewComment;
 
-@CodeReview(approved = false)
-@CodeReviewComment(teacher = "тесты написаны неверно. Нет вызова класса," +
-        " который тестируют. Для работы используют переменные, которые хранят какие-то значения")
 public class TaskFourteenCalculatorMaxOfTwoNumbersTest {
     private TaskFourteenCalculatorMaxOfTwoNumbers test = new TaskFourteenCalculatorMaxOfTwoNumbers();
 
