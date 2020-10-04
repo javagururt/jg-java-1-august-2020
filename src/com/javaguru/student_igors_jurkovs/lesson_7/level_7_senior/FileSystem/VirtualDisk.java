@@ -92,7 +92,6 @@ class VirtualDisk {
         return null;
     }
 
-    //Надо найти более оптимальный вариант заполнения ячеек памяти
     private void writingToMemoryArray(VirtualDiskObject virtualDiskObject) {
         int counter = 0;
         int memoryCellIndex = 0;
