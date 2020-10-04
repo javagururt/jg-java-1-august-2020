@@ -1,20 +1,21 @@
-package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
+package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models;
 
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.FileType;
 import com.javaguru.teacher.codereview.CodeReviewComment;
 
-class File extends VirtualDiskObject {
+public class File extends VirtualDiskObject {
 
     FileType fileType;
 
-    File(String name, int size, FileType fileType) {
+    public File(String name, int size, FileType fileType) {
         this.name = name;
         this.size = MIN_SIZE + size;
         this.fileType = fileType;
-        this.uniqueNumber = setUniqueNumber();
+        this.uniqueNumber = 0;
     }
 
     @CodeReviewComment(teacher = "зачем метод, если он пустой?")
-    void addSubFolderToFolderList(SubFolder subFolder) {
+    public void addSubFolderToFolderList(SubFolder subFolder) {
     }
 
     @Override

@@ -6,7 +6,10 @@ import java.util.Arrays;
 
 @CodeReviewComment(teacher = "если внутри только статик методы, то можно в название добавить Utils," +
         " а так же сделал приватный конструктор")
-class PrintInformation {
+class PrintInformationUtils {
+
+    private PrintInformationUtils() {
+    }
 
     static void printVirtualDiskName(VirtualDisk virtualDisk) {
         System.out.println("Virtual disk name: " + virtualDisk.getDiskName());
