@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.FileSystem;
+package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
 import com.javaguru.teacher.codereview.CodeReviewComment;
 
@@ -92,7 +92,7 @@ class VirtualDisk {
             }
         }
 
-        return null;
+        throw new IllegalArgumentException();
     }
 
     private void writingToMemoryArray(VirtualDiskObject virtualDiskObject) {

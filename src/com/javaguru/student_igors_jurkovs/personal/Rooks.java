@@ -6,11 +6,3 @@ public class Rooks {
     }
 }
 
-class RooksTest {
-    public static void main(String[] args) {
-        Rooks rooks = new Rooks();
-        boolean result = rooks.canCapture(new String[] {"A6", "E8"});
-        System.out.println(result);
-
-    }
-}
