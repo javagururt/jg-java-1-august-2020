@@ -1,8 +1,8 @@
-package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
+package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models;
 
-class SubFolder extends Folder {
+public class SubFolder extends Folder {
 
-    SubFolder(String name) {
+    public SubFolder(String name) {
         super(name);
     }
 
