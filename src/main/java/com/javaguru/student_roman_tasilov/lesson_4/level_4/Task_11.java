@@ -3,8 +3,6 @@ package com.javaguru.student_roman_tasilov.lesson_4.level_4;
 import com.javaguru.teacher.codereview.CodeReview;
 import com.javaguru.teacher.codereview.CodeReviewComment;
 
-import java.util.Scanner;
-
 /* Создайте класс Calculator. В этом классе создайте методы
 для сложения, вычитания, деления и умножения двух целых чисел.
 
@@ -23,7 +21,7 @@ class Calculator {
  */
 @CodeReview(approved = false)
 @CodeReviewComment(teacher = "maxOf* реализованы неверно")
- class Calculator {
+class Calculator {
 
     public int sum(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
@@ -41,14 +39,18 @@ class Calculator {
         return firstNumber * secondNumber;
     }
 
-    public boolean isEven(int number)
-    { return (number % 2 == 0); }
+    public boolean isEven(int number) {
+        return (number % 2 == 0);
+    }
 
-public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        return firstNumber & secondNumber;}
-        public int maxThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        return firstNumber & secondNumber & thirdNumber;}
-        }
+    public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
+        return firstNumber & secondNumber;
+    }
+
+    public int maxThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
+        return firstNumber & secondNumber & thirdNumber;
+    }
+}
 
 
 
