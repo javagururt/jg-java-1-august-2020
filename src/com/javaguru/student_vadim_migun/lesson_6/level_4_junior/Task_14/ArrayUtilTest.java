@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_6.level_4_junior.Task_14.Task_14;
+package com.javaguru.student_vadim_migun.lesson_6.level_4_junior.Task_14;
 
 import java.util.Arrays;
 
