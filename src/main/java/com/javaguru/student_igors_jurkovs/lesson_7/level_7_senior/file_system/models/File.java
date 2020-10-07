@@ -1,6 +1,6 @@
-package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models;
+package main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models;
 
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.FileType;
+import main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.FileType;
 import com.javaguru.teacher.codereview.CodeReviewComment;
 
 public class File extends VirtualDiskObject {

@@ -13,6 +13,14 @@ class CalculatorTest {
         calculatorTest.firstNumberBiggerThanSecondNumberTest();
         calculatorTest.secondNumberBiggerThanFirstNumberTest();
         calculatorTest.firstNumberAndSecondNumberAreEqualTest();
+
+        calculatorTest.firstNumberBiggerThanSecondAndThirdNumbersTest();
+        calculatorTest.secondNumberBiggerThanFirstAndThirdNumbersTest();
+        calculatorTest.thirdNumberBiggerThanFirstAndSecondNumbersTest();
+        calculatorTest.firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest();
+        calculatorTest.firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest();
+        calculatorTest.secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest();
+        calculatorTest.allThreeNumbersAreEqualTest();
     }
 
     public void additionTest() {
@@ -90,4 +98,83 @@ class CalculatorTest {
         if (result == 0) System.out.println("firstNumberAndSecondNumberAreEqualTest= Success");
         else System.out.println("firstNumberAndSecondNumberAreEqualTest= Fail");
     }
+
+    public void firstNumberBiggerThanSecondAndThirdNumbersTest() {
+        int firstNumber = 13;
+        int secondNumber = 6;
+        int thirdNumber = 5;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result > secondNumber && result > thirdNumber)
+            System.out.println("firstNumberBiggerThanSecondAndThirdNumbersTest= Success");
+        else System.out.println("firstNumberBiggerThanSecondAndThirdNumbersTest= Fail");
+    }
+
+    public void secondNumberBiggerThanFirstAndThirdNumbersTest() {
+        int firstNumber = 2;
+        int secondNumber = 7;
+        int thirdNumber = 4;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result > firstNumber && result > thirdNumber)
+            System.out.println("secondNumberBiggerThanFirstAndThirdNumbersTest= Success");
+        else System.out.println("secondNumberBiggerThanFirstAndThirdNumbersTest= Fail");
+    }
+
+    public void thirdNumberBiggerThanFirstAndSecondNumbersTest() {
+        int firstNumber = 3;
+        int secondNumber = 5;
+        int thirdNumber = 9;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result > firstNumber && result > secondNumber)
+            System.out.println("thirdNumberBiggerThanFirstAndSecondNumbersTest= Success");
+        else System.out.println("thirdNumberBiggerThanFirstAndSecondNumbersTest= Fail");
+    }
+
+    public void firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest() {
+        int firstNumber = 4;
+        int secondNumber = 4;
+        int thirdNumber = 2;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == firstNumber && result == secondNumber && result > thirdNumber)
+            System.out.println("firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest= Success");
+        else System.out.println("firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest= Fail");
+    }
+
+    public void firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest() {
+        int firstNumber = 7;
+        int secondNumber = 4;
+        int thirdNumber = 7;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == firstNumber && result == thirdNumber && result > secondNumber)
+            System.out.println("firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest= Success");
+        else System.out.println("firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest= Fail");
+    }
+
+    public void secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest() {
+        int firstNumber = 3;
+        int secondNumber = 8;
+        int thirdNumber = 8;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == secondNumber && result == thirdNumber && result > firstNumber)
+            System.out.println("secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest= Success");
+        else System.out.println("secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest= Fail");
+    }
+
+    public void allThreeNumbersAreEqualTest() {
+        int firstNumber = 6;
+        int secondNumber = 6;
+        int thirdNumber = 6;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (firstNumber == secondNumber && secondNumber == thirdNumber && result == 0)
+            System.out.println("allThreeNumbersAreEqualTest= Success");
+        else System.out.println("allThreeNumbersAreEqualTest= Fail");
+    }
+
+
 }

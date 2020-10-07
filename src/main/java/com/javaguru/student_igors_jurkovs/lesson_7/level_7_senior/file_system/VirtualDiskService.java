@@ -1,9 +1,10 @@
-package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
+package main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.File;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.Folder;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.SubFolder;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDiskObject;
+
+import main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.File;
+import main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.Folder;
+import main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.SubFolder;
+import main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDiskObject;
 
 import java.util.List;
 
