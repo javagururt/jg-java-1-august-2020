@@ -1,9 +1,8 @@
-package main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models;
+package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models;
 
-import main.java.com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.FileType;
-import com.javaguru.teacher.codereview.CodeReviewComment;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.FileType;
 
-public class File extends VirtualDiskObject {
+public class File extends DiskObject {
 
     FileType fileType;
 
@@ -11,17 +10,17 @@ public class File extends VirtualDiskObject {
         this.name = name;
         this.size = MIN_SIZE + size;
         this.fileType = fileType;
-        this.uniqueNumber = 0;
     }
 
-    @CodeReviewComment(teacher = "зачем метод, если он пустой?")
-    public void addSubFolderToFolderList(SubFolder subFolder) {
+    public void setDirectory(String directory) {
+        this.directory = directory + "\\" + name + "." + fileType;
     }
 
     @Override
     public String toString() {
         return "File{" +
                 "fileType=" + fileType +
+                ", directory='" + directory + '\'' +
                 ", name='" + name + '\'' +
                 ", size=" + size +
                 ", uniqueNumber=" + uniqueNumber +
