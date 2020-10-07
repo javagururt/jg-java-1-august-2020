@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_jurkovs.lesson_2.level_6.Task_23;
+package main.java.com.javaguru.student_igors_jurkovs.lesson_2.level_6.Task_23;
 
 import com.javaguru.teacher.codereview.CodeReview;
 
