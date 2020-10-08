@@ -3,8 +3,6 @@ package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.s
 
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NotEnoughMemoryException;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.TooLongNameException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.FileType;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.UniqueNumber;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
@@ -23,21 +21,26 @@ public class VirtualDiskService {
         UniqueNumber.resetUniqueNumber();
     }
 
-    public void createFolder(String name)
-            throws TooLongNameException, NotEnoughMemoryException {
+    public void createFolder(String name) {
         DiskObject folder = new Folder(name);
         fileManager.addingFolderToFileSystem(folder);
     }
 
-    public  void createFile(String name, int size, FileType fileType)
-            throws TooLongNameException, NotEnoughMemoryException {
+    public void createFile(String name, int size, FileType fileType) {
         DiskObject file = new File(name, size, fileType);
         fileManager.addingFileToFileSystem(file);
     }
 
-    public void createDiskObjectInFolder(String folderName, String subObjectName)
-            throws NoSuchNameException, InvalidDiskObjectException, TooLongNameException, NotEnoughMemoryException {
-        fileManager.addingSubObjectToFileSystem(folderName, subObjectName);
+    public void createFileInFolder(String folderName, String name, int size, FileType fileType)
+            throws NoSuchNameException, InvalidDiskObjectException {
+        DiskObject file = new File(name, size, fileType);
+        fileManager.addingFileToSubFolder(folderName, file);
+    }
+
+    public void createSubFolder(String folderName, String subObjectName)
+            throws NoSuchNameException, InvalidDiskObjectException {
+        DiskObject subFolder = new Folder(subObjectName);
+        fileManager.addingSubObjectToFileSystem(folderName, subFolder);
     }
 
     public void deleteDiskObject(String name) throws NoSuchNameException {

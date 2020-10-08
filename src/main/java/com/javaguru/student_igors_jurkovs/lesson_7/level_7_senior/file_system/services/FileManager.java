@@ -8,7 +8,6 @@ import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.mi
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDisk;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.Folder;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,23 +21,32 @@ class FileManager {
         diskMemoryService = new DiskMemoryService(virtualDisk);
     }
 
-    void addingFolderToFileSystem(DiskObject folder) throws TooLongNameException, NotEnoughMemoryException {
+    void addingFolderToFileSystem(DiskObject folder) {
         addingDiskObjectToDisk(folder);
         folder.setDirectory(folder.getDirectory());
     }
 
-    void addingFileToFileSystem(DiskObject file) throws TooLongNameException, NotEnoughMemoryException {
+    void addingFileToFileSystem(DiskObject file) {
         addingDiskObjectToDisk(file);
         file.setDirectory(file.getDirectory());
     }
 
-    void addingSubObjectToFileSystem(String folderName, String subObjectName)
-            throws NoSuchNameException, InvalidDiskObjectException, TooLongNameException, NotEnoughMemoryException {
+    void addingSubObjectToFileSystem(String folderName, DiskObject subObject)
+            throws NoSuchNameException, InvalidDiskObjectException {
         DiskObject folder = findDiskObject(folderName);
         if (folder instanceof Folder) {
-            DiskObject subFolder = new Folder(subObjectName);
-            addingDiskObjectToDisk(subFolder);
-            subFolder.setDirectory(getDirectory(folderName));
+            addingDiskObjectToDisk(subObject);
+            subObject.setDirectory(getDirectory(folderName));
+
+        } else throw new InvalidDiskObjectException();
+    }
+
+    void addingFileToSubFolder(String folderName, DiskObject file)
+            throws NoSuchNameException, InvalidDiskObjectException {
+        DiskObject folder = findDiskObject(folderName);
+        if (folder instanceof Folder) {
+            addingDiskObjectToDisk(file);
+            file.setDirectory(getDirectory(folderName));
 
         } else throw new InvalidDiskObjectException();
     }
@@ -57,14 +65,17 @@ class FileManager {
         throw new NoSuchNameException();
     }
 
-    private void addingDiskObjectToDisk(DiskObject diskObject) throws TooLongNameException, NotEnoughMemoryException {
-        checkNameLength(diskObject);
-        checkIfEnoughMemory(diskObject);
-        List<DiskObject> diskObjects = virtualDisk.getDiskObjects();
-        diskObjects.add(diskObject);
-        diskObject.setUniqueNumber(UniqueNumber.uniqueNumberGeneration());
-        diskMemoryService.addingDiskObjectToDiskMemory(diskObject);
-        virtualDisk.setDiskObjects(diskObjects);
+    private void addingDiskObjectToDisk(DiskObject diskObject) {
+        try {
+            diskObjectCheckForExceptions(diskObject);
+            List<DiskObject> diskObjects = virtualDisk.getDiskObjects();
+            diskObjects.add(diskObject);
+            diskObject.setUniqueNumber(UniqueNumber.uniqueNumberGeneration());
+            diskMemoryService.addingDiskObjectToDiskMemory(diskObject);
+            virtualDisk.setDiskObjects(diskObjects);
+        } catch (NotEnoughMemoryException | TooLongNameException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     void diskObjectDeletion(String name) throws NoSuchNameException {
@@ -79,6 +90,11 @@ class FileManager {
         }
         diskObjects.removeAll(diskObjectsToDelete);
         virtualDisk.setDiskObjects(diskObjects);
+    }
+
+    private void diskObjectCheckForExceptions(DiskObject diskObject) throws TooLongNameException, NotEnoughMemoryException {
+        checkNameLength(diskObject);
+        checkIfEnoughMemory(diskObject);
     }
 
     private void checkNameLength(DiskObject diskObject) throws TooLongNameException {
