@@ -7,7 +7,7 @@ public class VirtualDisk {
 
     public static char diskChar = 'C';
 
-    private char diskName;
+    private final char diskName;
     private final int diskMaxMemory;
     private int diskMemoryUsed;
     private List<DiskObject> diskObjects;
