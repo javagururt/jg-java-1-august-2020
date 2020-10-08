@@ -2,8 +2,8 @@ package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.s
 
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.UniqueNumber;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.VirtualDisk;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.UniqueNumber;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDisk;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.Folder;
 

@@ -2,6 +2,9 @@ package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.FileType;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.PrintInformationUtils;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDisk;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.VirtualDiskService;
 
 class FileSystemDemo {

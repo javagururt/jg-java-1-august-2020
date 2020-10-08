@@ -1,6 +1,4 @@
-package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
-
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
+package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +13,7 @@ public class VirtualDisk {
     private List<DiskObject> diskObjects;
     private int[] diskMemoryArray;
 
-    VirtualDisk(int diskMaxMemory) {
+    public VirtualDisk(int diskMaxMemory) {
         this.diskName = setDiskName();
         this.diskMaxMemory = diskMaxMemory;
         this.diskMemoryUsed = 0;
