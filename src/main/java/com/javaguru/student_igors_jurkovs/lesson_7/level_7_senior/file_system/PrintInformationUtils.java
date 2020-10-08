@@ -1,7 +1,5 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
-
 import java.util.Arrays;
 
 class PrintInformationUtils {

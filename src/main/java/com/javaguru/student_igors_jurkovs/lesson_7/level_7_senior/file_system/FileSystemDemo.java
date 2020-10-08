@@ -1,10 +1,12 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.VirtualDiskService;
 
 class FileSystemDemo {
 
-    public static void main(String[] args) throws NoSuchNameException {
+    public static void main(String[] args) throws NoSuchNameException, InvalidDiskObjectException {
 
         VirtualDisk virtualDisk = new VirtualDisk(40);
         VirtualDiskService virtualDiskService = new VirtualDiskService(virtualDisk);
@@ -25,7 +27,7 @@ class FileSystemDemo {
         PrintInformationUtils.printDiskObjects(virtualDisk);
 
         System.out.println("Deleting folder 'Test2'");
-        virtualDiskService.virtualDiskObjectDeletion("Test2");
+        virtualDiskService.deleteDiskObject("Test2");
 
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk);
@@ -80,8 +82,8 @@ class FileSystemDemo {
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
 
         System.out.println("Deleting text file and folder 'Test5'");
-        virtualDiskService1.virtualDiskObjectDeletion("Random text");
-        virtualDiskService1.virtualDiskObjectDeletion("Test5");
+        virtualDiskService1.deleteDiskObject("Random text");
+        virtualDiskService1.deleteDiskObject("Test5");
 
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk1);

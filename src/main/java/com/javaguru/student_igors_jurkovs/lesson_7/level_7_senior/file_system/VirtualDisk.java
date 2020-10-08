@@ -23,7 +23,7 @@ public class VirtualDisk {
         this.diskMemoryArray = new int[diskMaxMemory + 1];
     }
 
-    int getDiskMemoryUsed() {
+    public int getDiskMemoryUsed() {
         return diskMemoryUsed;
     }
 
@@ -31,27 +31,27 @@ public class VirtualDisk {
         return diskName;
     }
 
-    int[] getDiskMemoryArray() {
+    public int[] getDiskMemoryArray() {
         return diskMemoryArray;
     }
 
-    int getDiskMaxMemory() {
+    public int getDiskMaxMemory() {
         return diskMaxMemory;
     }
 
-    List<DiskObject> getDiskObjects() {
+    public List<DiskObject> getDiskObjects() {
         return diskObjects;
     }
 
-    void setDiskMemoryUsed(int diskMemoryUsed) {
+    public void setDiskMemoryUsed(int diskMemoryUsed) {
         this.diskMemoryUsed = diskMemoryUsed;
     }
 
-    void setDiskObjects(List<DiskObject> diskObjects) {
+    public void setDiskObjects(List<DiskObject> diskObjects) {
         this.diskObjects = diskObjects;
     }
 
-    void setDiskMemoryArray(int[] diskMemoryArray) {
+    public void setDiskMemoryArray(int[] diskMemoryArray) {
         this.diskMemoryArray = diskMemoryArray;
     }
 
