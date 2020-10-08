@@ -8,21 +8,22 @@ import java.util.Scanner;
 
 class UserMenu {
 
-    Scanner scanner = new Scanner(System.in);
-    InsuranceType insuranceTypeChoice = null;
-    List<InsuranceObject> insuranceObjects = new ArrayList<>();
+    private Scanner scanner = new Scanner(System.in);
+    private InsuranceType insuranceTypeChoice = null;
+    private List<InsuranceObject> insuranceObjects = new ArrayList<>();
     List<InsuranceSubObject> subObjects = new ArrayList<>();
-    String userChoice;
+    private String userChoice;
+    private int userInput;
 
     InsuranceType insuranceTypeChoice() {
         printMenu();
         do {
-            int userChoice = scanner.nextInt();
-            if (userChoice == 1) {
+            userInput = scanner.nextInt();
+            if (userInput == 1) {
                 insuranceTypeChoice = InsuranceType.FIRE;
-            } else if (userChoice == 2) {
+            } else if (userInput == 2) {
                 insuranceTypeChoice = InsuranceType.THEFT;
-            } else if (userChoice == 3) {
+            } else if (userInput == 3) {
                 insuranceTypeChoice = InsuranceType.FULL;
             }
         } while (isUserEnteredValidType());
@@ -31,7 +32,6 @@ class UserMenu {
     }
 
     List<InsuranceObject> insuranceObjects() {
-        String userChoice;
         System.out.println("Type 'YES' if you want to insure home, flat, car etc: ");
         userChoice = scanner.next();
         while (userChoice.equals("YES")) {

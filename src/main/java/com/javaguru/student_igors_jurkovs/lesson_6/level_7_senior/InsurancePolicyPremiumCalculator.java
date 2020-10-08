@@ -10,6 +10,7 @@ class InsurancePolicyPremiumCalculator {
     private static final double THEFT_INSURANCE_COEFFICIENT_GREATER_2000 = 0.02;
 
     private Policy policy;
+    double insurancePrice;
 
     double calculate(Policy policy) {
         this.policy = policy;
@@ -30,7 +31,6 @@ class InsurancePolicyPremiumCalculator {
     }
 
     private double calculatePrice(double allSubObjectsPriceSum) {
-        double insurancePrice = 0;
         InsuranceType insuranceType = policy.insuranceType;
         double fireCoefficient = FIRE_INSURANCE_COEFFICIENT_LESSER_2000;
         double theftCoefficient = THEFT_INSURANCE_COEFFICIENT_LESSER_2000;
