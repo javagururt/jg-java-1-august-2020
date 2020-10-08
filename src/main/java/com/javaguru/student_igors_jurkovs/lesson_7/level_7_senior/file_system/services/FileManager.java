@@ -2,6 +2,8 @@ package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.s
 
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NotEnoughMemoryException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.TooLongNameException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.UniqueNumber;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDisk;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
@@ -20,20 +22,21 @@ class FileManager {
         diskMemoryService = new DiskMemoryService(virtualDisk);
     }
 
-    void addingFolderToFileSystem(DiskObject folder) {
+    void addingFolderToFileSystem(DiskObject folder) throws TooLongNameException, NotEnoughMemoryException {
         addingDiskObjectToDisk(folder);
         folder.setDirectory(folder.getDirectory());
     }
 
-    void addingFileToFileSystem(DiskObject file) {
+    void addingFileToFileSystem(DiskObject file) throws TooLongNameException, NotEnoughMemoryException {
         addingDiskObjectToDisk(file);
         file.setDirectory(file.getDirectory());
     }
 
-    void addingSubObjectToFileSystem(String folderName, String subDiskObjectName) throws NoSuchNameException, InvalidDiskObjectException {
+    void addingSubObjectToFileSystem(String folderName, String subObjectName)
+            throws NoSuchNameException, InvalidDiskObjectException, TooLongNameException, NotEnoughMemoryException {
         DiskObject folder = findDiskObject(folderName);
         if (folder instanceof Folder) {
-            DiskObject subFolder = new Folder(subDiskObjectName);
+            DiskObject subFolder = new Folder(subObjectName);
             addingDiskObjectToDisk(subFolder);
             subFolder.setDirectory(getDirectory(folderName));
 
@@ -54,14 +57,14 @@ class FileManager {
         throw new NoSuchNameException();
     }
 
-    private void addingDiskObjectToDisk(DiskObject diskObject) {
-        if (nameIsLessThan20Char(diskObject) && isEnoughMemory(diskObject)) {
-            List<DiskObject> diskObjects = virtualDisk.getDiskObjects();
-            diskObjects.add(diskObject);
-            diskObject.setUniqueNumber(UniqueNumber.uniqueNumberGeneration());
-            diskMemoryService.addingDiskObjectToDiskMemory(diskObject);
-            virtualDisk.setDiskObjects(diskObjects);
-        }
+    private void addingDiskObjectToDisk(DiskObject diskObject) throws TooLongNameException, NotEnoughMemoryException {
+        checkNameLength(diskObject);
+        checkIfEnoughMemory(diskObject);
+        List<DiskObject> diskObjects = virtualDisk.getDiskObjects();
+        diskObjects.add(diskObject);
+        diskObject.setUniqueNumber(UniqueNumber.uniqueNumberGeneration());
+        diskMemoryService.addingDiskObjectToDiskMemory(diskObject);
+        virtualDisk.setDiskObjects(diskObjects);
     }
 
     void diskObjectDeletion(String name) throws NoSuchNameException {
@@ -78,11 +81,15 @@ class FileManager {
         virtualDisk.setDiskObjects(diskObjects);
     }
 
-    private boolean nameIsLessThan20Char(DiskObject diskObject) {
-        return diskObject.getName().length() <= DiskObject.MAX_CHAR;
+    private void checkNameLength(DiskObject diskObject) throws TooLongNameException {
+        if (diskObject.getName().length() >= DiskObject.MAX_CHAR) {
+            throw new TooLongNameException("Name longer than 20 char");
+        }
     }
 
-    private boolean isEnoughMemory(DiskObject diskObject) {
-        return virtualDisk.getDiskMaxMemory() >= (virtualDisk.getDiskMemoryUsed() + diskObject.getSize());
+    private void checkIfEnoughMemory(DiskObject diskObject) throws NotEnoughMemoryException {
+        if (virtualDisk.getDiskMaxMemory() <= (virtualDisk.getDiskMemoryUsed() + diskObject.getSize())) {
+            throw new NotEnoughMemoryException("Not enough memory");
+        }
     }
 }

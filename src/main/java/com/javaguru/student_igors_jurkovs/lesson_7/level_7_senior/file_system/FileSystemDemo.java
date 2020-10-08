@@ -2,6 +2,8 @@ package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NotEnoughMemoryException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.TooLongNameException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.FileType;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.PrintInformationUtils;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDisk;
@@ -9,7 +11,8 @@ import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.se
 
 class FileSystemDemo {
 
-    public static void main(String[] args) throws NoSuchNameException, InvalidDiskObjectException {
+    public static void main(String[] args)
+            throws NoSuchNameException, InvalidDiskObjectException, TooLongNameException, NotEnoughMemoryException {
 
         VirtualDisk virtualDisk = new VirtualDisk(40);
         VirtualDiskService virtualDiskService = new VirtualDiskService(virtualDisk);
@@ -78,11 +81,6 @@ class FileSystemDemo {
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk1);
         PrintInformationUtils.printDiskObjects(virtualDisk1);
-
-        System.out.println("Trying to create file bigger than disk remaining memory");
-        virtualDiskService1.createFile("Big File", 80, FileType.JAVA);
-
-        PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
 
         System.out.println("Deleting text file and folder 'Test5'");
         virtualDiskService1.deleteDiskObject("Random text");
