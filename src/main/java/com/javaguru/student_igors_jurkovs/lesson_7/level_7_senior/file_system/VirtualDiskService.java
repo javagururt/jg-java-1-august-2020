@@ -29,14 +29,14 @@ class VirtualDiskService {
         file.setDirectory(file.getDirectory());
     }
 
-    void createDiskObjectInFolder(String folderName, String subDiskObjectName) throws NoSuchNameException {
+    void createDiskObjectInFolder(String folderName, String subDiskObjectName) throws NoSuchNameException, InvalidDiskObjectException {
         DiskObject folder = findDiskObject(folderName);
         if (folder instanceof Folder) {
             DiskObject subFolder = new Folder(subDiskObjectName);
             addingDiskObjectToDisk(subFolder);
             subFolder.setDirectory(getDirectory(folderName));
 
-        } else throw new NoSuchNameException();
+        } else throw new InvalidDiskObjectException();
     }
 
 

@@ -9,14 +9,14 @@ public class VirtualDisk {
 
     public static char diskChar = 'C';
 
-    private final char diskName;
+    private char diskName;
     private final int diskMaxMemory;
     private int diskMemoryUsed;
     private List<DiskObject> diskObjects;
     private int[] diskMemoryArray;
 
     VirtualDisk(int diskMaxMemory) {
-        this.diskName = diskChar++;
+        this.diskName = setDiskName();
         this.diskMaxMemory = diskMaxMemory;
         this.diskMemoryUsed = 0;
         this.diskObjects = new ArrayList<>();
@@ -53,5 +53,9 @@ public class VirtualDisk {
 
     void setDiskMemoryArray(int[] diskMemoryArray) {
         this.diskMemoryArray = diskMemoryArray;
+    }
+
+    private char setDiskName() {
+        return diskChar++;
     }
 }
