@@ -1,10 +1,16 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.DiskObject;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.FileType;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.PrintInformationUtils;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDisk;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.VirtualDiskService;
 
 class FileSystemDemo {
 
-    public static void main(String[] args) throws NoSuchNameException {
+    public static void main(String[] args)
+            throws NoSuchNameException, InvalidDiskObjectException {
 
         VirtualDisk virtualDisk = new VirtualDisk(40);
         VirtualDiskService virtualDiskService = new VirtualDiskService(virtualDisk);
@@ -17,15 +23,22 @@ class FileSystemDemo {
         System.out.println("Creating two folders, 1 subfolder and 1 file");
         virtualDiskService.createFolder("Test1");
         virtualDiskService.createFolder("Test2");
-        virtualDiskService.createDiskObjectInFolder("Test2", "Test2 sub folder");
+        virtualDiskService.createSubFolder("Test2", "Test2 sub folder");
         virtualDiskService.createFile("Game", 10, FileType.EXE);
 
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk);
         PrintInformationUtils.printDiskObjects(virtualDisk);
 
+        System.out.println("Creating sub folder with too long name");
+        virtualDiskService.createSubFolder("Test1", "Too long name to create folder");
+
+        PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk);
+        PrintInformationUtils.printDiskMemoryArray(virtualDisk);
+        PrintInformationUtils.printDiskObjects(virtualDisk);
+
         System.out.println("Deleting folder 'Test2'");
-        virtualDiskService.virtualDiskObjectDeletion("Test2");
+        virtualDiskService.deleteDiskObject("Test2");
 
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk);
@@ -68,7 +81,7 @@ class FileSystemDemo {
 
         System.out.println("Creating folder and subfolder");
         virtualDiskService1.createFolder("Test5");
-        virtualDiskService1.createDiskObjectInFolder("Test5", "Test5 in");
+        virtualDiskService1.createSubFolder("Test5", "Test5 in");
 
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk1);
@@ -80,8 +93,8 @@ class FileSystemDemo {
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
 
         System.out.println("Deleting text file and folder 'Test5'");
-        virtualDiskService1.virtualDiskObjectDeletion("Random text");
-        virtualDiskService1.virtualDiskObjectDeletion("Test5");
+        virtualDiskService1.deleteDiskObject("Random text");
+        virtualDiskService1.deleteDiskObject("Test5");
 
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk1);
@@ -89,6 +102,13 @@ class FileSystemDemo {
 
         System.out.println("Creating exe file");
         virtualDiskService1.createFile("Random text", 30, FileType.EXE);
+
+        PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
+        PrintInformationUtils.printDiskMemoryArray(virtualDisk1);
+        PrintInformationUtils.printDiskObjects(virtualDisk1);
+
+        System.out.println("Creating txt file in Test4 folder");
+        virtualDiskService1.createFileInFolder("Test4", "Text test", 10, FileType.TXT);
 
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
         PrintInformationUtils.printDiskMemoryArray(virtualDisk1);

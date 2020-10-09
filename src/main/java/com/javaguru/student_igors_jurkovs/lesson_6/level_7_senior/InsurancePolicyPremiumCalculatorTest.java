@@ -1,8 +1,5 @@
 package com.javaguru.student_igors_jurkovs.lesson_6.level_7_senior;
 
-
-import java.util.List;
-
 class InsurancePolicyPremiumCalculatorTest {
 
     public static void main(String[] args) {
