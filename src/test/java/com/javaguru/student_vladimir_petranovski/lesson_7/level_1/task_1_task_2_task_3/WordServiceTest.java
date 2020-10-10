@@ -2,10 +2,14 @@ package com.javaguru.student_vladimir_petranovski.lesson_7.level_1.task_1_task_2
 
 import org.junit.Before;
 import org.junit.Test;
-
+/*
 import static com.javaguru.student_vladimir_petranovski.lesson_7.level_1.task_1_task_2_task_3.WordService.*;
 
+
+ */
+/*
 public class WordServiceTest {
+
     private WordService test;
 
     @Before
@@ -41,3 +45,5 @@ public class WordServiceTest {
         assertEquals(1, foundMaxAmountRepeatWordOnIndex("Mama Ha, mila ha, ramu! ha!"));
     }
 }
+
+ */

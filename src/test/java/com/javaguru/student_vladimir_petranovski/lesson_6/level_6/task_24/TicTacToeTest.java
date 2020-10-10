@@ -3,7 +3,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_6.level_6.task_24;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-
+/*
 public class TicTacToeTest {
 
     @Test
@@ -19,3 +19,5 @@ public class TicTacToeTest {
         }
     }
 }
+
+ */

@@ -3,7 +3,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_7.level_6.task_11_2;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CreditCardServiceTest {
+/*public class CreditCardServiceTest {
     private CreditCardService test;
     private CreditCard creditCard;
 
@@ -103,3 +103,5 @@ public class CreditCardServiceTest {
         assertEquals(false, test.isWithdrawMoreBalance(creditCard, 10));
     }
 }
+
+ */
