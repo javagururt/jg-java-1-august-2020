@@ -3,6 +3,8 @@ package com.javaguru.student_vladimir_petranovski.lesson_4.level_4.task_11;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class TaskElevenCalculatorTest {
     private TaskElevenCalculator taskElevenCalculator;
 

@@ -3,6 +3,8 @@ package com.javaguru.student_vladimir_petranovski.lesson_4.level_4.task_13;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class TaskThirteenEvenOrOddTest {
     private TaskThirteenEvenOrOdd taskThirteenEvenOrOdd;
 
