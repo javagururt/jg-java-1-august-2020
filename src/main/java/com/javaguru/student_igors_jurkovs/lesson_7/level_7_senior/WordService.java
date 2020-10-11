@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class WordService {
 
     String findMostFrequentWord(String text) {
@@ -41,6 +43,8 @@ class WordService {
         return wordCountArray;
     }
 
+    @CodeReviewComment(teacher = "тестовые методы лучше хранить в тестовых классах. " +
+            "В данном случае получается, что метод для теста хранится в продакшн коде")
     void test(boolean condition, String action) {
         if (condition) {
             System.out.println(action + " test: OK");

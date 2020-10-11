@@ -3,8 +3,10 @@ package com.javaguru.student_ivan_shulga.lesson_6.level_3_junior.Task_9;
 // основа класса скопирована из задания lesson_5 -> level_5_middle дописаны текущие задачи из lesson_6
 // в будущем хорошо бы упростить и оптимизировать, как минимум вывод результатов вынести в отдельный метод
 
-import java.util.Arrays;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Arrays;
+@CodeReview(approved = true)
 class ArrayUtilTest {
 
     public static void main(String[] args) {

@@ -1,4 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_6.level_5.task_21;
+
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 В классе TicTacToe реализуйте
 метод для определения является ли данная позиция
@@ -17,7 +21,8 @@ public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck).
 
 В классе TicTacToeTest написать тесты для разработанного метода.
  */
-
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "чтобы код был более читаем, постарайтесь if выносить на следующую строку")
 class TicTacToe {
     public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
         int countOne =0, countTwo = 0;

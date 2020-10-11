@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_7.level_6.task_12;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Написать программу, которая определяет, является ли строка палиндромом.
 Палиндром - это буквосочетание, слово или текст, одинаково читающееся в обоих направлениях.
@@ -16,7 +19,7 @@ boolean isPalindrome(String text) - метод возвращает true, есл
 Написать тестовые сценарии для класса Palindrome в классе PalindromeTest.
 Все тестовые сценарии должны отрабатывать без ошибок.
  */
-
+@CodeReview(approved = true)
 class Palindrome {
     boolean isPalindrome(String text) {
         if (text == null) {

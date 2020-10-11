@@ -15,8 +15,10 @@ int[] copyInRange(int[] in, int numberFrom, int numberTo)
 Все тестовые сценарии должны отрабатывать без ошибок.
  */
 
-import java.util.Arrays;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Arrays;
+@CodeReview(approved = true)
 class Copy {
 
     int[] copyInRange(int[] in, int numberFrom, int numberTo) {

@@ -1,7 +1,10 @@
 package com.javaguru.student_ivan_shulga.lesson_6.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class DayOfTheWeekDetector {
 
     public static final int MIN_NUMBER = 1;

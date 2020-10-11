@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_6.level_6.task_25;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создайте класс Move с двумя свойствами:
 
@@ -19,7 +22,7 @@ public Move getNextMove() {
     // верните созданный объект Move из метода.
 }
  */
-
+@CodeReview(approved = true)
 class Move {
     private int x;
     private int y;

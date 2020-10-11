@@ -7,8 +7,10 @@ public void printFieldToConsole(int[][] field) {
 }
  */
 
-import java.util.Arrays;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Arrays;
+@CodeReview(approved = true)
 class TicTacToe {
     public void printFieldToConsole(int[][] field) {
         for (int[] ints : field) {

@@ -1,8 +1,10 @@
 package com.javaguru.student_ivan_shulga.lesson_6.level_3_junior.Task_9;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 // файл для самопроверки, как работает программа
 // основа класса скопирована из задания lesson_5 -> level_5_middle дописаны текущие задачи из lesson_6
-
+@CodeReview(approved = true)
 class ArrayDemo {
 
     public static void main(String[] args) {

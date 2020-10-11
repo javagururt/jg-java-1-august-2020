@@ -10,7 +10,7 @@ class PalindromeCheck {
 
     boolean isPalindrome() {
         for (int i = 0; i < splitTextToChar().length / 2; i++) {
-            if (!(splitTextToChar()[i] == splitTextToChar()[splitTextToChar().length - i - 1])) {
+            if (splitTextToChar()[i] != splitTextToChar()[splitTextToChar().length - i - 1]) {
 
                 return false;
             }
@@ -19,13 +19,13 @@ class PalindromeCheck {
         return true;
     }
 
-    String formattedText() {
-        return text.toLowerCase().replaceAll(",", "")
-                .replaceAll("\\.", "")
-                .replaceAll(" ", "");
+    private String formattedText() {
+        return text.toLowerCase().replace(",", "")
+                .replace(".", "")
+                .replace(" ", "");
     }
 
-    char[] splitTextToChar() {
+    private char[] splitTextToChar() {
         return formattedText().toCharArray();
     }
 

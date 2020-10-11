@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior;
 
-import java.util.Arrays;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Arrays;
+@CodeReview(approved = true)
 class WordServiceTest {
 
     String text = "Это текст просто текст просто просто";

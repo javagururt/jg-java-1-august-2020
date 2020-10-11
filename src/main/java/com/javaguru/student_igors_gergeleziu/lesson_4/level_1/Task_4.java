@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_gergeleziu.lesson_4.level_1;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class Task_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

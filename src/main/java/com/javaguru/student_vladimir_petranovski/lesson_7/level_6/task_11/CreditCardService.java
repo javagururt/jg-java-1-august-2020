@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_7.level_6.task_11;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class CreditCardService {
     boolean deposit(CreditCard creditCard, int pin, double deposit) {
         if (!isPin(creditCard, pin)) {
