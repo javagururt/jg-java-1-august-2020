@@ -31,8 +31,11 @@ class DayOfTheWeekDetectorDemo {
 автоматические тесты для всех сценариев.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorDemo {
     public String detectDayName(int number) {
         Scanner myInput = new Scanner(System.in);

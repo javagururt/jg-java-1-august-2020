@@ -11,8 +11,11 @@ package com.javaguru.student_vadim_migun.lesson_6.level_4_junior.Task_18;
 чисел в массиве.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Random;
 
+@CodeReview(approved = true)
 class TwoDimensionalArray {
 
     public int[][] randomNumbers() {

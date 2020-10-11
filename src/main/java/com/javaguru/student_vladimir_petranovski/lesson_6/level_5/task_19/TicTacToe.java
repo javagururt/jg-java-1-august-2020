@@ -19,6 +19,10 @@ public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck).
 Создать класс TicTacToeTest
 и написать тесты для разработанного метода.
  */
+
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class TicTacToe {
     public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
         for (int i = 0; i < field.length; i++) {

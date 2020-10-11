@@ -1,9 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_4.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
+@CodeReview(approved = true)
 public class CalculatorTest {
 
     private Calculator victim = new Calculator();

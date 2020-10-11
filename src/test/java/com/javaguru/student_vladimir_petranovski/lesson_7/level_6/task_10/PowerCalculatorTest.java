@@ -1,10 +1,12 @@
 package com.javaguru.student_vladimir_petranovski.lesson_7.level_6.task_10;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-
+@CodeReview(approved = true)
 public class PowerCalculatorTest {
     private PowerCalculator test;
 

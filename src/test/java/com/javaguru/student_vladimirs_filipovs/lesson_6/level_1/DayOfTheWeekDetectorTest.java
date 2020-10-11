@@ -1,10 +1,12 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_6.level_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorTest {
     private DayOfTheWeekDetector victim;
 

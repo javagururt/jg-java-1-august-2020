@@ -1,7 +1,9 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_7.level_1;
 
-import java.util.Arrays;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Arrays;
+@CodeReview(approved = true)
 class WordService {
     //план построения программы:
     //1. Создать массив для отдельных слов.

@@ -2,9 +2,11 @@ package com.javaguru.student_ivan_shulga.lesson_6.level_3_junior.Task_9;
 
 // основа класса скопирована из задания lesson_5 -> level_5_middle дописаны текущие задачи из lesson_6
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Arrays;
 import java.util.Random;
-
+@CodeReview(approved = true)
 class ArrayUtil {
 
 

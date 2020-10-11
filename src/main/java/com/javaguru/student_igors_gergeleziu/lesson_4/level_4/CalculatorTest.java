@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_gergeleziu.lesson_4.level_4;
 
-import java.util.concurrent.Callable;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.concurrent.Callable;
+@CodeReview(approved = true)
 class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();

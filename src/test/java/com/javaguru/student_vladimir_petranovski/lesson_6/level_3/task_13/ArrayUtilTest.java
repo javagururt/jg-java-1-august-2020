@@ -1,9 +1,11 @@
 package com.javaguru.student_vladimir_petranovski.lesson_6.level_3.task_13;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-
+@CodeReview(approved = true)
 class ArrayUtilTest {
 
     @Test

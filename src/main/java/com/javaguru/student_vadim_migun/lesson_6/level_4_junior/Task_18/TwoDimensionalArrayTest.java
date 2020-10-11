@@ -1,5 +1,8 @@
 package com.javaguru.student_vadim_migun.lesson_6.level_4_junior.Task_18;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class TwoDimensionalArrayTest {
 
     public static void main(String[] args) {

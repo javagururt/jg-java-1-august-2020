@@ -28,6 +28,8 @@ PS: если вы не можете придумать как разбить э�
 собрать решение главной задачи.
  */
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class WordService {
     String findMostFrequentWord(String text) {
 
@@ -51,6 +53,7 @@ class WordService {
         return count;
     }
 
+    @CodeReviewComment(teacher = "лучше каждую переменную объявлять на новой строке")
     static int foundMaxAmountRepeatWordOnIndex(String text) {
         int max = 0, index = 0;
         for (int i = 0; i < fillArrayIntegerForCountEachWord(text).length; i++) {

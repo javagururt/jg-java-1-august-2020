@@ -1,5 +1,10 @@
 package com.javaguru.student_vladimir_larin.lesson_6.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "нет необходимости ставить скобки в case")
 class DayOfTheWeekDetector {
     static String detectDayName(int number) {
         if (number >= 1 && number <= 7)

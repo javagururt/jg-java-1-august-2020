@@ -11,6 +11,9 @@ PS: а нужно ли свойство класса initialNumber?
  */
 package com.javaguru.student_sergey_kazyanin.lesson_6.level_1_intern.Task_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class FizzBuzz {
 
 //    private int initialNumber;

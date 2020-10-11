@@ -1,4 +1,8 @@
 package com.javaguru.student_roman_tasilov.lesson_4.level_5;
+
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 /*
 Функциональные требования:
 Программа должна определять цвет в зависимости
@@ -14,6 +18,8 @@ package com.javaguru.student_roman_tasilov.lesson_4.level_5;
 
 
  */
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "для того, чтобы использовать 'и' нужно указать &&")
 public class LightColorDetector {
     public String detect(int waveLenght) {
         if (waveLenght >= 380 & waveLenght <= 449) {

@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_7.level_6.task_10;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Разработать класс PowerCalculator, который реализует единственный функциональный метод
 для возведения заданного числа в заданную степень.
@@ -6,7 +9,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_7.level_6.task_10;
 Написать тестовые сценарии для класса PowerCalculator в классе PowerCalculatorTest.
 Все тестовые сценарии должны отрабатывать без ошибок.
  */
-
+@CodeReview(approved = true)
 class PowerCalculator {
     double raiseNumberToPower(double number, double power) {
         if (power == 0) {

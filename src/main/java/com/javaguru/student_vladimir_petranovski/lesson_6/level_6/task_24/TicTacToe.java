@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_6.level_6.task_24;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 В классе TicTacToe реализуйте метод:
 
@@ -9,7 +12,7 @@ public int[][] createField().
 
 В классе TicTacToeTest написать тесты для разработанного метода.
  */
-
+@CodeReview(approved = true)
 class TicTacToe {
     public int[][] createField() {
         int[][] field = new int[3][3];

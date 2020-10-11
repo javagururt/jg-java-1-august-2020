@@ -1,10 +1,12 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_6_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
+@CodeReview(approved = true)
 public class PalindromeCheckTest {
 
     String text;

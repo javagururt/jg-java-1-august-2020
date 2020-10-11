@@ -11,9 +11,11 @@ package com.javaguru.student_vladimir_petranovski.lesson_6.level_4.task_18;
 чисел в массиве.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Arrays;
 import java.util.Random;
-
+@CodeReview(approved = true)
 class TwoDimensionalArray {
     public static int[][] fillArray() {
         int[][] twoArray = new int[3][3];

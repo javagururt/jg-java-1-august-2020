@@ -43,9 +43,11 @@ public static void main(String[] args) {
 Сыграйте в игру крестики нолики!
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Arrays;
 import java.util.Scanner;
-
+@CodeReview(approved = true)
 class TicTacToe {
 
     public boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {

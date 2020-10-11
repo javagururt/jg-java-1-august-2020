@@ -1,7 +1,11 @@
 package com.javaguru.student_igors_gergeleziu.lesson_4.level_1;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Лучше ставить фигурные скобки, чтобы явно указать область видимости")
 class Task_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

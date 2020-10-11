@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_6.level_1.task_3;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Разберитесь, что делает класс указанный ниже.
 Это реализация одного из супер тасков предыдущего урока.
@@ -18,7 +21,7 @@ class FizzBuzz {
     }
 }
  */
-
+@CodeReview(approved = true)
 class FizzBuzz {
     public String detect(int number) {
         if ((number % 3 == 0) && (number % 5 == 0)) return "FizzBuzz";

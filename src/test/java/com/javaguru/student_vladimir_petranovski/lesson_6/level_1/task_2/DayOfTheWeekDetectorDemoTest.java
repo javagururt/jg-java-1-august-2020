@@ -1,10 +1,12 @@
 package com.javaguru.student_vladimir_petranovski.lesson_6.level_1.task_2;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemoTest {
     private DayOfTheWeekDetectorDemo test;
 

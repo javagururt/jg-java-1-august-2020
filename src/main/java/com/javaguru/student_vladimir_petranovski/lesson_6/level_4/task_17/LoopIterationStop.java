@@ -1,10 +1,13 @@
 package com.javaguru.student_vladimir_petranovski.lesson_6.level_4.task_17;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Как досрочно закончить текущую итерацию цикла?
 Найдите ответ в интернете и напишите пример кода
 для циклов while и for.
  */
-
+@CodeReview(approved = true)
 class LoopIterationStop {
     public static void endlessLoops() {
         int a = 1;

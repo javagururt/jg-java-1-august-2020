@@ -1,7 +1,11 @@
 package com.javaguru.student_ivan_shulga.lesson_6.level_4_junior;
 
-import java.util.Random;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Random;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "лучше не смешивать static/non-static методы в одном классе")
 class TwoDimensionalArray {
 
     int[][] createTwoDemensionalArray(int size) {

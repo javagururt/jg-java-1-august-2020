@@ -1,15 +1,20 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_6_middle;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+@CodeReview(approved = false)
 public class CreditCardTest {
 
     private CreditCard victim = new CreditCard("4552-2451-1255-2222", 1234);
 
     @Before
+    @CodeReviewComment(teacher = "получается, что изначальные данные завязаны на работу метода withdraw")
     public void setUpCreditLimit() {
         victim.setCreditLimit(1000);
         victim.withdraw(100, 1234);
