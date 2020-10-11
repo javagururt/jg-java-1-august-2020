@@ -1,51 +1,47 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_6_middle;
 
-import com.javaguru.teacher.codereview.CodeReview;
-import com.javaguru.teacher.codereview.CodeReviewComment;
-
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
-@CodeReview(approved = false)
+@RunWith(JUnitParamsRunner.class)
+@Category(CreditCard.class)
 public class CreditCardTest {
 
-    private CreditCard victim = new CreditCard("4552-2451-1255-2222", 1234);
+    private final CreditCard victim = new CreditCard("4552-2451-1255-2222", 1234);
 
     @Before
-    @CodeReviewComment(teacher = "получается, что изначальные данные завязаны на работу метода withdraw")
     public void setUpCreditLimit() {
         victim.setCreditLimit(1000);
         victim.withdraw(100, 1234);
     }
 
     @Test
-    public void depositWhenPinCorrect() {
-        double expected = 100;
-        double result = victim.deposit(200, 1234);
-        assertEquals(expected, result, 0.01);
+    @Parameters({
+            "200, 1234, 100",
+            "200, 1235, 0"
+
+    })
+    public void depositWhenPinCorrectAndIncorrect(double deposit, int pin, double expected) {
+        double result = victim.deposit(deposit, pin);
+        assertThat(result).isEqualByComparingTo(expected);
     }
 
     @Test
-    public void withdrawWhenPinCorrect() {
-        double expected = 0;
-        double result = victim.withdraw(200, 1234);
-        assertEquals(expected, result, 0.01);
-    }
+    @Parameters({
+            "200, 1234, 0",
+            "200, 1235, 0"
 
-    @Test
-    public void depositWhenPinIncorrect() {
-        double expected = 0;
-        double result = victim.deposit(200, 1235);
-        assertEquals(expected, result, 0.01);
-    }
-
-    @Test
-    public void withdrawWhenPinIncorrect() {
-        double expected = 0;
-        double result = victim.withdraw(200, 1235);
-        assertEquals(expected, result, 0.01);
+    })
+    public void withdrawWhenPinCorrectAndIncorrect(double withdraw, int pin, double expected) {
+        double result = victim.withdraw(withdraw, pin);
+        assertThat(result).isEqualByComparingTo(expected);
     }
 
     @Test
