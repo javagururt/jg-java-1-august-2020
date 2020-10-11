@@ -26,7 +26,7 @@ class CopyNumbersInRange {
         return copyInRange;
     }
 
-    int numbersQuantityInRange(int[] in, int numberFrom, int numberTo) {
+    private int numbersQuantityInRange(int[] in, int numberFrom, int numberTo) {
         int numbersInRange = 0;
         for (int j : in) {
             if (j >= numberFrom && numberTo >= j) {
