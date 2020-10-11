@@ -20,7 +20,6 @@ public class PowerCalculatorTest {
             "0, 100, 0"
     })
     public void powerCalculator(int number, int power, int expected) {
-
         PowerCalculator victim = new PowerCalculator();
         int result = victim.powerCalculator(number, power);
         assertThat(result).isEqualByComparingTo(expected);
