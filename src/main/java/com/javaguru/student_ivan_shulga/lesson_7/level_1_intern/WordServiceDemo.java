@@ -21,6 +21,8 @@ class WordServiceDemo {
         text = wordService.textToArray(text); // получили массив со словами
 
         System.out.println(text);
+
+        // считаем слова
     }
 
 }

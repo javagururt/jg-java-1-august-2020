@@ -27,6 +27,8 @@ class WordService {
         return Arrays.toString(textArray);
     }
 
+    // считаем слова
+
 }
 /*
 1. убираем из текста все знаки препинания, оставляем только пробелы
