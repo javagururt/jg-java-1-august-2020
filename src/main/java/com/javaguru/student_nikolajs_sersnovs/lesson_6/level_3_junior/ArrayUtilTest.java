@@ -12,7 +12,6 @@ public class ArrayUtilTest {
         System.out.println("--------------------");
         arrayUtilTest.shouldReplaceFirst();
         System.out.println("--------------------");
-
         arrayUtilTest.shouldReplaceAll();
         System.out.println("--------------------");
         arrayUtilTest.shouldFlippingAll();
