@@ -72,7 +72,7 @@ class ArrayUtil {
     public int findMaxNumber(int[] array) {
         int maxNumber = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (maxNumber > array[i]) {
+            if (maxNumber < array[i]) {
                 maxNumber = array[i];
             }
         }
@@ -91,7 +91,7 @@ class ArrayUtil {
     public int findMinNumber(int[] array) {
         int minNumber = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (minNumber < array[i]) {
+            if (minNumber > array[i]) {
                 minNumber = array[i];
             }
         }
