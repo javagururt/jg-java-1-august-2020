@@ -8,6 +8,10 @@ abstract class Shape {
         this.title = title;
     }
 
+    String getTitle(Shape shape) {
+        return shape.title;
+    }
+
     abstract double calculateArea();
 
     abstract double calculatePerimeter();
