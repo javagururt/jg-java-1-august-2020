@@ -1,19 +1,20 @@
 package com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system;
 
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.InvalidDiskObjectException;
-import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.exceptions.NoSuchNameException;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.FileType;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.miscs.PrintInformationUtils;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.models.VirtualDisk;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.DiskMemoryService;
+import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.FileManager;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.VirtualDiskService;
 
 class FileSystemDemo {
 
-    public static void main(String[] args)
-            throws NoSuchNameException, InvalidDiskObjectException {
+    public static void main(String[] args) {
 
         VirtualDisk virtualDisk = new VirtualDisk(40);
-        VirtualDiskService virtualDiskService = new VirtualDiskService(virtualDisk);
+        DiskMemoryService diskMemoryService = new DiskMemoryService(virtualDisk);
+        FileManager fileManager = new FileManager(virtualDisk);
+        VirtualDiskService virtualDiskService = new VirtualDiskService(diskMemoryService, fileManager);
 
         PrintInformationUtils.printDiskName(virtualDisk);
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk);
@@ -52,12 +53,14 @@ class FileSystemDemo {
         PrintInformationUtils.printDiskObjects(virtualDisk);
 
         System.out.println("Using defragmentation");
-        virtualDiskService.diskDefragmentation();
+        diskMemoryService.diskDefragmentation();
 
         PrintInformationUtils.printDiskMemoryArray(virtualDisk);
 
         VirtualDisk virtualDisk1 = new VirtualDisk(70);
-        VirtualDiskService virtualDiskService1 = new VirtualDiskService(virtualDisk1);
+        DiskMemoryService diskMemoryService1 = new DiskMemoryService(virtualDisk1);
+        FileManager fileManager1 = new FileManager(virtualDisk1);
+        VirtualDiskService virtualDiskService1 = new VirtualDiskService(diskMemoryService1, fileManager1);
 
         PrintInformationUtils.printDiskName(virtualDisk1);
         PrintInformationUtils.printDiskCurrentMemoryUsed(virtualDisk1);
@@ -114,7 +117,7 @@ class FileSystemDemo {
         PrintInformationUtils.printDiskMemoryArray(virtualDisk1);
         PrintInformationUtils.printDiskObjects(virtualDisk1);
 
-        virtualDiskService1.diskDefragmentation();
+        diskMemoryService1.diskDefragmentation();
         PrintInformationUtils.printDiskMemoryArray(virtualDisk1);
     }
 }
