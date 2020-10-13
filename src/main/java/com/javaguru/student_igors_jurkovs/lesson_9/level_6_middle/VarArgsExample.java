@@ -1,4 +1,4 @@
-package com.javaguru.teacher.lesson_9.homework.level_6_middle;
+package com.javaguru.student_igors_jurkovs.lesson_9.level_6_middle;
 
 class VarArgsExample {
 
