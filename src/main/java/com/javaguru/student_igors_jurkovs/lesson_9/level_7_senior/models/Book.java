@@ -55,7 +55,7 @@ public class Book {
     public void setReservation() {
         if (!isTaken) {
             isReserved = true;
-        } else throw new BookIsTakenException();
+        } else throw new BookIsTakenException("Book is taken");
 
     }
 
