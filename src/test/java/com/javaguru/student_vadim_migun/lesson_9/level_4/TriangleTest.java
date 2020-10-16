@@ -4,21 +4,21 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class SquareTest {
+public class TriangleTest {
 
-    Square victim = new Square(5, 5);
+    Triangle victim = new Triangle(4.33,5);
 
     @Test
     public void shouldCalculateArea() {
         double actual = victim.calculateArea();
-        assertEquals(25, actual, 0.01);
+        assertEquals(10.825, actual, 0.001);
         System.out.println(actual);
     }
 
     @Test
     public void shouldCalculatePerimeter() {
         double actual = victim.calculatePerimeter();
-        assertEquals(20, actual, 0.01);
+        assertEquals(15, actual, 0.1);
         System.out.println(actual);
     }
 }
