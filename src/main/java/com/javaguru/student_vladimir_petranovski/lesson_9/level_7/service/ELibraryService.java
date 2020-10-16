@@ -7,38 +7,38 @@ import java.util.Scanner;
 
 public class ELibraryService {
 
-    String searchBookInLibrary(ArrayList<String> books, String name) {
+    public String searchBookInLibrary(ArrayList<String> books, String name) {
         return books.contains(name) ? "Вы нашли книгу " + name + "." : "Library doesn't have this book.";
     }
 
-    ArrayList<String> getBookFromLibrary(ArrayList<String> books, String name) {
+    public ArrayList<String> getBookFromLibrary(ArrayList<String> books, String name) {
         books.remove(name);
         return books;
     }
 
-    ArrayList<String> returnBookInLibrary(ArrayList<String> books, String name) {
+    public ArrayList<String> returnBookInLibrary(ArrayList<String> books, String name) {
         books.set(0, name);
         return books;
     }
 
-    boolean isBookInLibrary(ArrayList<String> books, String name) {
+    public boolean isBookInLibrary(ArrayList<String> books, String name) {
         return books.contains(name);
     }
 
-    boolean isBookReserved(ArrayList<String> books, String name) {
+    public boolean isBookReserved(ArrayList<String> books, String name) {
         return isBookInLibrary(books, name);
     }
 
-    ArrayList<String> reservedBook(ArrayList<String> books, String name) {
+    public ArrayList<String> reservedBook(ArrayList<String> books, String name) {
         books.remove(name);
         return books;
     }
 
-    String deliveryDate(ELibrary eLibrary) {
+    public String deliveryDate(ELibrary eLibrary) {
         return "Deadline this book " + eLibrary.getDeadlineInDay() + " days.";
     }
 
-    double fine(ELibrary eLibrary) {
+    public double fine(ELibrary eLibrary) {
         double fineMethod = 0;
         if (3 * eLibrary.getDeadlineInDay() < eLibrary.getDayOfDelay()) {
             fineMethod = 3 * eLibrary.getFine();
@@ -50,7 +50,7 @@ public class ELibraryService {
         return fineMethod;
     }
 
-    ArrayList<String> addBookInLibrary(ArrayList<String> books, String name) {
+    public ArrayList<String> addBookInLibrary(ArrayList<String> books, String name) {
         books.add(0, name);
         return books;
     }
