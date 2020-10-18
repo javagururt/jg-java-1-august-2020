@@ -1,5 +1,8 @@
 package com.javaguru.student_ivan_shulga.lesson_9.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Task_1 { // т.к. конструктор не объявлен, то будет использоваться default constructor
 
     int a = 10;

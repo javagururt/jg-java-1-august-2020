@@ -1,5 +1,7 @@
 package com.javaguru.student_igors_jurkovs.lesson_9.level_2_intern.task_7;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Как вызвать конструктор родительского класса?
 Когда это нужно делать?
@@ -9,7 +11,7 @@ package com.javaguru.student_igors_jurkovs.lesson_9.level_2_intern.task_7;
 Это нужно делать при наследовании, чтобы унаследоватсья от суперкласса.
 В противном случае выдаст компиляционную ошибку.
  */
-
+@CodeReview(approved = true)
 class ChildConstructorExample extends ParentConstructorExample {
 
     ChildConstructorExample (int property1, String property2) {

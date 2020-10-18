@@ -1,10 +1,11 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_7.service;
 
 import com.javaguru.student_vladimir_petranovski.lesson_9.level_7.bean.ELibrary;
+import com.javaguru.teacher.codereview.CodeReview;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+@CodeReview(approved = true)
 public class ELibraryService {
 
     public String searchBookInLibrary(ArrayList<String> books, String name) {

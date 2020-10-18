@@ -6,7 +6,10 @@ import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.mo
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.DiskMemoryService;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.FileManager;
 import com.javaguru.student_igors_jurkovs.lesson_7.level_7_senior.file_system.services.VirtualDiskService;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+@CodeReview(approved = true)
 class FileSystemDemo {
 
     public static void main(String[] args) {

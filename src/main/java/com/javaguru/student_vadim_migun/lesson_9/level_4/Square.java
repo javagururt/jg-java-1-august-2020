@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_9.level_4;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создание иерархии класса Shape (геометрическая фигура).
 
@@ -8,7 +11,7 @@ Shape: calculateArea() и calculatePerimeter().
 Напишите тесты для класса Square.
 
  */
-
+@CodeReview(approved = true)
 class Square extends Shape {
 
     private double height;

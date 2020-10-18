@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_jurkovs.lesson_9.level_4_5;
 
-import java.util.Random;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Random;
+@CodeReview(approved = true)
 class ShapeUtil {
 
     private final Random random = new Random();

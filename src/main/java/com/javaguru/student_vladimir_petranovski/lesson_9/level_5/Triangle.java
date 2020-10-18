@@ -1,6 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_5;
 
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class Triangle extends Shape {
     private double length;
 

@@ -1,11 +1,13 @@
 package com.javaguru.student_igors_jurkovs.lesson_9.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Дефолтный констрктор - это конструктор по умолчанию, без каких либо параметров. Если не создавать конструктор
 то он будет по умолчанию пустой, как тот, что приведен в ниже указаном примере. При использовании дефолтного
 конструктора, для создания экземпляра класса не надо вводить никаких параметров.
  */
-
+@CodeReview(approved = true)
 class DefaultConstructorExample {
 
     DefaultConstructorExample() {

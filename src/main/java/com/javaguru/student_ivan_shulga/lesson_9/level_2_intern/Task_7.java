@@ -5,7 +5,9 @@ package com.javaguru.student_ivan_shulga.lesson_9.level_2_intern;
 Но если нужно вызвать параметризованный конструктор суперкласса, то необходимо использовать ключевое слово super для вызова параметризованного конструктора суперкласса.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class Task_7 {
 
     int age;

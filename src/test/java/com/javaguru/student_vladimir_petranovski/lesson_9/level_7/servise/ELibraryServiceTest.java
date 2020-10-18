@@ -2,13 +2,15 @@ package com.javaguru.student_vladimir_petranovski.lesson_9.level_7.servise;
 
 import com.javaguru.student_vladimir_petranovski.lesson_9.level_7.bean.ELibrary;
 import com.javaguru.student_vladimir_petranovski.lesson_9.level_7.service.ELibraryService;
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
-
+@CodeReview(approved = true)
 public class ELibraryServiceTest {
     private ELibraryService test;
     private ELibrary eLibrary;

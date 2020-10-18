@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_9.level_3.task_14;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Исправьте код программы так, что бы он компилировался.
 Класс Car менять нельзя.
@@ -25,7 +28,7 @@ class PetrolCar extends Car {
 
 }
  */
-
+@CodeReview(approved = true)
 abstract class Car {
 
     abstract void accelerate();

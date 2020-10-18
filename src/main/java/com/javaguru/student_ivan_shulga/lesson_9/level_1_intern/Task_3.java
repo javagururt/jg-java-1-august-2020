@@ -1,8 +1,10 @@
 package com.javaguru.student_ivan_shulga.lesson_9.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 // Объявление полей класса похоже на объявление переменных, при создании экземпляра класса, все его поля инициализируются значениями по умолчанию.
 // Для объектов значением по умолчанию является null. Для int - 0 и т.д.
-
+@CodeReview(approved = true)
 class Task_3 {
 
     private String fullName;

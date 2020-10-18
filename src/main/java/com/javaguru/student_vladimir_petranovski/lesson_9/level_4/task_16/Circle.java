@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_4.task_16;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создание иерархии класса Shape (геометрическая фигура).
 
@@ -25,7 +28,7 @@ class Circle extends Shape {
 
 }
  */
-
+@CodeReview(approved = true)
 class Circle extends Shape {
     private double radius;
 

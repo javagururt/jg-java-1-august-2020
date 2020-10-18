@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_9.level_4;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создайте наследника класс Shape - класс Circle.
 Реализуйте в нём абстрактные методы из класса
@@ -22,7 +25,7 @@ class Circle extends Shape {
     // implement here calculatePerimeter()
 
  */
-
+@CodeReview(approved = true)
 class Circle extends Shape {
 
     private double radius;

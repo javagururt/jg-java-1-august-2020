@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_4.task_18;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создание иерархии класса Shape (геометрическая фигура).
 
@@ -7,7 +10,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_9.level_4.task_18;
 Shape: calculateArea() и calculatePerimeter().
 Напишите тесты для класса Rectangle.
  */
-
+@CodeReview(approved = true)
 class Rectangle extends Shape {
     private double length;
     private double height;
