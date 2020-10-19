@@ -2,9 +2,10 @@ package com.javaguru.student_vladimir_petranovski.lesson_9.level_7;
 
 import com.javaguru.student_vladimir_petranovski.lesson_9.level_7.bean.ELibrary;
 import com.javaguru.student_vladimir_petranovski.lesson_9.level_7.service.ELibraryService;
+import com.javaguru.teacher.codereview.CodeReview;
 
 import java.util.ArrayList;
-
+@CodeReview(approved = true)
 public class ELibraryDemo {
     public static void main(String[] args) {
         ArrayList<String> books = new ArrayList<>();

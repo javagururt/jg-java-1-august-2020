@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_1.task_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class PersonDemo {
     public static void main(String[] args) {
         Person person =new Person();

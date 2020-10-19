@@ -1,5 +1,11 @@
 package com.javaguru.student_ivan_shulga.lesson_9.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "для полупериметра можно вызвать метод calculatePerimeter разделить " +
+        "на 2 и записать в переменную в методе (не в состоянии класса). И использовать уже в формуле p")
 class Triangle extends Shape {
 
     private double sideA;

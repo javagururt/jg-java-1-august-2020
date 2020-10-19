@@ -1,10 +1,13 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_6.task_30;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Узнать в интернете, что такое varargs.
 Придумайте пример кода, в котором продемонстрируйте
 использование varargs.
  */
-
+@CodeReview(approved = true)
 class ExampleVarArgs {
     private void addAll(String s, String...name) {
         for (int i = 0; i < name.length; i++) {

@@ -1,5 +1,8 @@
 package com.javaguru.student_ivan_shulga.lesson_9.level_2_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Player9 {
 
     private String name;

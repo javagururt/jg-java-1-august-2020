@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_3.task_13;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Dog extends Pet {
     private String name;
     private int age;

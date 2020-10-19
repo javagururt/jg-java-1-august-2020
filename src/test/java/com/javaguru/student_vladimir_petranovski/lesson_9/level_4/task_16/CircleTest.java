@@ -1,10 +1,13 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_4.task_16;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+@CodeReview(approved = true)
 public class CircleTest {
     private Circle test;
     private double radius;

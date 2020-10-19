@@ -1,5 +1,8 @@
 package com.javaguru.student_ivan_shulga.lesson_9.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Rectangle extends Shape {
 
     private double sideA;

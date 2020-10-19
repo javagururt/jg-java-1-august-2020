@@ -7,12 +7,14 @@ package com.javaguru.student_vadim_migun.lesson_9.level_1.task_1;
  */
 
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Конструктор имеется в любом классе.
 Даже если вы его не написали, компилятор Java сам создаст конструктор по умолчанию (default constructor).
 Этот конструктор пустой и не делает ничего, кроме вызова конструктора суперкласса.
  */
-
+@CodeReview(approved = true)
 class Human {
 
 

@@ -4,7 +4,9 @@ import com.javaguru.student_igors_jurkovs.lesson_9.level_7_senior.models.Book;
 import com.javaguru.student_igors_jurkovs.lesson_9.level_7_senior.models.Library;
 import com.javaguru.student_igors_jurkovs.lesson_9.level_7_senior.services.LibraryService;
 import com.javaguru.student_igors_jurkovs.lesson_9.level_7_senior.utils.PrintLibraryInfoUtils;
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class LibraryDemo {
 
     public static void main(String[] args) {

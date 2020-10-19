@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_2.task_8;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Исправьте код программы так, что бы он компилировался.
 Изменения можно вносить только в класс HumanPlayer.
@@ -21,7 +24,7 @@ class HumanPlayer extends Player {
 
 }
  */
-
+@CodeReview(approved = true)
 class Player {
     private String name;
 

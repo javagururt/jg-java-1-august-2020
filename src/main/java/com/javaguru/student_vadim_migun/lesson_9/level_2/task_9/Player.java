@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_9.level_2.task_9;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Внесите изменения в код программы так,
 чтобы можно было создать экземпляр класса
@@ -20,7 +23,7 @@ class ComputerPlayer {
 
 }
  */
-
+@CodeReview(approved = true)
 class Player {
 
     private String name;

@@ -11,7 +11,9 @@ package com.javaguru.student_vadim_migun.lesson_9.level_1.task_2;
 Этот конструктор пустой и не делает ничего, кроме вызова конструктора суперкласса.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class Person {
 }
 

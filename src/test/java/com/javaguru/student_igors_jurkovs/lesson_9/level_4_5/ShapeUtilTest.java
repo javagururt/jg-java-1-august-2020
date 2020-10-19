@@ -1,10 +1,12 @@
 package com.javaguru.student_igors_jurkovs.lesson_9.level_4_5;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
+@CodeReview(approved = true)
 public class ShapeUtilTest {
 
     private final ShapeUtil shapeUtil = new ShapeUtil();

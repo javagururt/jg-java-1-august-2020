@@ -16,9 +16,11 @@ package com.javaguru.student_vladimir_petranovski.lesson_9.level_7.bean;
 поддерживать только часть указанных выше операций.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.Objects;
-
+@CodeReview(approved = true)
 public class ELibrary {
     private String bookName;
     private ArrayList<String> books;

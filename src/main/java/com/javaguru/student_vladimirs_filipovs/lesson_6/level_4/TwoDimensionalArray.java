@@ -1,7 +1,11 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_6.level_4;
 
-import java.util.Random;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Random;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "необходимо почистить код от лишних операций (лишние циклы и т.д)")
 class TwoDimensionalArray {
 
     public int[][] createArray(int arrayLength) {

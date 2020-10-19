@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_9.level_4;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Создание иерархии класса Shape (геометрическая фигура).
 
@@ -19,7 +22,7 @@ abstract class Shape {
 Объявите в классе Shape абстрактный метод
 для подсчёта периметра.
  */
-
+@CodeReview(approved = true)
 abstract class Shape {
 
     private String title;

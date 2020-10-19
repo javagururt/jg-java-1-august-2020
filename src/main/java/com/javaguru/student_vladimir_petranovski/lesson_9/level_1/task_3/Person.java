@@ -1,5 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_9.level_1.task_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Какие значения принимают свойства класса
 (ссылки на объекты и примитивные типы данных)
@@ -16,6 +18,7 @@ class Person {
 Напишите программу, которая продемонстрирует
 ответ на этот вопрос.
  */
+@CodeReview(approved = true)
 class Person {
     private String fullName;
     private int age;
