@@ -27,15 +27,14 @@ class Circle extends Shape {
 
     private double radius;
 
-    Circle(double radius) {
+    public Circle(String title, double radius) {
+        super(title);
         this.radius = radius;
     }
 
     @Override
     double calculateArea() {
         return Math.PI * Math.pow(radius, 2);
-
-        //  идеа предлагает сразу решение в return писать, без создания переменной
     }
 
     @Override
