@@ -31,9 +31,6 @@ abstract class Shape {
         this.title = title;
     }
 
-    protected Shape() {
-    }
-
     abstract double calculateArea();
 
     abstract double calculatePerimeter();

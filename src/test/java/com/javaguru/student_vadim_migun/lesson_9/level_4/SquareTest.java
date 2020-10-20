@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 @CodeReview(approved = true)
 public class SquareTest {
 
-    Square victim = new Square(5, 5);
+    Square victim = new Square("Square",5);
 
     @Test
     public void shouldCalculateArea() {

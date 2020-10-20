@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 @CodeReview(approved = true)
 public class RectangleTest {
 
-    Rectangle victim = new Rectangle(3, 5);
+    Rectangle victim = new Rectangle("Rectangle",3, 5);
 
     @Test
     public void shouldCalculateArea() {

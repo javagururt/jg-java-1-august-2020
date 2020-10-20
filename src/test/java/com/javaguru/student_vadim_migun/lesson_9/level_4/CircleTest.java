@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 @CodeReview(approved = true)
 public class CircleTest {
 
-    Circle victim = new Circle(3);
+    Circle victim = new Circle("Circle", 3);
 
     @Test
     public void shouldCalculateArea() {

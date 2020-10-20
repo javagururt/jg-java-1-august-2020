@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 @CodeReview(approved = true)
 public class TriangleTest {
 
-    Triangle victim = new Triangle(4.33,5);
+    Triangle victim = new Triangle("Triangle",4.33,5);
 
     @Test
     public void shouldCalculateArea() {

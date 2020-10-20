@@ -6,7 +6,7 @@ import com.javaguru.teacher.codereview.CodeReview;
 class CircleDemo {
 
     public static void main(String[] args) {
-        Circle test = new Circle(3);
+        Circle test = new Circle("Circle",3);
         System.out.println("Circle area = " + test.calculateArea());
         System.out.println("Circle perimeter = " + test.calculatePerimeter());
     }

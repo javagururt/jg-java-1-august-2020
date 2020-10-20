@@ -17,18 +17,18 @@ class Square extends Shape {
     private double height;
     private double width;
 
-    Square(double height, double width) {
+    public Square(String title, double height) {
+        super(title);
         this.height = height;
-        this.width = width;
     }
 
     @Override
     double calculateArea() {
-        return height * width;
+        return height * height;
     }
 
     @Override
     double calculatePerimeter() {
-        return height * 2 + width * 2;
+        return height * 4;
     }
 }

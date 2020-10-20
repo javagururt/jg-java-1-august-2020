@@ -8,7 +8,8 @@ class Triangle extends Shape {
     private double height;
     private double width;
 
-    Triangle(double height, double width) {
+    public Triangle(String title, double height, double width) {
+        super(title);
         this.height = height;
         this.width = width;
     }

@@ -8,7 +8,8 @@ class Rectangle extends Shape {
     private double height;
     private double width;
 
-    Rectangle(double height, double width) {
+    public Rectangle(String title, double height, double width) {
+        super(title);
         this.height = height;
         this.width = width;
     }
