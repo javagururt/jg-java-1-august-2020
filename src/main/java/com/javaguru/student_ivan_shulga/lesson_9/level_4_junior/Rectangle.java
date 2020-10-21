@@ -14,6 +14,14 @@ class Rectangle extends Shape {
         this.sideB = sideB;
     }
 
+    public double getSideA() {
+        return sideA;
+    }
+
+    public double getSideB() {
+        return sideB;
+    }
+
     double calculateArea() {
         return sideA * sideB;
     }
