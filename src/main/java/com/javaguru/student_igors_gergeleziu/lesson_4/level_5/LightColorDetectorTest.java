@@ -2,6 +2,8 @@ package com.javaguru.student_igors_gergeleziu.lesson_4.level_5;
 
 class LightColorDetectorTest {
 
+    private LightColorDetector detector = new LightColorDetector();
+
     public static void main(String[] args) {
         LightColorDetectorTest test = new LightColorDetectorTest();
         test.violetColorTest();
@@ -17,81 +19,65 @@ class LightColorDetectorTest {
     public void violetColorTest() {
         int waveLengthMin = 380;
         int waveLengthMax = 440;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Violet", detector);
-        if (result) System.out.println("violetColorTest = Success");
-        else System.out.println("violetColorTest = Fail");
+        checkResults(result, "violetColorTest");
     }
 
     public void blueColorTest() {
         int waveLengthMin = 450;
         int waveLengthMax = 494;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Blue", detector);
-        if (result) System.out.println("blueColorTest = Success");
-        else System.out.println("blueColorTest = Fail");
+        checkResults(result, "blueColorTest");
     }
 
     public void greenColorTest() {
         int waveLengthMin = 495;
         int waveLengthMax = 569;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Green", detector);
-        if (result) System.out.println("greenColorTest = Success");
-        else System.out.println("greenColorTest = Fail");
+        checkResults(result, "greenColorTest");
     }
 
     public void yellowColorTest() {
         int waveLengthMin = 570;
         int waveLengthMax = 589;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Yellow", detector);
-        if (result) System.out.println("yellowColorTest = Success");
-        else System.out.println("yellowColorTest = Fail");
+        checkResults(result, "yellowColorTest");
     }
 
     public void orangeColorTest() {
         int waveLengthMin = 590;
         int waveLengthMax = 619;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Orange", detector);
-        if (result) System.out.println("orangeColorTest = Success");
-        else System.out.println("orangeColorTest = Fail");
+        checkResults(result, "orangeColorTest");
     }
 
     public void redColorTest() {
         int waveLengthMin = 620;
         int waveLengthMax = 750;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Red", detector);
-        if (result) System.out.println("redColorTest = Success");
-        else System.out.println("redColorTest = Fail");
+        checkResults(result, "redColorTest");
     }
 
     public void invisibleLightColor1Test() {
         int waveLengthMin = 0;
         int waveLengthMax = 379;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Invisible Light", detector);
-        if (result) System.out.println("invisibleLightColor1Test = Success");
-        else System.out.println("invisibleLightColor1Test = Fail");
+        checkResults(result, "invisibleLightColor1Test");
     }
 
     public void invisibleLightColor2Test() {
         int waveLengthMin = 751;
         int waveLengthMax = 1000;
-        LightColorDetector detector = new LightColorDetector();
         LightColorDetectorTest test = new LightColorDetectorTest();
         boolean result = test.cicleTest(waveLengthMin, waveLengthMax, "Invisible Light", detector);
-        if (result) System.out.println("invisibleLightColor2Test = Success");
-        else System.out.println("invisibleLightColor2Test = Fail");
+        checkResults(result, "invisibleLightColor2Test");
     }
 
     public boolean cicleTest(int waveLengthMin, int waveLengthMax, String color, LightColorDetector detector) {
@@ -103,5 +89,13 @@ class LightColorDetectorTest {
         }
         if (missmatch > 0) return false;
         else return true;
+    }
+
+    public void checkResults(boolean condition, String testName) {
+        if (condition) {
+            System.out.println(testName + " = Success");
+        } else {
+            System.out.println(testName + "= Fail");
+        }
     }
 }
