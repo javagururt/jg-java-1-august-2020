@@ -3,6 +3,7 @@ package com.javaguru.student_igors_gergeleziu.lesson_4.level_4;
 import com.javaguru.teacher.codereview.CodeReview;
 
 import java.util.concurrent.Callable;
+
 @CodeReview(approved = true)
 class CalculatorTest {
     public static void main(String[] args) {
@@ -30,8 +31,7 @@ class CalculatorTest {
         int secondNumber = 3;
         Calculator calculator = new Calculator();
         int result = calculator.addition(firstNumber, secondNumber);
-        if (result == 5) System.out.println("Addition test = Success");
-        else System.out.println("Addition test = Fail");
+        checkResults(result == 5, "additionTest");
     }
 
     public void subtractionTest() {
@@ -39,8 +39,7 @@ class CalculatorTest {
         int secondNumber = 2;
         Calculator calculator = new Calculator();
         int result = calculator.subtraction(firstNumber, secondNumber);
-        if (result == 3) System.out.println("Subtraction test = Success");
-        else System.out.println("Subtraction test = Fail");
+        checkResults(result == 3, "subtractionTest");
     }
 
     public void multiplicationTest() {
@@ -48,8 +47,7 @@ class CalculatorTest {
         int secondNumber = 5;
         Calculator calculator = new Calculator();
         int result = calculator.multiplication(firstNumber, secondNumber);
-        if (result == 25) System.out.println("Multiplication test = Success");
-        else System.out.println("Multiplication test = Fail");
+        checkResults(result == 25, "multiplicationTest");
     }
 
     public void divisionTest() {
@@ -57,8 +55,7 @@ class CalculatorTest {
         int secondNumber = 2;
         Calculator calculator = new Calculator();
         float result = calculator.division(firstNumber, secondNumber);
-        if (result == 5) System.out.println("Division test = Success");
-        else System.out.println("Divison test = Fail");
+        checkResults(result == 5, "divisionTest");
     }
 
     public void isEvenTest() {
@@ -66,12 +63,9 @@ class CalculatorTest {
         int oddNumber = 13;
         Calculator calculator = new Calculator();
         boolean result = calculator.isEven(evenNumber);
-        if (result == (evenNumber % 2 == 0)) System.out.println("isEven test = Success");
-        else System.out.println("isEven test = Fail");
+        checkResults(result == (evenNumber % 2 == 0), "isEvenTest");
         boolean result2 = calculator.isEven(oddNumber);
-        if (result2 == (oddNumber % 2 == 0)) System.out.println("isEven test = Success");
-        else System.out.println("isEven test = Fail");
-
+        checkResults(result2 == (oddNumber % 2 == 0), "isEvenTest");
     }
 
     public void firstNumberBiggerThanSecondNumberTest() {
@@ -79,8 +73,7 @@ class CalculatorTest {
         int secondNumber = 3;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
-        if (result > secondNumber) System.out.println("firstNumberBiggerThanSecondNumberTest= Success");
-        else System.out.println("firstNumberBiggerThanSecondNumberTest= Fail");
+        checkResults(result > secondNumber, "firstNumberBiggerThanSecondNumberTest");
     }
 
     public void secondNumberBiggerThanFirstNumberTest() {
@@ -88,8 +81,7 @@ class CalculatorTest {
         int secondNumber = 4;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
-        if (result > firstNumber) System.out.println("secondNumberBiggerThanFirstNumberTest= Success");
-        else System.out.println("secondNumberBiggerThanFirstNumberTest= Fail");
+        checkResults(result > firstNumber, "secondNumberBiggerThanFirstNumberTest");
     }
 
     public void firstNumberAndSecondNumberAreEqualTest() {
@@ -97,8 +89,7 @@ class CalculatorTest {
         int secondNumber = 6;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
-        if (result == 0) System.out.println("firstNumberAndSecondNumberAreEqualTest= Success");
-        else System.out.println("firstNumberAndSecondNumberAreEqualTest= Fail");
+        checkResults(result == 0, "firstNumberAndSecondNumberAreEqualTest");
     }
 
     public void firstNumberBiggerThanSecondAndThirdNumbersTest() {
@@ -107,9 +98,7 @@ class CalculatorTest {
         int thirdNumber = 5;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result > secondNumber && result > thirdNumber)
-            System.out.println("firstNumberBiggerThanSecondAndThirdNumbersTest= Success");
-        else System.out.println("firstNumberBiggerThanSecondAndThirdNumbersTest= Fail");
+        checkResults(result > secondNumber && result > thirdNumber, "firstNumberBiggerThanSecondAndThirdNumbersTest");
     }
 
     public void secondNumberBiggerThanFirstAndThirdNumbersTest() {
@@ -118,9 +107,7 @@ class CalculatorTest {
         int thirdNumber = 4;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result > firstNumber && result > thirdNumber)
-            System.out.println("secondNumberBiggerThanFirstAndThirdNumbersTest= Success");
-        else System.out.println("secondNumberBiggerThanFirstAndThirdNumbersTest= Fail");
+        checkResults(result > firstNumber && result > thirdNumber, "secondNumberBiggerThanFirstAndThirdNumbersTest");
     }
 
     public void thirdNumberBiggerThanFirstAndSecondNumbersTest() {
@@ -129,9 +116,7 @@ class CalculatorTest {
         int thirdNumber = 9;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result > firstNumber && result > secondNumber)
-            System.out.println("thirdNumberBiggerThanFirstAndSecondNumbersTest= Success");
-        else System.out.println("thirdNumberBiggerThanFirstAndSecondNumbersTest= Fail");
+        checkResults(result > firstNumber && result > secondNumber, "thirdNumberBiggerThanFirstAndSecondNumbersTest");
     }
 
     public void firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest() {
@@ -140,9 +125,7 @@ class CalculatorTest {
         int thirdNumber = 2;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result == firstNumber && result == secondNumber && result > thirdNumber)
-            System.out.println("firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest= Success");
-        else System.out.println("firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest= Fail");
+        checkResults(result == firstNumber && result == secondNumber && result > thirdNumber, "firstAndSecondNumbersAreEqualAndBiggerThanThirdNumberTest");
     }
 
     public void firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest() {
@@ -151,9 +134,7 @@ class CalculatorTest {
         int thirdNumber = 7;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result == firstNumber && result == thirdNumber && result > secondNumber)
-            System.out.println("firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest= Success");
-        else System.out.println("firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest= Fail");
+        checkResults(result == firstNumber && result == thirdNumber && result > secondNumber, "firstAndThirdNumbersAreEqualAndBiggerThanSecondNumberTest");
     }
 
     public void secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest() {
@@ -162,9 +143,7 @@ class CalculatorTest {
         int thirdNumber = 8;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result == secondNumber && result == thirdNumber && result > firstNumber)
-            System.out.println("secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest= Success");
-        else System.out.println("secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest= Fail");
+        checkResults(result == secondNumber && result == thirdNumber && result > firstNumber, "secondAndThirdNumbersAreEqualAndBiggerThanFirstNumberTest");
     }
 
     public void allThreeNumbersAreEqualTest() {
@@ -173,9 +152,15 @@ class CalculatorTest {
         int thirdNumber = 6;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (firstNumber == secondNumber && secondNumber == thirdNumber && result == 0)
-            System.out.println("allThreeNumbersAreEqualTest= Success");
-        else System.out.println("allThreeNumbersAreEqualTest= Fail");
+        checkResults(firstNumber == secondNumber && secondNumber == thirdNumber && result == 0, "allThreeNumbersAreEqualTest");
+    }
+
+    public void checkResults(boolean condition, String testName) {
+        if (condition) {
+            System.out.println(testName + " = Success");
+        } else {
+            System.out.println(testName + " = Fail");
+        }
     }
 
 
