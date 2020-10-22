@@ -1,22 +1,40 @@
 package com.javaguru.student_ivan_shulga.lesson_9.level_4_junior;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class ShapeUtilDemoTest {
 
     ShapeUtil shapeUtil = new ShapeUtil();
 
-    // всё остальное, вроде, работает нормально, здесь не даёт создать массив фигур, пока не понял отчего,
-    // в то же время в ShapeUtilDemo он создаётся без проблем и проводятся расчёты
-    // чего-то не вижу или не понимаю
+    @Test
+    public void shouldCalculateAllShapesAreas() {
+        Shape[] shapes = new Shape[4];
+        shapes[0] = new Circle("Circle", 3);
+        shapes[1] = new Square("Square", 2);
+        shapes[2] = new Rectangle("Rectangle", 2,3);
+        shapes[3] = new Triangle("Triangle", 2,2,3);
 
-    /*
-    Shape[] shapes = new Shape[4];
-    shapes[0] = shapeUtil.createRandomCircle();
-    shapes[1] = shapeUtil.createRandomSquare();
-    shapes[2] = shapeUtil.createRandomRectangle();
-    shapes[3] = shapeUtil.createRandomTriangle();
-     */
+        double allAreas = shapeUtil.calculateArea(shapes);
+
+        assertEquals(40.258, allAreas, 0.001);
+
+    }
+
+    @Test
+    public void shouldCalculateAllShapesPerimeters() {
+        Shape[] shapes = new Shape[4];
+        shapes[0] = new Circle("Circle", 3);
+        shapes[1] = new Square("Square", 2);
+        shapes[2] = new Rectangle("Rectangle", 2,3);
+        shapes[3] = new Triangle("Triangle", 2,2,3);
+
+        double allPerimeters = shapeUtil.calculatePerimeter(shapes);
+
+        assertEquals(43.849, allPerimeters, 0.001);
+
+    }
 
 }
 
