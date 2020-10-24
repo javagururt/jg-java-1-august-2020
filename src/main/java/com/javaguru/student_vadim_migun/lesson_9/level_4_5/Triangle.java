@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_9.level_4;
+package com.javaguru.student_vadim_migun.lesson_9.level_4_5;
 
 import com.javaguru.teacher.codereview.CodeReview;
 

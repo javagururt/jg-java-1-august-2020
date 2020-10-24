@@ -1,4 +1,4 @@
-package com.javaguru.student_vadim_migun.lesson_9.level_4;
+package com.javaguru.student_vadim_migun.lesson_9.level_4_5;
 /*
 Создайте класс ShapeUtil.
 В класе ShapeUtil реализуйте метод:
@@ -50,13 +50,12 @@ class ShapeUtil {
 
 
     double createRandomRadius() {
-        Random random = new Random();
         return random.nextInt(15);
     }
 
- //   double calculateAreaCircle() {
- //       return Math.PI * radius * radius;
-    //  }
+    double calculateAreaCircle(double radius) {
+        return Math.PI * radius * radius;
+    }
 
 }
 
