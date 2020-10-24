@@ -6,11 +6,6 @@ class DayOfTheWeekDetectorSwitchVersion implements DayOfTheWeekDetector {
 
     @Override
     public String detectDayName(int number) {
-
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Input number from 1 to 7 ");
-        number = scan.nextInt();
-
         switch (number) {
             case 1:
                 System.out.println("Monday");
@@ -33,7 +28,6 @@ class DayOfTheWeekDetectorSwitchVersion implements DayOfTheWeekDetector {
             case 7:
                 System.out.println("Sunday");
                 break;
-
         }
         return "Please input a valid number between 1 and 7";
     }
