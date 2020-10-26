@@ -1,9 +1,8 @@
 package com.javaguru.student_igors_gergeleziu.lesson_5.level_5_and_6;
 
 class ArrayUtilTest {
-    private final int arrayLength = 10;
     private final ArrayUtil arrayUtil = new ArrayUtil();
-    private final int[] array = arrayUtil.createArray(arrayLength);
+    private final int[] array = arrayUtil.newArrayWithRandomLength();
 
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();
@@ -15,7 +14,7 @@ class ArrayUtilTest {
     }
 
     public void shouldCreateArray() {
-        arrayUtil.createArray(arrayLength);
+        arrayUtil.createArray(array.length);
     }
 
     public void shouldFillArrayWithRandomNumbers() {
