@@ -13,7 +13,7 @@ class WordService {
     }
 
     String formattedText() {
-        return text.toLowerCase().replaceAll(",", "").replaceAll("\\.", "");
+        return text.toLowerCase().replace(",", "").replace(".", "");
     }
 
     String[] splitFormattedTextOnWords() {
