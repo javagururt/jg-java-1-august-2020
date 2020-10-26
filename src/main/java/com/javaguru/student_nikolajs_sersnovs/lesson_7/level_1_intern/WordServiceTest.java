@@ -1,6 +1,13 @@
 package com.javaguru.student_nikolajs_sersnovs.lesson_7.level_1_intern;
 
+import java.util.Arrays;
+
 class WordServiceTest {
+
+    String text = "JUNIOR FORMAT GLANCE JUNIOR JUNIOR GRASS DOCUMENT HOPE HISTORY KEEP " +
+            "BIKE HOPE FORUM GALLERY PLANET HOPE VILLAGE BANANA";
+    WordService wordService = new WordService(text);
+
     public static void main(String[] args) {
         WordServiceTest test = new WordServiceTest();
         test.shouldPrintWords();
@@ -9,77 +16,63 @@ class WordServiceTest {
         System.out.println("-------------------");
         test.shouldRewriteTextToLowerCase();
         System.out.println("-------------------");
-        test.shouldContainsWord();
-        System.out.println("-------------------");
         test.shouldIgnoreTextCase();
+        System.out.println("-------------------");
+        test.shouldContainsWord();
         System.out.println("-------------------");
         test.shouldFindIndexOf();
         System.out.println("-------------------");
-       // test.shouldFindMostFrequentWor();
+        // test.shouldFindMostFrequentWor();
 
     }
 
     void shouldPrintWords() {
-        WordService wordService = new WordService();
-        String actualResult = wordService.text(wordService);
+        String actualResult = text;
         String expectResult = "JUNIOR FORMAT GLANCE JUNIOR JUNIOR GRASS DOCUMENT HOPE HISTORY KEEP " +
                 "BIKE HOPE FORUM GALLERY PLANET HOPE VILLAGE BANANA";
-        testResult(actualResult, expectResult, "shouldPrintWords");
+        testResult(expectResult, actualResult, "shouldPrintWords");
 
 
     }
 
     void shouldSplitText() {
-        WordService wordService = new WordService();
-        String myText = wordService.text(wordService);
-        String actualResult = wordService.textSplit(myText);
-        String expectResult = "JUNIOR FORMAT GLANCE JUNIOR JUNIOR GRASS DOCUMENT HOPE HISTORY KEEP" +
-                " BIKE HOPE FORUM GALLERY PLANET HOPE VILLAGE BANANA";
-        testResult(actualResult, expectResult, "shouldSplitText");
+        String[] actualResult = wordService.textSplit();
+        String[] expectResult = {"junior, format, glance, junior, junior, grass, document, hope, history, keep," +
+                " bike, hope, forum, gallery, planet, hope, village, banana"};
+        testResult(Arrays.toString(expectResult),Arrays.toString(actualResult), "shouldSplitText");
 
     }
 
     void shouldRewriteTextToLowerCase() {
-        WordService wordService = new WordService();
-        String myText = wordService.text(wordService);
-        String actualResult = wordService.textToLowerCase(myText);
-        String expectResult = "JUNIOR FORMAT GLANCE JUNIOR JUNIOR GRASS DOCUMENT HOPE HISTORY KEEP" +
-                " BIKE HOPE FORUM GALLERY PLANET HOPE VILLAGE BANANA";
-        testResult(actualResult, expectResult, "shouldRewriteTextToLowerCase");
+        String actualResult = wordService.textToLowerCase();
+        String expectResult = "junior format glance junior junior grass document hope history keep" +
+                " bike hope forum gallery planet hope village banana";
+        testResult(expectResult, actualResult, "shouldRewriteTextToLowerCase");
 
     }
 
     void shouldContainsWord() {
-        WordService wordService = new WordService();
-        String myText = wordService.text(wordService);
         String word = "GLANCE";
-        String actualResult = wordService.textContains(myText, word);
-        String expectResult = "JUNIOR FORMAT GLANCE JUNIOR JUNIOR GRASS DOCUMENT HOPE HISTORY KEEP" +
-                " BIKE HOPE FORUM GALLERY PLANET HOPE VILLAGE BANANA";
-        testResult(actualResult, expectResult, "shouldContainsWord");
+        String actualResult = String.valueOf(wordService.textContains(word));
+        String expectResult = String.valueOf(true);
+        testResult(expectResult, actualResult, "shouldContainsWord");
 
     }
 
     void shouldIgnoreTextCase() {
-        WordService wordService = new WordService();
-        String myText = wordService.text(wordService);
-        String text2 = "junior format glance junior junior grass document hope history keep" +
-                " bike hope forum gallery planet hope village banana";
-        String actualResult = wordService.textIgnoreCase(myText, text2);
-        String expectResult = "JUNIOR FORMAT GLANCE JUNIOR JUNIOR GRASS DOCUMENT HOPE HISTORY KEEP" +
-                " BIKE HOPE FORUM GALLERY PLANET HOPE VILLAGE BANANA";
-        testResult(actualResult, expectResult, "shouldIgnoreTextCase");
+        String text2 = "Junior Format Glance Junior Junior Grass Document Hope History Keep" +
+                " Bike Hope Forum Gallery Planet Hope Village Banana";
+        String actualResult = wordService.textIgnoreCase(text2);
+        String expectResult = String.valueOf(true);
+        testResult(expectResult, actualResult, "shouldIgnoreTextCase");
 
     }
 
     void shouldFindIndexOf() {
-        WordService wordService = new WordService();
-        String myText = wordService.text(wordService);
         String word = "JUNIOR";
-        String actualResult = wordService.textIndexOf(myText, word);
-        String expectResult = "JUNIOR FORMAT GLANCE JUNIOR JUNIOR GRASS DOCUMENT HOPE HISTORY KEEP" +
-                " BIKE HOPE FORUM GALLERY PLANET HOPE VILLAGE BANANA";
-        testResult(actualResult, expectResult, "shouldFindIndexOf");
+        String actualResult = wordService.textIndexOf(word);
+        String expectResult = "JUNIOR";
+        testResult(expectResult, actualResult, "shouldFindIndexOf");
     }
 
  /*   void shouldFindMostFrequentWor(){
@@ -88,8 +81,8 @@ class WordServiceTest {
   */
 
 
-    private void testResult(String actualResult, String expectResult, String testName) {
-        if (expectResult.equals(actualResult)) {
+    private void testResult(String expectResult, String actualResult , String testName) {
+        if (actualResult.equals(expectResult)) {
             System.out.println(testName + ": SUCCESS ");
         } else {
             System.out.println(testName + ": FAILURE " + " ExpectResult :" + expectResult + "\nBut ActualResult :" + actualResult);
