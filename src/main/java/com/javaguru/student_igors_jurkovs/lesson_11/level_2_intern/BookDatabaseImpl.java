@@ -9,7 +9,7 @@ class BookDatabaseImpl implements BookDatabase {
     private static final Long ID = 0L;
     private final ArrayList<Book> bookList = new ArrayList<>();
 
-    public ArrayList<Book> getBookList() {
+    public List<Book> getBookList() {
         return bookList;
     }
 
