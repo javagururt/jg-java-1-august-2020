@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_jurkovs.lesson_11.level_2_intern;
+package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
 
 import java.util.Objects;
 
@@ -6,10 +6,16 @@ class Book {
     private Long id;
     private final String title;
     private final String author;
+    private int yearOfIssue;
 
-    Book(String author, String title) {
+    Book(String author, String title, int yearOfIssue) {
         this.author = author;
         this.title = title;
+        this.yearOfIssue = yearOfIssue;
+    }
+
+    public int getYearOfIssue() {
+        return yearOfIssue;
     }
 
     public void setId(Long id) {

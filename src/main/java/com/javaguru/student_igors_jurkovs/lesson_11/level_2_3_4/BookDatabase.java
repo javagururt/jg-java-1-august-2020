@@ -1,7 +1,8 @@
-package com.javaguru.student_igors_jurkovs.lesson_11.level_2_intern;
+package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public interface BookDatabase {
 
@@ -14,4 +15,10 @@ public interface BookDatabase {
     int countAllBooks();
     void deleteByAuthor(String author);
     void deleteByTitle(String title);
+    List<Book> find(SearchCriteria searchCriteria);
+    Set<String> findUniqueAuthors();
+    Set<String> findUniqueTitles();
+    Set<Book> findUniqueBooks();
+    boolean contains(Book book);
+    Set<String> find(String text);
 }

@@ -1,8 +1,6 @@
-package com.javaguru.student_igors_jurkovs.lesson_11.level_2_intern;
+package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 class BookDatabaseImpl implements BookDatabase {
 
@@ -101,5 +99,54 @@ class BookDatabaseImpl implements BookDatabase {
             }
         }
         bookList.removeAll(deleteList);
+    }
+
+    @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+        ArrayList<Book> books = new ArrayList<>();
+        for (Book book : bookList) {
+            if (searchCriteria.match(book)) {
+                books.add(book);
+            }
+        }
+
+        return books;
+    }
+
+    @Override
+    public Set<String> findUniqueAuthors() {
+        HashSet<String> authorsHashSet = new HashSet<>();
+        for (Book book : bookList) {
+            authorsHashSet.add(book.getAuthor());
+        }
+
+        return authorsHashSet;
+    }
+
+    @Override
+    public Set<String> findUniqueTitles() {
+        HashSet<String> titlesHashSet = new HashSet<>();
+        for (Book book : bookList) {
+            titlesHashSet.add(book.getTitle());
+        }
+
+        return titlesHashSet;
+    }
+
+    @Override
+    public Set<Book> findUniqueBooks() {
+        return new HashSet<>(bookList);
+    }
+
+    @Override
+    public boolean contains(Book book) {
+        return bookList.contains(book);
+    }
+
+    @Override
+    public Set<String> find(String text) {
+        String[] splitText = text.split(" ");
+
+        return new HashSet<>(Arrays.asList(splitText));
     }
 }
