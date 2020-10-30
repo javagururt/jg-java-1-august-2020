@@ -32,7 +32,7 @@ class WordServiceTests {
     private void test3TransformStringToArray() {
         WordService wordService = new WordService();
         String text = "Холодная война и время как вода";
-        String[] expectedResult = {"Холодная, война, и, время, как, вода"};
+        String[] expectedResult = {"Холодная", "война", "и", "время", "как", "вода"};
         String[] actualResult = wordService.divideTextInWordsArray(text);
         finalResultArray(expectedResult, actualResult, "test3TransformStringToArray");
     }
