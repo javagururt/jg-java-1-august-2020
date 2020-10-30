@@ -1,9 +1,41 @@
-package com.javaguru.student_ivan_shulga.lesson_10.level_2_intern.Task_5;
+package com.javaguru.student_ivan_shulga.lesson_10.level_2_intern.Task_4_and_Task_5;
+
+import java.util.Scanner;
 
 class DayOfTheWeekDetectorDemo {
 
+    DayOfTheWeekDetector dayOfTheWeekDetector;
+
+    public DayOfTheWeekDetectorDemo(DayOfTheWeekDetector dayOfTheWeekDetector) {
+        this.dayOfTheWeekDetector = dayOfTheWeekDetector;
+    }
+
+    void run() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Пожалуйста, введите номер дня недели от 1 до 7!");
+        int dayNumber = scanner.nextInt();
+        String dayName = dayOfTheWeekDetector.detectDayName(dayNumber);
+        System.out.println("This is : " + dayName);
+    }
+
+    public static void main(String[] args) {
+
+        DayOfTheWeekDetectorIfVersion ifVersion = new DayOfTheWeekDetectorIfVersion();
+        DayOfTheWeekDetectorSwitchVersion switchVersion = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorArrayVersion arrayVersion = new DayOfTheWeekDetectorArrayVersion();
+
+        DayOfTheWeekDetectorDemo demo1 = new DayOfTheWeekDetectorDemo(ifVersion);
+        DayOfTheWeekDetectorDemo demo2 = new DayOfTheWeekDetectorDemo(switchVersion);
+        DayOfTheWeekDetectorDemo demo3 = new DayOfTheWeekDetectorDemo(arrayVersion);
+
+        demo1.run();
+        demo2.run();
+        demo3.run();
+
+    }
 
 }
+
 /*
 Создайте класс DayOfTheWeekDetectorDemo.
 

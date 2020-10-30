@@ -1,4 +1,4 @@
-package com.javaguru.student_ivan_shulga.lesson_10.level_2_intern.Task_4;
+package com.javaguru.student_ivan_shulga.lesson_10.level_2_intern.Task_4_and_Task_5;
 
 public interface DayOfTheWeekDetector {
 
