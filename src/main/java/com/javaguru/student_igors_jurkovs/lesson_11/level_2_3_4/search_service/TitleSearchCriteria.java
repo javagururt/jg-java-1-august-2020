@@ -1,6 +1,8 @@
-package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
+package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service;
 
-class TitleSearchCriteria implements SearchCriteria {
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.domain.Book;
+
+public class TitleSearchCriteria implements SearchCriteria {
 
     private final String titleToSearch;
 

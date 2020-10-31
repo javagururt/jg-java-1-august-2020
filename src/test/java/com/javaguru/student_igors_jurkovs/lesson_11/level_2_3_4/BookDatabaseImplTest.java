@@ -1,5 +1,12 @@
 package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
 
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.database.BookDatabaseImpl;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.domain.Book;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.exceptions.NoSuchIdException;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.AuthorSearchCriteria;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.OrSearchCriteria;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.SearchCriteria;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.TitleSearchCriteria;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -185,6 +192,36 @@ public class BookDatabaseImplTest {
         String[] textInArray = {"test", "Test", "home", "homework", "work", "dog", "cat", "java"};
         Set<String> expected = new HashSet<>(Arrays.asList(textInArray));
         Set<String> result = victim.find(text);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void getAuthorToBooksMap() {
+        victim.save(book2);
+        victim.save(book3);
+        victim.save(book4);
+        victim.save(book5);
+        Map<String, List<Book>> expected = new HashMap<>();
+        expected.put(book1.getAuthor(), Collections.singletonList(book1));
+        expected.put(book2.getAuthor(), Arrays.asList(book2, book4));
+        expected.put(book3.getAuthor(), Collections.singletonList(book3));
+        expected.put(book5.getAuthor(), Collections.singletonList(book5));
+        Map<String, List<Book>> result = victim.getAuthorToBooksMap();
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void getEachAuthorBookCount() {
+        victim.save(book2);
+        victim.save(book3);
+        victim.save(book4);
+        victim.save(book5);
+        Map<String, Integer> expected = new HashMap<>();
+        expected.put(book1.getAuthor(), 1);
+        expected.put(book2.getAuthor(), 2);
+        expected.put(book3.getAuthor(), 1);
+        expected.put(book5.getAuthor(), 1);
+        Map<String, Integer> result = victim.getEachAuthorBookCount();
         assertEquals(expected, result);
     }
 }

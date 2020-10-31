@@ -1,6 +1,10 @@
-package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
+package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.database;
+
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.SearchCriteria;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.domain.Book;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
@@ -21,4 +25,6 @@ public interface BookDatabase {
     Set<Book> findUniqueBooks();
     boolean contains(Book book);
     Set<String> find(String text);
+    Map<String, List<Book>> getAuthorToBooksMap();
+    Map<String, Integer> getEachAuthorBookCount();
 }

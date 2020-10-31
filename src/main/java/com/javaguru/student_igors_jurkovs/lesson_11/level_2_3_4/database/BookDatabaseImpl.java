@@ -1,8 +1,12 @@
-package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
+package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.database;
+
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.exceptions.NoSuchIdException;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.SearchCriteria;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.domain.Book;
 
 import java.util.*;
 
-class BookDatabaseImpl implements BookDatabase {
+public class BookDatabaseImpl implements BookDatabase {
 
     private static final Long ID = 0L;
     private final ArrayList<Book> bookList = new ArrayList<>();
@@ -125,7 +129,7 @@ class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public Set<String> findUniqueTitles() {
-        HashSet<String> titlesHashSet = new HashSet<>();
+        Set<String> titlesHashSet = new HashSet<>();
         for (Book book : bookList) {
             titlesHashSet.add(book.getTitle());
         }
@@ -148,5 +152,25 @@ class BookDatabaseImpl implements BookDatabase {
         String[] splitText = text.split(" ");
 
         return new HashSet<>(Arrays.asList(splitText));
+    }
+
+    @Override
+    public Map<String, List<Book>> getAuthorToBooksMap() {
+        Map<String, List<Book>> authorHashMap = new HashMap<>();
+        for (String author : findUniqueAuthors()) {
+            authorHashMap.put(author, findByAuthor(author));
+        }
+
+        return authorHashMap;
+    }
+
+    @Override
+    public Map<String, Integer> getEachAuthorBookCount() {
+        Map<String, Integer> eachAuthorBookCount = new HashMap<>();
+        for (String author : findUniqueAuthors()) {
+            eachAuthorBookCount.put(author, findByAuthor(author).size());
+        }
+
+        return eachAuthorBookCount;
     }
 }

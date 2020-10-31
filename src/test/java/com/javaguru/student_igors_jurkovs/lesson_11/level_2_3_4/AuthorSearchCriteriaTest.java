@@ -1,5 +1,8 @@
 package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
 
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.domain.Book;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.AuthorSearchCriteria;
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.SearchCriteria;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,11 +1,13 @@
 package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
 
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.*;
+
 /**
  * - автор книги "Kuper" и название "Zveroboi" searchCriteria1
  * - автор книги "Kuper" и год выпуска 1890 searchCriteria2
  * - автор книги "Kuper" или год выпуска 1890 или название "Zveroboi" searchCriteria3,4,5
  */
-class SearchCriteriaDemo {
+public class SearchCriteriaDemo {
 
     public static void main(String[] args) {
 

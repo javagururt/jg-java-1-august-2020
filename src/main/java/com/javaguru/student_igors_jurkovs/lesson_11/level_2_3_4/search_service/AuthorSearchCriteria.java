@@ -1,6 +1,8 @@
-package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
+package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service;
 
-class AuthorSearchCriteria implements SearchCriteria {
+import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.domain.Book;
+
+public class AuthorSearchCriteria implements SearchCriteria {
 
     private final String authorToSearch;
 
