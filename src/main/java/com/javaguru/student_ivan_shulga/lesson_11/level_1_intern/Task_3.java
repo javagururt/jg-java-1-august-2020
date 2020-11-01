@@ -2,7 +2,7 @@ package com.javaguru.student_ivan_shulga.lesson_11.level_1_intern;
 
 class Task_3 {
 
-    //  по сути сделал это задание в этой папке в Task_1, только со словами
+    //  по сути сделал это задание в этой папке в Task_1, только со String
 
 }
 /*
