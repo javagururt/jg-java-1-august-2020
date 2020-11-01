@@ -134,6 +134,23 @@ public class BookDatabaseImplTest {
     }
 
     @Test
+    public void findPaged() {
+        List<Book> expected = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            String title = String.valueOf(i);
+            String author = "test author2";
+            int year = 2000 + i;
+            Book book = new Book(author, title, year);
+            if (i <= 9) {
+                expected.add(book);
+            }
+            victim.save(book);
+        }
+        List<Book> result = victim.find(authorSearchCriteria, 0, 9);
+        assertEquals(expected, result);
+    }
+
+    @Test
     public void findUniqueAuthors() {
         victim.save(book2);
         victim.save(book3);
@@ -224,4 +241,5 @@ public class BookDatabaseImplTest {
         Map<String, Integer> result = victim.getEachAuthorBookCount();
         assertEquals(expected, result);
     }
+
 }

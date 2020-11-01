@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class BookLibrary {
 
-    private Map<Integer, UIAction> menuNumberToActionMap;
+    private final Map<Integer, UIAction> menuNumberToActionMap;
 
     public BookLibrary() {
         BookDatabase bookDatabase = new BookDatabaseImpl();

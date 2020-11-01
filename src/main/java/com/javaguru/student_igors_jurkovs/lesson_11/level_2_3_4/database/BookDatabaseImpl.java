@@ -118,6 +118,22 @@ public class BookDatabaseImpl implements BookDatabase {
     }
 
     @Override
+    public List<Book> find(SearchCriteria searchCriteria, int from, int to) {
+        List<Book> books = find(searchCriteria);
+        List<Book> pagedList = new ArrayList<>();
+        if (to >= books.size()) {
+            to = books.size() - 1;
+        }
+        for (int i = from; i <= to; i++) {
+            if (searchCriteria.match(books.get(i))) {
+                pagedList.add(books.get(i));
+            }
+        }
+
+        return pagedList;
+    }
+
+    @Override
     public Set<String> findUniqueAuthors() {
         HashSet<String> authorsHashSet = new HashSet<>();
         for (Book book : bookList) {
