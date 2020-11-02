@@ -13,7 +13,7 @@ package com.javaguru.student_anastasija_meiksane.lesson_3.level_5;
          this.age = age;
          this.color = color;  }
 
-     void voice() { System.out.println(name  +  age  +  color); }
+     void voice() { System.out.println(name +  " " +  age + " " +  color); }
      void happyBirthday() { this.age += 1 ;}
      void changeColor(String newColor) { this.color = newColor;}
 
