@@ -1,9 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_10.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Arrays;
 import java.util.OptionalInt;
 import java.util.Random;
-
+@CodeReview(approved = true)
 class ArrayUtilImpl implements ArrayUtil {
 
     @Override

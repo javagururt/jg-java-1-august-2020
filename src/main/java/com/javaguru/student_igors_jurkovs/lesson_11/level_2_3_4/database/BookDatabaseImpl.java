@@ -3,9 +3,11 @@ package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.database;
 import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.exceptions.NoSuchIdException;
 import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.search_service.SearchCriteria;
 import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.domain.Book;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
 import java.util.*;
-
+@CodeReview(approved = true)
 public class BookDatabaseImpl implements BookDatabase {
 
     private static final Long ID = 0L;
@@ -15,6 +17,7 @@ public class BookDatabaseImpl implements BookDatabase {
         return bookList;
     }
 
+    @CodeReviewComment(teacher = "id должен увеличиваться каждый раз после сохранения")
     @Override
     public Long save(Book book) {
         book.setId(ID + 1);

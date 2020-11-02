@@ -1,7 +1,10 @@
 package com.javaguru.student_igors_jurkovs.lesson_10.level_6_middle.models;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Objects;
 
+@CodeReview(approved = true)
 public class Book {
 
     private final String name;

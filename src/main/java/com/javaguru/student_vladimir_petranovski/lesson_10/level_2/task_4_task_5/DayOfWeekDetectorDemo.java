@@ -1,8 +1,10 @@
 package com.javaguru.student_vladimir_petranovski.lesson_10.level_2.task_4_task_5;
 
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class DayOfWeekDetectorDemo {
     private final DayOfTheWeekDetector dayOfTheWeekDetector;
 

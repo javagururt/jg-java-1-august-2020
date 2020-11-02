@@ -9,9 +9,11 @@ package com.javaguru.student_vladimir_petranovski.lesson_11.level_1.task_3;
 - обойти список и вывести на консоль каждый элемент.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@CodeReview(approved = true)
 class IntegerListDemo {
     public static void main(String[] args) {
         List<Integer> number = new ArrayList<>();

@@ -1,4 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_10.level_2;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Несколько имплементаций одного интерфейса.
 
@@ -42,7 +45,7 @@ class DayOfTheWeekDetectorIfVersion {
 
 Протестируйте все имплементации.
  */
-
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector {
 
     @Override

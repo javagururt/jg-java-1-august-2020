@@ -1,8 +1,12 @@
 package com.javaguru.student_igors_gergeleziu.lesson_5.level_5_and_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Random;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class ArrayUtil {
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];
@@ -60,6 +64,8 @@ public class ArrayUtil {
         return new int[random.nextInt(24) + 1];
     }
 
+    @CodeReviewComment(teacher = "можно сделать так, чтобы метод возвращал массив четных чисел," +
+            "а другой метод выводил на консоль. Тогда код будет более гибким")
     public void evenNumbersOfArray(int[] array) {
         System.out.println("Even numbers of array: ");
         for (int element: array) {

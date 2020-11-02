@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimir_petranovski.lesson_10.level_2.task_4_task_5;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorIfVersionThirdImplementation implements DayOfTheWeekDetector {
     @Override
     public String detectDayName(int number) {

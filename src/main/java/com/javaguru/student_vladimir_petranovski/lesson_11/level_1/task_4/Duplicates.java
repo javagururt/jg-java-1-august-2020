@@ -5,10 +5,12 @@ package com.javaguru.student_vladimir_petranovski.lesson_11.level_1.task_4;
 ответ на этот вопрос.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
+@CodeReview(approved = true)
 class Duplicates { // да могут
 
     public static void main(String[] args) {

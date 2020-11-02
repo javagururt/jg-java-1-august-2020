@@ -1,9 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_10.level_3_junior.task_10;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@CodeReview(approved = true)
 class InMemoryDatabase implements DatabaseV2 {
 
     private final List<Product> database = new ArrayList<>();

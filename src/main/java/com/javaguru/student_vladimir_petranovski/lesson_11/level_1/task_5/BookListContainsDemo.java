@@ -1,8 +1,10 @@
 package com.javaguru.student_vladimir_petranovski.lesson_11.level_1.task_5;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@CodeReview(approved = true)
 class BookListContainsDemo {
     public static void main(String[] args) {
         BookListContainsDemo bookListContainsDemo = new BookListContainsDemo();

@@ -1,8 +1,10 @@
 package com.javaguru.student_igors_jurkovs.lesson_11.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@CodeReview(approved = true)
 class DuplicatesInList {
 
     public static void main(String[] args) {

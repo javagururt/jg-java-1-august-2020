@@ -25,8 +25,10 @@ package com.javaguru.student_vadim_migun.lesson_10.level_2;
 названия дня недели, программа DayOfTheWeekDetectorDemo работает одинаково.
  */
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorDemo {
 
     private static DayOfTheWeekDetector dayOfTheWeekDetector;

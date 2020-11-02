@@ -1,7 +1,13 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_3.level_x;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "можно упростить некоторые условия в решениях. " +
+        "К примеру 'false' это точно лишнее.")
 class UserLoginService {
     private String login;
     private String password;

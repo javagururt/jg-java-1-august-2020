@@ -1,7 +1,9 @@
 package com.javaguru.student_ivan_shulga.lesson_11.level_1_intern;
 
-import java.util.ArrayList;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.ArrayList;
+@CodeReview(approved = true)
 class Task_1 {
 
     public static void main(String[] args) {

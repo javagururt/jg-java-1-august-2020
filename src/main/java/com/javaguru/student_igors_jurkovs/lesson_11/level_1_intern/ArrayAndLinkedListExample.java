@@ -1,9 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_11.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
+@CodeReview(approved = true)
 class ArrayAndLinkedListExample {
 
     public static void main(String[] args) {

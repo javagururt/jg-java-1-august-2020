@@ -7,9 +7,13 @@ Optional - это класс оболочка, которая внутри се�
 // на основе предыдущего задания попытки воспользоваться Optional где-то, задание Task_10
 // https://habr.com/ru/post/346782/
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.ArrayList;
 import java.util.Optional;
-
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "по идее любой find* метод может возвращать Optional")
 class Task_9 implements Database9 {
 
     ArrayList<Product9> newProductList = new ArrayList<>();

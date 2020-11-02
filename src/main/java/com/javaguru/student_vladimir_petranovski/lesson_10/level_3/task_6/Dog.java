@@ -7,6 +7,11 @@ package com.javaguru.student_vladimir_petranovski.lesson_10.level_3.task_6;
 В коментарии в коде напишите ответ на вопрос.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "main в этом классе лишнее")
 class Dog implements Animals{
     //Функциональный интерфейс в Java – это интерфейс, который содержит только 1 абстрактный метод.
     // Основное назначение – использование в лямбда выражениях и method reference.

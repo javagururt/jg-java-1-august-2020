@@ -1,5 +1,10 @@
 package com.javaguru.student_igors_jurkovs.lesson_10.level_7_senior.super_task_2;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Можно добавить generics")
 class ArrayAsList implements  MyList {
 
     private Object[] myArray;

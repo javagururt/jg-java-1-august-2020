@@ -2,10 +2,12 @@ package com.javaguru.student_igors_jurkovs.lesson_10.level_6_middle.services;
 
 import com.javaguru.student_igors_jurkovs.lesson_10.level_6_middle.models.Book;
 import com.javaguru.student_igors_jurkovs.lesson_10.level_6_middle.models.Library;
+import com.javaguru.teacher.codereview.CodeReview;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@CodeReview(approved = true)
 public class BookReaderImpl implements BookReader {
 
     private final Library library;

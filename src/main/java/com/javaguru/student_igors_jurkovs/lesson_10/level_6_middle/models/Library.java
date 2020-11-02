@@ -1,8 +1,10 @@
 package com.javaguru.student_igors_jurkovs.lesson_10.level_6_middle.models;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@CodeReview(approved = true)
 public class Library {
 
     private final List<Book> books = new ArrayList<>();

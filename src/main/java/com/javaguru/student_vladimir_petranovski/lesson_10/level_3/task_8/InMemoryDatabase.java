@@ -32,8 +32,10 @@ class Product {
 }
  */
 
-import java.util.ArrayList;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.ArrayList;
+@CodeReview(approved = true)
 class InMemoryDatabase implements Database{
 
     private final ArrayList<Product> products = new ArrayList<>();

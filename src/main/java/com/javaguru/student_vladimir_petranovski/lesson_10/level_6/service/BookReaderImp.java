@@ -2,10 +2,11 @@ package com.javaguru.student_vladimir_petranovski.lesson_10.level_6.service;
 
 import com.javaguru.student_vladimir_petranovski.lesson_10.level_6.bean.Book;
 import com.javaguru.student_vladimir_petranovski.lesson_10.level_6.bean.ElLibrary;
+import com.javaguru.teacher.codereview.CodeReview;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@CodeReview(approved = true)
 class BookReaderImp implements BookReader {
 
     private final ElLibrary elLibrary;

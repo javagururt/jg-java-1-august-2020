@@ -3,6 +3,7 @@ package com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4;
 import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.database.BookDatabase;
 import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.database.BookDatabaseImpl;
 import com.javaguru.student_igors_jurkovs.lesson_11.level_2_3_4.ui.*;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +13,7 @@ public class BookLibrary {
 
     private final Map<Integer, UIAction> menuNumberToActionMap;
 
+    @CodeReviewComment(teacher = "в hashmap лучше указывать generics")
     public BookLibrary() {
         BookDatabase bookDatabase = new BookDatabaseImpl();
 

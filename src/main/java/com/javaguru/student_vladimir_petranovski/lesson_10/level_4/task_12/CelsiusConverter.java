@@ -40,7 +40,9 @@ class KelvinConverter implements TemperatureConverter {
 - написать юнит тесты для классов KelvinConverter и FahrenheitConverter.
  */
 
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class CelsiusConverter implements TemperatureConverter {
 
     @Override

@@ -1,7 +1,9 @@
 package com.javaguru.student_vladimir_petranovski.lesson_10.level_4.task_11.service;
 
 import com.javaguru.student_vladimir_petranovski.lesson_10.level_4.task_11.bean.Converter;
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 public class ConverterService {
 
     public float findDegreesKelvin(Converter converter) {

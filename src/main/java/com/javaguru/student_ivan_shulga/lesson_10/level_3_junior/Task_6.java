@@ -1,7 +1,11 @@
 package com.javaguru.student_ivan_shulga.lesson_10.level_3_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+@CodeReview(approved = true)
 class Task_6 {
 
+    @CodeReviewComment(teacher = "лишние переменные")
     static int x = 3;
     static int y = 5;
 

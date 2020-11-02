@@ -1,4 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_10.level_4.task_11.bean;
+
+import com.javaguru.teacher.codereview.CodeReview;
+
 /*
 Сайт прогноза погоды на данный момент показывает
 температуру в градусах по цельсию.
@@ -7,7 +10,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_10.level_4.task_11.bean
 Попробуйте самостоятельно спроектировать (придумать)
 и реализовать решение для данной задачи.
  */
-
+@CodeReview(approved = true)
 public class Converter {
     private float degreesCelsius;
 
