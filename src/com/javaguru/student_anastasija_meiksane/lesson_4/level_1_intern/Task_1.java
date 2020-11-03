@@ -16,7 +16,7 @@ public class Task_1 {
         int number = scanner.nextInt();
 
         if (number >= 0 ) { System.out.println ( "Positive number") ;  }
-        else if (number < 0) {  System.out.println ( "Negative number"); }
+        else if (number<0) {  System.out.println ( "Negative number"); }
 
 
 
