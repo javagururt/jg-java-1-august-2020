@@ -17,6 +17,7 @@ class TicTacToeTest {
         ticTacToeTest.firstPlayerWinPositionTest();
         ticTacToeTest.secondPlayerWinPositionTest();
         ticTacToeTest.drawPositionTest();
+        ticTacToeTest.createFieldTest();
 
     }
 
@@ -147,6 +148,12 @@ class TicTacToeTest {
         ticTacToe.checkResult(result, "drawPositionTest");
         ticTacToe.checkResult(!firstPlayerDraw, "firstPlayerDrawTest");
         ticTacToe.checkResult(!secondPlayerDraw, "secondPlayerDrawTest");
+    }
+    public void createFieldTest(){
+        TicTacToeTest ticTacToeTest = new TicTacToeTest();
+        int[][]fieldTest=ticTacToe.createField();
+        boolean result=ticTacToe.isDrawPosition(fieldTest);
+        ticTacToe.checkResult(!result, "createFieldTest");
     }
 
 }
