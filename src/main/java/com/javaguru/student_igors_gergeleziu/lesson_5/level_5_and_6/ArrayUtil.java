@@ -27,7 +27,7 @@ public class ArrayUtil {
 
     public int findMaxNumber(int[] array) {
         int maxValue = array[0];
-        for (int element: array) {
+        for (int element : array) {
             if (element > maxValue) {
                 maxValue = element;
             }
@@ -37,7 +37,7 @@ public class ArrayUtil {
 
     public int findMinNumber(int[] array) {
         int minValue = array[0];
-        for (int element: array) {
+        for (int element : array) {
             if (element < minValue) {
                 minValue = element;
             }
@@ -68,18 +68,19 @@ public class ArrayUtil {
             "а другой метод выводил на консоль. Тогда код будет более гибким")
     public void evenNumbersOfArray(int[] array) {
         System.out.println("Even numbers of array: ");
-        for (int element: array) {
+        for (int element : array) {
             if (element % 2 == 0) {
-                System.out.println(element+" ");
+                System.out.println(element + " ");
             }
         }
         System.out.println(" ");
     }
+
     public void oddNumbersOfArray(int[] array) {
         System.out.println("Odd numbers of array: ");
-        for (int element: array) {
+        for (int element : array) {
             if (element % 2 != 0) {
-                System.out.println(element+" ");
+                System.out.println(element + " ");
             }
         }
         System.out.println(" ");
