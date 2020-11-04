@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_gergeleziu.lesson_6.level_5;
+package com.javaguru.student_igors_gergeleziu.lesson_6.level_5_and_6;
 
 class TicTacToeTest {
     public final TicTacToe ticTacToe = new TicTacToe();
