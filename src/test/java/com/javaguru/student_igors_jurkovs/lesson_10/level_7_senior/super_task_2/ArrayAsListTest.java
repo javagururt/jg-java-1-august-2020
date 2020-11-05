@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class ArrayAsListTest {
 
-    private final ArrayAsList victim = new ArrayAsList();
+    private final ArrayAsList<Object> victim = new ArrayAsList<>();
     private Object object1;
     private Object object2;
     private Object object3;
