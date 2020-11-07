@@ -5,7 +5,7 @@ import com.javaguru.teacher.codereview.CodeReviewComment;
 
 @CodeReview(approved = true)
 @CodeReviewComment(teacher = "Можно добавить generics")
-class ArrayAsList implements  MyList {
+public class ArrayAsList<T> implements MyList<T> {
 
     private Object[] myArray;
 
@@ -21,12 +21,21 @@ class ArrayAsList implements  MyList {
         return myArray;
     }
 
+    @SuppressWarnings("unchecked")
+    T get(int i) {
+        return (T)myArray[i];
+    }
+
+    void set(int i, T t) {
+        myArray[i] = t;
+    }
+
     @Override
-    public boolean addObject(Object object) {
+    public boolean addObject(T object) {
         boolean isObjectAdded = false;
         for (int i = 0; i < myArray.length; i++) {
             if (myArray[i] == null) {
-                myArray[i] = object;
+                set(i, object);
                 isObjectAdded = true;
                 break;
             }
@@ -39,7 +48,7 @@ class ArrayAsList implements  MyList {
     }
 
     @Override
-    public boolean removeObject(Object object) {
+    public boolean removeObject(T object) {
         for (int i = 0; i < myArray.length; i++) {
             if (object.equals(myArray[i])) {
                 myArray[i] = null;
@@ -51,10 +60,10 @@ class ArrayAsList implements  MyList {
     }
 
     @Override
-    public Object findObject(Object object) {
-        for (Object ob : myArray) {
-            if (ob.equals(object)) {
-                return ob;
+    public T findObject(T object) {
+        for (int i = 0; i < myArray.length; i++) {
+            if (object.equals(get(i))) {
+                return get(i);
             }
         }
         return null;

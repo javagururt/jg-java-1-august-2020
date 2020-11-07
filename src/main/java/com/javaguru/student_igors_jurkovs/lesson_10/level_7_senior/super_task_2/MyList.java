@@ -1,11 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_10.level_7_senior.super_task_2;
 
-public interface MyList {
+public interface MyList<T> {
 
-    boolean addObject(Object object);
-    boolean removeObject(Object object);
+    boolean addObject(T object);
+    boolean removeObject(T object);
     void increaseArray();
     void decreaseArray();
-    Object findObject(Object object);
+    T findObject(T object);
     void sortArray();
 }
