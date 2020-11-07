@@ -3,6 +3,8 @@ package com.javaguru.student_vadim_migun.lesson_11.level_2;
 import java.util.ArrayList;
 import java.util.List;
 
+// Сложная задача, не понимаю как все реализовать, хотелось бы разбирать на лекции подобные задачи!
+
 class BookDatabaseImpl implements BookDatabase {
 
     public static final Long ID = 0L;
@@ -37,6 +39,9 @@ class BookDatabaseImpl implements BookDatabase {
         }
         return false;
     }
+
+
+
 
 
 
