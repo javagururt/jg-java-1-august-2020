@@ -1,12 +1,12 @@
 package com.javaguru.student_ivan_shulga.lesson_7.level_1_intern;
 
+import java.util.Arrays;
+
 class WordServiceDemo {
 
     public static void main(String[] args) {
 
-        String text = "Осень. Как холодна она и прекрасна, разноцветная палитра окрашивает все деревья. " +
-                "А особенно прекрасен октябрь. Октябрь- это пора, когда все вокруг желтое, красное, оранжевое. " +
-                "Хоть осень и хмурая пора, но все же- она прекрасна.";
+        String text = "Пора, все, деревья, деревья пришли. Домой. Снег и въюга. Красный свет. Теремок синеватый!";
 
         WordService wordService = new WordService();
 
@@ -18,11 +18,13 @@ class WordServiceDemo {
 
         System.out.println(text);
 
-        text = wordService.textToArray(text); // получили массив со словами
+        String[] textArray = wordService.textToArray(text); // получили массив со словами
+
+        System.out.println(Arrays.toString(textArray));
+
+        text = wordService.findMostFrequentWord(text);
 
         System.out.println(text);
-
-        // считаем слова
     }
 
 }
