@@ -1,4 +1,4 @@
-package com.javaguru.student_igors_jurkovs.lesson_13.level_5_middle;
+package com.javaguru.student_igors_jurkovs.lesson_13.level_5_middle.exceptions;
 
 public class ValidationException extends Exception {
 
@@ -22,5 +22,14 @@ public class ValidationException extends Exception {
 
     public String getFieldName() {
         return fieldName;
+    }
+
+    @Override
+    public String toString() {
+        return "ValidationException{" +
+                "ruleName='" + ruleName + '\'' +
+                ", description='" + description + '\'' +
+                ", fieldName='" + fieldName + '\'' +
+                '}';
     }
 }
