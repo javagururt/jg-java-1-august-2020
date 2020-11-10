@@ -1,29 +1,20 @@
-package com.javaguru.student_vladimirs_filipovs.lesson_10.level_6;
+package com.javaguru.student_vladimirs_filipovs.lesson_11.level_1.Task_5;
 
 class Book {
     private String title;
     private String author;
-    private boolean isRead;
 
-    public Book(String title, String author) {
-        this.title = title;
+    Book(String author, String title) {
         this.author = author;
+        this.title = title;
     }
 
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public String getAuthor() {
-        return author;
-    }
-
-    public void setRead(boolean read) {
-        isRead = read;
-    }
-
-    public boolean isRead() {
-        return isRead;
+        return this.author;
     }
 
     @Override
