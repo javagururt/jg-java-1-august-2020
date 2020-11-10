@@ -1,9 +1,10 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_10.level_6;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class BookReaderImpl implements BookReader {
-    ArrayList<Book> bookLibrary = new ArrayList<>();
+    List<Book> bookLibrary = new ArrayList<>();
 
     @Override
     public boolean chekIsBookExist(Book book) {
@@ -17,15 +18,12 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public boolean chekAreNameAndAuthorOnTheBook(Book book) {
-        if (!book.getTitle().isBlank() && !book.getAuthor().isBlank()) {
-            return true;
-        }
-        return false;
+        return !book.getTitle().isBlank() && !book.getAuthor().isBlank();
     }
 
     @Override
     public boolean putBookInLibrary(Book book) {
-        if (chekIsBookExist(book) == false && chekAreNameAndAuthorOnTheBook(book) == true) {
+        if (!chekIsBookExist(book) && chekAreNameAndAuthorOnTheBook(book)) {
             bookLibrary.add(book);
             return true;
         } else {
@@ -36,7 +34,7 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public boolean deleteBookFromLibrary(Book book) {
-        if (chekIsBookExist(book) == true) {
+        if (chekIsBookExist(book)) {
             bookLibrary.remove(book);
             return true;
         } else {
@@ -53,8 +51,8 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
-    public ArrayList<Book> findBookByAuthor(String findAuthor) {
-        ArrayList<Book> findByAuthorsList = new ArrayList<>();
+    public List<Book> findBookByAuthor(String findAuthor) {
+        List<Book> findByAuthorsList = new ArrayList<>();
         for (Book book : bookLibrary) {
             if (book.getAuthor().length() > 3 && findAuthor.length() > 3) {
                 if (book.getAuthor().substring(0, 4).equalsIgnoreCase(findAuthor.substring(0, 4))) {
@@ -78,8 +76,8 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
-    public ArrayList<Book> findBookByTitle(String findTitle) {
-        ArrayList<Book> findByTitleList = new ArrayList<>();
+    public List<Book> findBookByTitle(String findTitle) {
+        List<Book> findByTitleList = new ArrayList<>();
         for (Book book : bookLibrary) {
             if (book.getTitle().length() > 3 && findTitle.length() > 3) {
                 if (book.getTitle().substring(0, 4).equalsIgnoreCase(findTitle.substring(0, 4))) {
@@ -101,59 +99,49 @@ class BookReaderImpl implements BookReader {
         }
         return findByTitleList;
     }
-/*
+
     @Override
-    public void bookIsRead(Book book) {
-        book.isRead() = true;
+    public boolean markBookIsRead(Book book) {
+        if (chekIsBookExist(book)) {
+            book.setRead(true);
+            return true;
+        } else {
+            return false;
+        }
     }
 
- */
-}
+    @Override
+    public boolean markBookIsNotRead(Book book) {
+        if (chekIsBookExist(book)) {
+            book.setRead(false);
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-class BookReaderDemo {
-    public static void main(String[] args) {
-        BookReaderImpl reader = new BookReaderImpl();
-        Book book1 = new Book("Denjgi", "Vovan");
-        Book book2 = new Book("Kak bitj krutim", "Vovan");
-        Book book3 = new Book("Java Learning form Vovan", "Vovan");
-        Book book4 = new Book("", "");
-        Book book5 = new Book("Dva stvola", "Keksik");
-        Book book6 = new Book("Dva stvola", "Vov4ik");
-        reader.putBookInLibrary(book1);
-        reader.putBookInLibrary(book2);
-        reader.putBookInLibrary(book3);
-        reader.putBookInLibrary(book2);
-        reader.putBookInLibrary(book4);
-        reader.putBookInLibrary(book5);
-        reader.putBookInLibrary(book6);
-  /*      System.out.println(reader.bookLibrary);
-        reader.deleteBookFromLibrary(book2);
-        System.out.println(reader.bookLibrary);
-        reader.deleteBookFromLibrary(book4);
-        reader.showAllBooksInLibrary();
-        System.out.println();
+    @Override
+    public List<Book> returnAllIsReadBooks() {
+        List<Book> bookIsReadList = new ArrayList<>();
+        for (Book book : bookLibrary) {
+            if (book.isRead()) {
+                bookIsReadList.add(book);
+                System.out.println(book.getTitle() + "[" + book.getAuthor() + "]");
+            }
+        }
+        return bookIsReadList;
+    }
 
-        reader.findBookByAuthorAndPutInFoundAuthorsList("Vovan");
-        reader.showAllFoundBooksByAuthor();
-        System.out.println();
-
-        reader.findBookByTitleAndPutInFoundTitleList("Java Learning form Vovan");
-        reader.showAllFoundBooksByTitle();
-
-        System.out.println("Remove finder");
-        reader.clearFoundBooksByAuthor();
-        reader.clearFoundBooksByTitle();
-        System.out.println(reader.foundAuthors);
-        System.out.println(reader.foundTitle);
-*/
-        System.out.println("-------------------------------------------");
-        ArrayList<Book> testList1 = new ArrayList<>();
-        testList1 = reader.findBookByAuthor("v");
-        System.out.println(testList1);
-
-        System.out.println("-------------------------------------------");
-        ArrayList<Book> testList2 = new ArrayList<>();
-        testList2 = reader.findBookByTitle("D");
-        System.out.println(testList2);
+    @Override
+    public List<Book> returnAllIsNotReadBooks() {
+        List<Book> bookIsNotReadList = new ArrayList<>();
+        for (Book book : bookLibrary) {
+            if (!book.isRead()) {
+                bookIsNotReadList.add(book);
+                System.out.println(book.getTitle() + "[" + book.getAuthor() + "]");
+            }
+        }
+        return bookIsNotReadList;
     }
 }
+

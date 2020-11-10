@@ -1,6 +1,6 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_10.level_6;
 
-import java.util.ArrayList;
+import java.util.List;
 
 interface BookReader {
 
@@ -14,9 +14,15 @@ interface BookReader {
 
     void showAllBooksInLibrary();
 
-    ArrayList<Book> findBookByAuthor(String findAuthor);
+    List<Book> findBookByAuthor(String findAuthor);
 
-    ArrayList<Book> findBookByTitle(String findTitle);
+    List<Book> findBookByTitle(String findTitle);
 
- //   void bookIsRead(Book book);
+    boolean markBookIsRead(Book book);
+
+    boolean markBookIsNotRead(Book book);
+
+    List<Book> returnAllIsReadBooks();
+
+    List<Book> returnAllIsNotReadBooks();
 }

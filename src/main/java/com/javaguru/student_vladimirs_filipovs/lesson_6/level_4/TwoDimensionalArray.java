@@ -9,12 +9,7 @@ import java.util.Random;
 class TwoDimensionalArray {
 
     public int[][] createArray(int arrayLength) {
-        int[][] array = new int[arrayLength][arrayLength];
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-            }
-        }
-        return array;
+        return new int[arrayLength][arrayLength];
     }
 
     public int[][] fillArrayWithRandomNumbers(int[][] array) {
