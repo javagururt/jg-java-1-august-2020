@@ -1,4 +1,4 @@
-package com.javaguru.student_anastasija_meiksane.lesson_4.level_2_intern;
+package main.java.com.javaguru.student_anastasija_meiksane.lesson_4.level_2_intern;
 
 import java.util.Scanner;
 

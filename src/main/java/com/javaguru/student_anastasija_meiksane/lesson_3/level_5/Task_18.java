@@ -1,4 +1,4 @@
-package com.javaguru.student_anastasija_meiksane.lesson_3.level_5;
+package main.java.com.javaguru.student_anastasija_meiksane.lesson_3.level_5;
 
  class Dog {
 

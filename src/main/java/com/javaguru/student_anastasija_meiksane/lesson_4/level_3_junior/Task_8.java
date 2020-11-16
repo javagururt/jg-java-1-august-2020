@@ -1,4 +1,4 @@
-package com.javaguru.student_anastasija_meiksane.lesson_4.level_3_junior;
+package main.java.com.javaguru.student_anastasija_meiksane.lesson_4.level_3_junior;
 
 import java.util.Scanner;
 
