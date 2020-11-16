@@ -22,5 +22,18 @@ public class WordServiceTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldTextToArray() {
+        String[] expected = new String[] {"тестовая", "строка", "создания", "массива", "из", "строки"};
+        String[] actual = victim.textToArray("тестовая строка создания массива из строки");
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldFindMostFrequentWord() {
+        String expected = "повторяемого2";
+        String actual = victim.findMostFrequentWord("тестовая строка поиска самого повторяемого слова повторяемого");
+        assertEquals(expected, actual);
+    }
 
 }
