@@ -1,5 +1,10 @@
 package com.javaguru.student_igors_jurkovs.lesson_14.level_1_intern;
 
+import com.javaguru.student_igors_jurkovs.lesson_14.level_1_intern.domain.Apple;
+import com.javaguru.student_igors_jurkovs.lesson_14.level_1_intern.predicate.AppleGreenColorPredicate;
+import com.javaguru.student_igors_jurkovs.lesson_14.level_1_intern.predicate.AppleHeavyWeightPredicate;
+import com.javaguru.student_igors_jurkovs.lesson_14.level_1_intern.predicate.AppleLightWeightPredicate;
+import com.javaguru.student_igors_jurkovs.lesson_14.level_1_intern.predicate.AppleRedColorPredicate;
 import org.junit.Before;
 import org.junit.Test;
 
