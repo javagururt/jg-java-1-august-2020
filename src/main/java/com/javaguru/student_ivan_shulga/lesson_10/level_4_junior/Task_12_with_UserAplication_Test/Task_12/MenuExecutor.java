@@ -12,6 +12,7 @@ class MenuExecutor {
     }
 
     void start() {
+        while (true) {
             Scanner scanner = new Scanner(System.in);
             for (int i = 0; i < menus.length; i++) {
                 System.out.println(i + ". " + menus[i].getMenuName());
@@ -19,6 +20,11 @@ class MenuExecutor {
             System.out.println();
             System.out.println("Please enter number:");
             int number = scanner.nextInt();
-            menus[number].convert();
+            if (number >= menus.length || number < 0) {
+                System.out.println("Incorrect value! Try again!");
+                System.out.println();
+            } else
+                menus[number].convert();
+        }
     }
 }

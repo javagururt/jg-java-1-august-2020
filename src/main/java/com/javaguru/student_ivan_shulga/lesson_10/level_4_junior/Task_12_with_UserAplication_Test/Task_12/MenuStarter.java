@@ -9,10 +9,13 @@ class MenuStarter {
         KelvinConverter kelConv = new KelvinConverter();
         CelsiusConverter celConv = new CelsiusConverter();
 
-        TemperatureConverter[] menus = new TemperatureConverter[3];
+        ExitMenu exitMenu = new ExitMenu();
+
+        TemperatureConverter[] menus = new TemperatureConverter[4];
         menus[0] = farConv;
         menus[1] = kelConv;
         menus[2] = celConv;
+        menus[3] = exitMenu;
 
         MenuExecutor menuExecutor = new MenuExecutor(menus);
         menuExecutor.start();
