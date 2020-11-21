@@ -1,29 +1,25 @@
 package com.javaguru.student_vladimir_petranovski.lesson_13.level_6.validation;
 
 import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.domain.Product;
-import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.exceptions.ValidationException;
 import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.rules_for_validation.ProductDescriptionValidationRule;
 import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.rules_for_validation.ProductNameProductValidationRule;
 import com.javaguru.student_vladimir_petranovski.lesson_13.level_6.rules_for_validation.ProductPriceValidationRule;
 import junit.framework.TestCase;
 import org.junit.Before;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ProductValidatorImplTest extends TestCase {
 
     private ProductValidatorImpl test;
-    private final String correctDescription = "Description546";
-    private final String more100Symbols = "2222222222222222222222222222222222222222222222222222" +
-            "dsjdhkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh";
-    private final String more2000Symbols = "iofsfihjfosifkosjfskfjkejfkjeosjfsofjsofsjfsj33333" +
+    private final String correctDescription = "Correct description546";
+    private final String more100Symbols = "222222222222222222222222 2222222222222222222222222222" +
+            "dsjdhkjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjjjjhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhhhhhhhh";
+    private final String more2000Symbols = "iofsfihjfosifko sjfskfjkejfkjeosjfsofjsofsjfsj33333" +
             "hsdkfjhsfjhdfafhdhafjfhdhfkfhahdfkhadjdhf11111111jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" +
-            "dssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" +
-            "llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll" +
-            "skallllllllllllllllllllllllllllllldssawwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" +
-            "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdeweqwewqwwwq" +
-            "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" +
+            "dsssssssssssssssssssssssssss sssssssssssssssssssssssssssssssssssssssssssssssssssss" +
+            "lllllllllllllllllllllllllllllllllllllllllll lllllllllllllllllllllllllllllllllllllll" +
+            "skalllllllll lllllllllllllllllllllldssawwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" +
+            "sssssssssssssssssssssssssssssssssssssssssssss ssssssssssssssssssssssssdeweqwewqwwwq" +
+            "qqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" +
             "assssssssdddddddddddddddddddddddddddddddddddffffffffffffffffffffffffffffffffffffff" +
             "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" +
             "jkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" +
@@ -44,7 +40,7 @@ public class ProductValidatorImplTest extends TestCase {
             "9999999999999999999999999999999999999999999999999999999999999999999999999999999999" +
             "0000000000000000000000000000000000000000000000000000000000000000000000000000000000" +
             "9999999999999999999999999999999999999999999999999999999999999999999999999999999999";
-    private final String correctName = "Correct123";
+    private final String correctName = "Correct name 123";
     private final int correctPrice = 125;
 
     private final Product product = new Product("", correctPrice, correctDescription);
@@ -61,7 +57,6 @@ public class ProductValidatorImplTest extends TestCase {
     private final Product product10 = new Product("df", 0, correctDescription);
     private final Product product11 = new Product("df", 0, more2000Symbols);
 
-    private final List<ValidationException> exceptions = new ArrayList<>();
     private final ProductNameProductValidationRule productNameProductValidationRule =
             new ProductNameProductValidationRule();
     private final ProductPriceValidationRule productPriceValidationRule =
