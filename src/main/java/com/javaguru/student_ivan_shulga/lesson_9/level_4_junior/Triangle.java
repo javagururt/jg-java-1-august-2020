@@ -20,12 +20,28 @@ class Triangle extends Shape {
         this.sideC = sideC;
     }
 
+    public double getSideA() {
+        return sideA;
+    }
+
+    public double getSideB() {
+        return sideB;
+    }
+
+    public double getSideC() {
+        return sideC;
+    }
+
     double calculateArea() {
-        return Math.sqrt(((sideA + sideB + sideC) / 2) * (((sideA + sideB + sideC) / 2) - sideA) * (((sideA + sideB + sideC) / 2) - sideB) * (((sideA + sideB + sideC) / 2) - sideC));
+        return Math.sqrt(calculateSemiPerimeter() * (calculateSemiPerimeter() - sideA) * (calculateSemiPerimeter() - sideB) * (calculateSemiPerimeter() - sideC));
     }
 
     double calculatePerimeter() {
         return sideA + sideB + sideC;
+    }
+
+    double calculateSemiPerimeter() {
+        return calculatePerimeter() / 2;
     }
 }
 /*

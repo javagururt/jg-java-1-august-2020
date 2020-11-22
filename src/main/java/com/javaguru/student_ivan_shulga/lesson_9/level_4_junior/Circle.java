@@ -3,6 +3,7 @@ package com.javaguru.student_ivan_shulga.lesson_9.level_4_junior;
 import com.javaguru.teacher.codereview.CodeReview;
 
 @CodeReview(approved = true)
+
 class Circle extends Shape {
 
     private double radius;
@@ -10,6 +11,10 @@ class Circle extends Shape {
     Circle(String title, double radius) {
         super(title);
         this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
     }
 
     double calculateArea() {
