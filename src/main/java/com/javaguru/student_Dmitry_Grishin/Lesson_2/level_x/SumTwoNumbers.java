@@ -6,15 +6,16 @@ package main.java.com.javaguru.student_Dmitry_Grishin.Lesson_2.level_x;
 
             int numberOne = 10;
             int numberTwo = 20;
+            int sum;
 
             System.out.println("Number 1 = " + numberOne);
             System.out.println("Number 2 = " + numberTwo);
 
-            int sum = numberOne + numberTwo;
+            sum = numberOne + numberTwo;
 
             System.out.println("Sum = " + sum);
         }
 
     }
 
-}
+
