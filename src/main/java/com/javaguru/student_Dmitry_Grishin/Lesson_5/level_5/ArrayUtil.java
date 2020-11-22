@@ -1,7 +1,4 @@
-package main.java.com.javaguru.student_Dmitry_Grishin.Lesson_5.level_5;
-
-import com.javaguru.teacher.codereview.CodeReview;
-import com.javaguru.teacher.codereview.CodeReviewComment;
+package com.javaguru.student_Dmitry_Grishin.Lesson_5.level_5;
 
 import java.util.Arrays;
 import java.util.Random;
