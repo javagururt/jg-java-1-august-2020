@@ -16,7 +16,7 @@ public boolean isWinPosition(int[][] field, int playerToCheck).
 Поле передаётся в этот метод как первый параметр int[][] field.
 Знак игрока (0 или 1) передаётся вторым параметром: int playerToCheck.
 
-Метод должет вернуть:
+Метод должен вернуть:
  - true если позиция победна для указанного игрока (int playerToCheck),
  - false иначе.
 
