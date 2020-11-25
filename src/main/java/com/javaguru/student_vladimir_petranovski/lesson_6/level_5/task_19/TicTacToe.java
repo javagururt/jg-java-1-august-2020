@@ -12,7 +12,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_6.level_5.task_19;
 public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck).
 Поле передаётся в этот метод как первый параметр int[][] field.
 Знак игрока (0 или 1) передаётся вторым параметром: int playerToCheck.
-Метод должет вернуть:
+Метод должен вернуть:
  - true если в одной из горизонталей есть три подряд клетки
    занятые знаком указанного игрока (int playerToCheck),
  - false иначе.

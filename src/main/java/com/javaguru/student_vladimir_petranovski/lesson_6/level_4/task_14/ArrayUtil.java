@@ -5,7 +5,7 @@ import com.javaguru.teacher.codereview.CodeReview;
 /*
 Добавьте в класс ArrayUtil метод для сортировки массива целых чисел.
 Напишите автоматические тесты в классе ArrayUtilTest доказывающие,
-что ваша реализацяия метода работает правильно.
+что ваша реализация метода работает правильно.
  */
 @CodeReview(approved = true)
 class ArrayUtil {

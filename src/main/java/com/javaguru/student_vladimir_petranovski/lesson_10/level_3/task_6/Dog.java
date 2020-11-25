@@ -4,7 +4,7 @@ package com.javaguru.student_vladimir_petranovski.lesson_10.level_3.task_6;
 
 Найдите в интернете информацию об этом.
 Придумайте и реализуйте его в виде программного кода.
-В коментарии в коде напишите ответ на вопрос.
+В комментарии в коде напишите ответ на вопрос.
  */
 
 import com.javaguru.teacher.codereview.CodeReview;

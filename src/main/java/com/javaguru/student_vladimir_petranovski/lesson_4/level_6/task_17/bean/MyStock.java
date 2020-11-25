@@ -34,7 +34,7 @@ google.updatePrice(7);
 google.updatePrice(14);
 priceInformation = google.getPriceInformation();
 System.out.println(priceInformation);
-После выполнения кода вывод в консоли должет быть следующим:
+После выполнения кода вывод в консоли должен быть следующим:
 Company = "GOOG", Current Price = 10, Min Price = 10, Max Price = 10
 Company = "GOOG", Current Price = 14, Min Price = 7, Max Price = 15
  */

@@ -4,7 +4,7 @@ import com.javaguru.teacher.codereview.CodeReview;
 
 /*
 Добавьте в класс ArrayUtil метод для замены первого вхождения указанного числа в массиве целых чисел на другое число.
-Напишите автоматические тесты в классе ArrayUtilTest доказывающие, что ваша реализацяия метода работает правильно.
+Напишите автоматические тесты в классе ArrayUtilTest доказывающие, что ваша реализация метода работает правильно.
 Подсказка: void replace(int[] arr, int numberToReplace, int newNumber).
  */
 @CodeReview(approved = true)
