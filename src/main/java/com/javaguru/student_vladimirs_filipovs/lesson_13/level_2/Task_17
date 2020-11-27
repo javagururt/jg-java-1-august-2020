@@ -1,0 +1,2 @@
+Класс AccessDeniedException следует наследовать от Exception,
+потому что мы знаем, что ошибка будет типа "checked exception".
