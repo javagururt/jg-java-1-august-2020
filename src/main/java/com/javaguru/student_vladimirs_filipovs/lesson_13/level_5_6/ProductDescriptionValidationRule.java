@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_13.level_5_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ProductDescriptionValidationRule implements FieldValidationRule {
 //            - RULE-7: не должно быть длиннее 2000 символов
 //            - RULE-8: должно содержать только английские буквы и цифры, другие символы не допустимы

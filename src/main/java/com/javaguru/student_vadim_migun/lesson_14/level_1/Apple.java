@@ -1,7 +1,9 @@
 package com.javaguru.student_vadim_migun.lesson_14.level_1;
 
-import java.util.Objects;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Objects;
+@CodeReview(approved = true)
 class Apple {
 
     private String color;

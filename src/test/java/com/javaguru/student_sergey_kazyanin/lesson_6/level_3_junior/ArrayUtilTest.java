@@ -1,9 +1,11 @@
 package com.javaguru.student_sergey_kazyanin.lesson_6.level_3_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
+@CodeReview(approved = true)
 public class ArrayUtilTest {
 
     private ArrayUtil victim = new ArrayUtil();

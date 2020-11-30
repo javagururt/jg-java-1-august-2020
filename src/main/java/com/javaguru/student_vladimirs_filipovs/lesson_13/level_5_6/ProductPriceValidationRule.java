@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_13.level_5_6;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ProductPriceValidationRule implements FieldValidationRule {
 //            - RULE-5: не должна быть пустой
 //            - RULE-6: должна быть больше 0

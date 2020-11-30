@@ -1,7 +1,12 @@
 package main.java.com.javaguru.student_anastasija_meiksane.lesson_4.level_2_intern;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Лишние проверки, которые всегда 'true'")
+@CodeReviewComment(teacher = "рекомендую ставить фигурные скобки. Так проще читать if/else")
 public class Task_5 {
     /*
     Написать программу, которая запрашивает у пользователя

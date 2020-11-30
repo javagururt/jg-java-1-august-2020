@@ -1,9 +1,11 @@
 package com.javaguru.student_ivan_shulga.lesson_13.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-
+@CodeReview(approved = true)
 class Task_25 {
 
     public static void main(String[] args) {

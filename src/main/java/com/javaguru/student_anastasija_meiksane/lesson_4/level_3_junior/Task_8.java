@@ -1,7 +1,11 @@
 package main.java.com.javaguru.student_anastasija_meiksane.lesson_4.level_3_junior;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "Необходимо использовать || а не |")
 public class Task_8 {
     /*
     Write a Java program that accepts three numbers and prints:

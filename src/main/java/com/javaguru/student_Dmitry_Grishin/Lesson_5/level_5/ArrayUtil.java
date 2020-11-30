@@ -1,5 +1,7 @@
 package com.javaguru.student_Dmitry_Grishin.Lesson_5.level_5;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -12,7 +14,7 @@ import java.util.Random;
 Создайте в классе ArrayUtil метод для
 заполнения массива целых чисел случайными числами.
  */
-
+@CodeReview(approved = true)
 class ArrayUtil {
 
     int[] createArray(int arrayLength) {

@@ -1,7 +1,9 @@
 package com.javaguru.student_igors_gergeleziu.lesson_7;
 
-import java.util.Arrays;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Arrays;
+@CodeReview(approved = true)
 class WordServiceTest {
     public static void main(String[] args) {
         WordServiceTest test = new WordServiceTest();

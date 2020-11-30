@@ -1,8 +1,10 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_13.level_3;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 class TestException extends Exception {
 }
-
+@CodeReview(approved = true)
 class Main {
     public static void main(String args[]) {
         try {

@@ -1,5 +1,8 @@
 package com.javaguru.student_ivan_shulga.lesson_13.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Task_24 {
 
     /*

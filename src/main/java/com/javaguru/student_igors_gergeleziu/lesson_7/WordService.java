@@ -1,7 +1,13 @@
 package com.javaguru.student_igors_gergeleziu.lesson_7;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Scanner;
 
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "в случае сравнения строк и 'не равно' используют !var.equals(...)")
+@CodeReviewComment(teacher = "Рекомендую следовать подсказкам от среды разработки")
 class WordService {
     private String inputText;
     private String mostFrequentWord = "No frequent words";
