@@ -1,7 +1,11 @@
 package com.javaguru.student_igors_jurkovs.lesson_10.level_7_senior.super_task_3;
 
 import com.javaguru.student_igors_jurkovs.lesson_10.level_7_senior.super_task_2.MyList;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "Не забывайте про дженерики")
 class LinkedListImpl implements MyList {
 
     private Object previousObject;

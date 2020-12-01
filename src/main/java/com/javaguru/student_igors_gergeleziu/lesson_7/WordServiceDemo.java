@@ -1,6 +1,8 @@
 package com.javaguru.student_igors_gergeleziu.lesson_7;
 
+import com.javaguru.teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 class WordServiceDemo {
 
     public static void main(String[] args) {

@@ -1,7 +1,9 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_13.level_5_6;
 
-import java.util.Objects;
+import com.javaguru.teacher.codereview.CodeReview;
 
+import java.util.Objects;
+@CodeReview(approved = true)
 class Product {
     private String name;
     private Integer price;

@@ -1,5 +1,8 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_13.level_4;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Task_26 {
     static int i = 0;
 

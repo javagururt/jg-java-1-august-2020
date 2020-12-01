@@ -1,7 +1,12 @@
 package main.java.com.javaguru.student_anastasija_meiksane.lesson_4.level_1_intern;
 
-import java.util.Scanner;
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
 
+import java.util.Scanner;
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "необходимо поменять package. На данный момент указан некорректно." +
+        "В остальных классах тоже самое")
 public class Task_1 {
     /*
     Написать программу, которая запрашивает у

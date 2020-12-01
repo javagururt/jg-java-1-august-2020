@@ -1,7 +1,12 @@
 package com.javaguru.student_igors_jurkovs.lesson_13.level_5_middle.domain;
 
+import com.javaguru.teacher.codereview.CodeReview;
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.Objects;
 
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "level 5 approved")
 public class Product {
 
     private String productName;

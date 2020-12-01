@@ -1,7 +1,10 @@
 package main.java.com.javaguru.student_anastasija_meiksane.lesson_4.level_1_intern;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 public class Task_2 {
     /*
     Написать программу, которая запрашивает у пользователя

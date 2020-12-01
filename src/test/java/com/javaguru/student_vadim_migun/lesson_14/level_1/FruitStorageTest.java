@@ -1,5 +1,7 @@
 package com.javaguru.student_vadim_migun.lesson_14.level_1;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
-
+@CodeReview(approved = true)
 public class FruitStorageTest {
 
     FruitStorage victim = new FruitStorage();

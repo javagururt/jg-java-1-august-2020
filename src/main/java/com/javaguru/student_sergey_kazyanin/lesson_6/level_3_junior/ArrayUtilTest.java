@@ -1,5 +1,8 @@
 package com.javaguru.student_sergey_kazyanin.lesson_6.level_3_junior;
 
+import com.javaguru.teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayUtilTest {
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();
