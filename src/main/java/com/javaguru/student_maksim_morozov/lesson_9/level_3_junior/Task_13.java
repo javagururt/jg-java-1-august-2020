@@ -2,12 +2,12 @@ package com.javaguru.student_maksim_morozov.lesson_9.level_3_junior;
 
 
 abstract class Task_13 {
-    abstract static class Car {
+    abstract static class Sports {
         abstract void voice();
 
     }
 
-    static class basketball extends Task_13.Car {
+    static class basketball extends Task_13.Sports {
 
         void voice() {
             System.out.println("NBA");
@@ -15,7 +15,7 @@ abstract class Task_13 {
 
     }
 
-    static class football extends Task_13.Car {
+    static class football extends Task_13.Sports {
 
         void voice() {
             System.out.println("Champion league");
@@ -23,7 +23,7 @@ abstract class Task_13 {
 
     }
 
-    static class Volleyball extends Task_13.Car {
+    static class Volleyball extends Task_13.Sports {
 
         void voice() {
             System.out.println("Baltic league");
@@ -32,7 +32,7 @@ abstract class Task_13 {
     }
 
 
-    static class CarDemo {
+    static class SportsDemo {
 
         public static void main(String[] args) {
 
