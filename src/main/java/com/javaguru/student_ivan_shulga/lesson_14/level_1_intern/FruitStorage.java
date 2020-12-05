@@ -1,5 +1,7 @@
 package com.javaguru.student_ivan_shulga.lesson_14.level_1_intern;
 
+import com.javaguru.student_ivan_shulga.lesson_14.level_2_intern.ApplePredicate;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -38,6 +40,16 @@ public class FruitStorage {
                 .stream()
                 .filter(ap -> ap.getWeight() >= weight)
                 .collect(Collectors.toList());
+    }
+
+    public List<Apple> findApples(List<Apple> inventory, ApplePredicate p) {
+        List<Apple> result = new ArrayList<>();
+        for(Apple apple : inventory) {
+            if(p.test(apple)) {
+                result.add(apple);
+            }
+        }
+        return result;
     }
 
 }

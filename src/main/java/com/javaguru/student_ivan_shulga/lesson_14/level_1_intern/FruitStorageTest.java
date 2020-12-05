@@ -2,7 +2,7 @@ package com.javaguru.student_ivan_shulga.lesson_14.level_1_intern;
 
 import java.util.List;
 
-public class FruitStorageTest {
+public class FruitStorageTest { // тесты не через junit просто так, для практики непонятно чего, логичекого мышления на языке java
 
     public static void main(String[] args) {
 
