@@ -2,11 +2,10 @@ package com.javaguru.student_vladimirs_filipovs.lesson_15.level_3;
 
 class Player {
     private String playerName;
-    private ScoreStatus playerScore;
+    private ScoreStatus playerScore = ScoreStatus.LOVE;
 
-    public Player(String playerName, ScoreStatus score) {
+    public Player(String playerName) {
         this.playerName = playerName;
-        this.playerScore = score;
     }
 
     public String getPlayerName() {

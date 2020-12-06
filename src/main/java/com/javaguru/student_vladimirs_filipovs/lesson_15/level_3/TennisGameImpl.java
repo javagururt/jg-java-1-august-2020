@@ -41,8 +41,8 @@ class TennisGameImpl implements TennisGame {
 
 class GameDemo {
     public static void main(String[] args) {
-        Player player1 = new Player("Maria Sharapova", ScoreStatus.LOVE);
-        Player player2 = new Player("Serena Williams", ScoreStatus.LOVE);
+        Player player1 = new Player("Maria Sharapova");
+        Player player2 = new Player("Serena Williams");
         TennisGame game = new TennisGameImpl(player1, player2);
 
         System.out.println(game.score(player1, player2));
