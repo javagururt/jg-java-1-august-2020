@@ -20,7 +20,7 @@ class TennisGameImpl implements TennisGame {
             changeScoreToFIFTEEN(player);
         } else if (player.getPoints() == 2) {
             changeScoreToTHIRTY(player);
-        } else if (chekSimilarScore() && chekPointsMoreThen2()) {
+        } else if (chekIsPlayersPointsEquals() && chekIsPointsMoreThen2()) {
             changeScoreToDEUCE();
         } else if (player.getPoints() == 3) {
             changeScoreToFORTY(player);
@@ -57,20 +57,20 @@ class TennisGameImpl implements TennisGame {
         player.setPlayerScore(ScoreStatus.WIN);
     }
 
-    private boolean chekSimilarScore() {
+    private boolean chekIsPlayersPointsEquals() {
         return firstPlayer.getPoints() - secondPlayer.getPoints() == 0;
     }
 
-    private boolean chekPointsMoreThen2() {
+    private boolean chekIsPointsMoreThen2() {
         return firstPlayer.getPoints() > 2 || secondPlayer.getPoints() > 2;
     }
 
-    private boolean checkBothScoreIsDEUCE() {
+    private boolean checkIsBothScoreDEUCE() {
         return firstPlayer.getPlayerScore().getCurrentScore().equals(ScoreStatus.DEUCE.getCurrentScore())
                 && secondPlayer.getPlayerScore().getCurrentScore().equals(ScoreStatus.DEUCE.getCurrentScore());
     }
 
-    private String witchPlayerForward() {
+    private String witchPlayerIsForward() {
         if (firstPlayer.getPoints() > secondPlayer.getPoints()) {
             return firstPlayer.getPlayerScore().getCurrentScore() + " "
                     + firstPlayer.getPlayerName();
@@ -80,12 +80,12 @@ class TennisGameImpl implements TennisGame {
         }
     }
 
-    private boolean checkOneOfPlayersIsAdvantage() {
+    private boolean checkIsOneOfThePlayersAdvantage() {
         return firstPlayer.getPlayerScore().getCurrentScore().equals(ScoreStatus.ADVANTAGE.getCurrentScore())
                 || secondPlayer.getPlayerScore().getCurrentScore().equals(ScoreStatus.ADVANTAGE.getCurrentScore());
     }
 
-    private boolean checkOneOfPlayersIsWIN() {
+    private boolean checkIsOneOfThePlayersWIN() {
         return firstPlayer.getPlayerScore().getCurrentScore().equals(ScoreStatus.WIN.getCurrentScore())
                 || secondPlayer.getPlayerScore().getCurrentScore().equals(ScoreStatus.WIN.getCurrentScore());
     }
@@ -103,11 +103,11 @@ class TennisGameImpl implements TennisGame {
 
     @Override
     public String score(Player player1, Player player2) {
-        if (checkOneOfPlayersIsWIN()) {
-            return witchPlayerForward();
-        } else if (checkOneOfPlayersIsAdvantage()) {
-            return witchPlayerForward();
-        } else if (checkBothScoreIsDEUCE()) {
+        if (checkIsOneOfThePlayersWIN()) {
+            return witchPlayerIsForward();
+        } else if (checkIsOneOfThePlayersAdvantage()) {
+            return witchPlayerIsForward();
+        } else if (checkIsBothScoreDEUCE()) {
             return ScoreStatus.DEUCE.getCurrentScore();
         } else {
             return player1.getPlayerScore().getCurrentScore() + " - "
