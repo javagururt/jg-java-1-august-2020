@@ -1,13 +1,17 @@
 package com.javaguru.student_maksim_morozov.lesson_7.level_4_junior;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class WordService {
 
     String text;
+    @CodeReviewComment(teacher = "в Java не принятно объявлять все переменные в 1 строку")
     private int mostFrequentWord = 0, mostFrequentWordIndex = 0;
 
     WordService(String text){this.text = text;}
 
-    String formattedText(){return text.replaceAll(",","").replaceAll("\\.","");}
+    @CodeReviewComment(teacher = "можно в первый раз использовать replace")
+    String formattedText(){return text.replace(",","").replaceAll("\\.","");}
 
     String findMostFrequentWord(){return splitFormattedTextOnWords()[mostFrequentWordIndex];}
 

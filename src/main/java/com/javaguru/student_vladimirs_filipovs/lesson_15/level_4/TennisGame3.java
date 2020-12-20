@@ -1,5 +1,7 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_15.level_4;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class TennisGame3 implements TennisGame {
 
     private int firstPlayerPoints;
@@ -22,6 +24,7 @@ class TennisGame3 implements TennisGame {
     }
 
     @Override
+    @CodeReviewComment(teacher = "очень сложное условие. Его нужно упростить. Так же можно использовать !=")
     public String score() {
         String score;
         if (SecondPlayerPoints < 4 && firstPlayerPoints < 4

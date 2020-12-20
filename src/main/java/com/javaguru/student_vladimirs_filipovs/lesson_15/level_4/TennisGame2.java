@@ -1,5 +1,7 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_15.level_4;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class TennisGame2 implements TennisGame {
 
     public int firstPlayerPoints = 0;
@@ -7,6 +9,7 @@ class TennisGame2 implements TennisGame {
 
     public String player1Score;
     public String player2Score;
+    @CodeReviewComment(teacher = "если переменные не испольщуются, то и лучше удалять")
     private String player1Name;
     private String player2Name;
 

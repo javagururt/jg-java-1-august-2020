@@ -1,5 +1,7 @@
 package com.javaguru.student_vladimir_petranovski.lesson_15.level_6.videostore;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,7 @@ class Customer {
 		rentals.add(rental);
 	}
 
+	@CodeReviewComment(teacher = "String.valueOf можно не использовать в данном случае")
 	public String statement () {
 		double 				totalAmount 			= 0;
 		int					frequentRenterPoints 	= 0;

@@ -1,10 +1,14 @@
 package com.javaguru.student_vladimirs_filipovs.lesson_15.level_4;
 
+import com.javaguru.teacher.codereview.CodeReviewComment;
+
 class TennisGame1 implements TennisGame {
 
     private int firstPlayerPoints = 0;
     private int secondPlayerPoints = 0;
+    @CodeReviewComment(teacher = "можно сделать как final")
     private String firstPlayerName;
+    @CodeReviewComment(teacher = "Данная переменная не испольуется, зачем она?")
     private String secondPlayerName;
 
     public TennisGame1(String player1Name, String player2Name) {
